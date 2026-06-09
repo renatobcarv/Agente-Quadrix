@@ -1,0 +1,199 @@
+{
+  "orgao": "Conselho Regional dos Representantes Comerciais no Estado de São Paulo",
+  "cargo": "Assistente Administrativo",
+  "ano": 2025,
+  "blocos": [
+    {
+      "titulo": "Conhecimentos Básicos",
+      "questoes": [
+        {
+          "texto_base": "Texto para as questões de 1 e 2.\n\nA representação comercial e o tempo\n\nA representação comercial tem origem milenar, remontando aos primeiros intercâmbios mercantis entre civilizações. No Brasil, a figura do representante comercial começou a se consolidar com os mascates — comerciantes itinerantes que percorriam o interior do país vendendo produtos manufaturados. Com o avanço da industrialização, surgiu a necessidade de profissionais que intermediassem fabricantes e mercados consumidores.\n\nInternet: <core-sp.org.br> (com adaptações).",
+          "enunciado": "Considerando os aspectos de forma e de conteúdo, assinale a opção que apresenta a função de linguagem predominante no texto.",
+          "alternativas": [
+            "Emotiva, pois o autor expõe sentimentos pessoais em primeira pessoa.",
+            "Conativa, pois há um apelo direto para que o leitor se torne representante comercial.",
+            "Referencial, pois o objetivo central é informar sobre a origem e a evolução da profissão.",
+            "Fática, pois o texto se volta para a manutenção do canal de comunicação.",
+            "Poética, pois a mensagem se organiza em torno da própria forma do texto."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "No trecho “No Brasil, a figura do representante comercial começou a se consolidar com os mascates”, a vírgula foi empregada para",
+          "alternativas": [
+            "separar enumeração de itens de mesmo valor sintático.",
+            "isolar adjunto adverbial deslocado no início do período.",
+            "isolar um vocativo.",
+            "marcar a omissão de um verbo.",
+            "separar orações coordenadas assindéticas."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Em uma empresa com 60 funcionários, 54 são homens. Para que a porcentagem de homens passe a ser de 80% do total, mantendo-se o mesmo número de mulheres, deve sair um total de",
+          "alternativas": [
+            "45 homens.",
+            "40 homens.",
+            "35 homens.",
+            "30 homens.",
+            "24 homens."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Assinale a opção que apresenta a negação da proposição “Nenhum representante resiste a uma boa comissão”.",
+          "alternativas": [
+            "Todos os representantes resistem a uma boa comissão.",
+            "Nenhum representante deixa de resistir a uma boa comissão.",
+            "Todos os representantes não resistem a uma boa comissão.",
+            "Algum representante não resiste a uma boa comissão.",
+            "Algum representante resiste a uma boa comissão."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "Um usuário percebeu que o navegador passou a exibir diversos anúncios em janelas pop-up e teve a página inicial alterada sem autorização. Com base nessa situação hipotética, assinale a opção que apresenta o tipo de malware que causa esse comportamento.",
+          "alternativas": [
+            "ransomware",
+            "keylogger",
+            "rootkit",
+            "worm",
+            "adware"
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "Em uma rede, cada dispositivo possui um endereço físico, atribuído pelo fabricante, e um endereço lógico, usado para roteamento na Internet. Assinale a opção que relaciona corretamente esses dois tipos de endereço.",
+          "alternativas": [
+            "Endereço de IP (físico) e Endereço MAC (lógico)",
+            "Endereço MAC (físico) e Endereço de IP (lógico)",
+            "Endereço MAC (lógico) e Endereço de IP (físico)",
+            "Endereço de domínio (físico) e Endereço MAC (lógico)",
+            "Endereço de IP (físico) e Endereço de domínio (lógico)"
+          ],
+          "gabarito": "B"
+        }
+      ]
+    },
+    {
+      "titulo": "Conhecimentos Complementares",
+      "questoes": [
+        {
+          "enunciado": "Um princípio da Administração Pública preconiza que os atos devem destinar-se ao interesse público, não podendo favorecer ou prejudicar pessoas em razão de simpatias ou antipatias pessoais. Assinale a opção que apresenta a denominação desse princípio.",
+          "alternativas": [
+            "legalidade",
+            "impessoalidade",
+            "moralidade",
+            "publicidade",
+            "eficiência"
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "De acordo com a Lei nº 8.429/1992 e suas alterações, constitui ato de improbidade administrativa que importa, primordialmente, em enriquecimento ilícito",
+          "alternativas": [
+            "frustrar a licitude de processo seletivo para ingresso no serviço público.",
+            "retardar indevidamente ato de ofício por interesse pessoal.",
+            "perceber vantagem econômica para intermediar a liberação de verba pública.",
+            "agir para a configuração de ilícito na celebração de parcerias.",
+            "revelar fato de que tem ciência em razão do cargo."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Em conformidade com a Lei nº 12.527/2011, a informação sigilosa é aquela submetida",
+          "alternativas": [
+            "definitivamente à restrição de acesso público, em razão de sua imprescindibilidade à segurança apenas do Estado.",
+            "temporariamente à restrição de acesso público, em razão de sua imprescindibilidade à segurança apenas da sociedade.",
+            "temporariamente à restrição de acesso público, em razão de sua imprescindibilidade à segurança apenas do Estado.",
+            "temporariamente à restrição de acesso público, em razão de sua imprescindibilidade à segurança da sociedade e do Estado.",
+            "definitivamente à restrição de acesso público, em razão de sua imprescindibilidade à segurança da sociedade e do Estado."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "De acordo com a Lei nº 13.709/2018 (LGPD), a disciplina da proteção de dados pessoais tem como um de seus fundamentos",
+          "alternativas": [
+            "o respeito à privacidade.",
+            "a dependência informativa do titular.",
+            "o controle estatal da comunicação.",
+            "a vulnerabilidade permanente da intimidade.",
+            "o decrescimento econômico e tecnológico."
+          ],
+          "gabarito": "A"
+        }
+      ]
+    },
+    {
+      "titulo": "Conhecimentos Específicos",
+      "questoes": [
+        {
+          "enunciado": "Assinale a opção que apresenta uma desvantagem da descentralização nas organizações.",
+          "alternativas": [
+            "rapidez nas decisões pela proximidade do local em que surgem os problemas",
+            "falta de uniformidade das decisões entre as unidades",
+            "aumento da motivação dos colaboradores envolvidos",
+            "maior dedicação do alto escalão às decisões estratégicas",
+            "melhor aproveitamento da aptidão dos colaboradores"
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "O princípio arquivístico que proíbe a transferência de propriedade dos arquivos públicos a terceiros e assegura que o direito público sobre os arquivos não prescreve com o tempo é o princípio da",
+          "alternativas": [
+            "proveniência.",
+            "unicidade.",
+            "inalienabilidade.",
+            "cumulatividade.",
+            "reversibilidade."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Acerca da Lei nº 4.886/1965, que regula a representação comercial autônoma, julgue os itens a seguir.\nI O representante comercial autônomo pode ser pessoa física ou jurídica.\nII A mediação dos negócios mercantis é realizada sem vínculo empregatício.\nIII Compete privativamente ao CONFERE elaborar os regimentos internos dos COREs.\nAssinale a opção correta.",
+          "alternativas": [
+            "Somente o item I está certo.",
+            "Somente o item II está certo.",
+            "Somente os itens I e II estão certos.",
+            "Somente os itens II e III estão certos.",
+            "Todos os itens estão certos."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Um assistente administrativo foi designado para acompanhar a execução de um contrato de prestação de serviços contínuos firmado pelo conselho. Com base nessa situação hipotética e na boa prática de fiscalização contratual, assinale a opção correta.",
+          "alternativas": [
+            "O fiscal não deve propor a aplicação de penalidades, para não deteriorar a relação contratual.",
+            "O fiscal deve atestar e encaminhar a nota fiscal sem verificar a execução, para agilizar o pagamento.",
+            "A fiscalização limita-se a verificar, ao final do contrato, se o objeto foi integralmente entregue.",
+            "O fiscal deve manter comunicação clara e constante com o gestor, documentando as ocorrências contratuais.",
+            "A gestão de riscos deve considerar apenas os riscos físicos da execução do objeto."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "O tipo de cultura organizacional em que as decisões são centralizadas na figura de um líder ou de um pequeno grupo, com foco no controle e na autoridade, denomina-se cultura de",
+          "alternativas": [
+            "poder.",
+            "papéis.",
+            "tarefas.",
+            "pessoas.",
+            "inovação."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Acerca da Lei nº 4.886/1965 e suas alterações, assinale a opção que apresenta competência privativa do CONFERE.",
+          "alternativas": [
+            "dirimir as dúvidas suscitadas pelos COREs",
+            "manter o cadastro profissional dos representantes da região",
+            "expedir as carteiras profissionais dos representantes inscritos",
+            "fiscalizar o exercício profissional na respectiva região",
+            "arrecadar as anuidades devidas pelos representantes da região"
+          ],
+          "gabarito": "A"
+        }
+      ]
+    }
+  ]
+}

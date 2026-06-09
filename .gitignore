@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Configuração local do Claude Code (permissões, etc.)
+.claude/
+
+# Sistema operacional
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Arquivos temporários de geração
+**/_*.tmp
+**/_preview.png
+*.log
+
+# Saídas de teste/rascunho (mantenha apenas materiais finais versionados à mão)
+materiais/**/_rascunho*

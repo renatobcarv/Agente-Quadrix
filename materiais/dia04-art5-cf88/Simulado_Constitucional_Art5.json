@@ -1,0 +1,342 @@
+{
+  "orgao": "Secretaria de Estado de Desenvolvimento Social do Distrito Federal (Sedes/DF)",
+  "cargo": "Técnico Administrativo",
+  "ano": 2026,
+  "blocos": [
+    {
+      "titulo": "Direito Constitucional — Direitos e Deveres Individuais e Coletivos (art. 5º da CF/88)",
+      "questoes": [
+        {
+          "enunciado": "Nos termos do art. 5º, caput, da Constituição Federal de 1988, assinale a opção correta acerca dos titulares dos direitos e garantias fundamentais.",
+          "alternativas": [
+            "É garantida a inviolabilidade do direito à vida, à liberdade, à igualdade, à segurança e à propriedade aos brasileiros e aos estrangeiros residentes no País.",
+            "Os direitos fundamentais são assegurados exclusivamente aos brasileiros natos.",
+            "Os estrangeiros, ainda que residentes no País, não são titulares dos direitos fundamentais.",
+            "Os direitos do art. 5º aplicam-se apenas às pessoas físicas, jamais às pessoas jurídicas.",
+            "A igualdade prevista no caput admite distinções de qualquer natureza estabelecidas por lei ordinária."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Assinale a opção que reproduz corretamente o princípio da legalidade previsto no art. 5º da CF/88.",
+          "alternativas": [
+            "É livre a manifestação do pensamento, sendo permitido o anonimato.",
+            "Ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei.",
+            "Ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de ordem de autoridade administrativa.",
+            "É plena a liberdade de associação, inclusive para fins paramilitares.",
+            "A lei penal retroagirá sempre, para prejudicar ou beneficiar o réu."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Acerca da liberdade de manifestação do pensamento e do direito de resposta (art. 5º, IV e V), assinale a opção correta.",
+          "alternativas": [
+            "É livre a manifestação do pensamento, sendo garantido o anonimato como forma de proteção do autor.",
+            "O direito de resposta independe de qualquer proporcionalidade em relação ao agravo.",
+            "É livre a manifestação do pensamento, vedado o anonimato; é assegurado o direito de resposta, proporcional ao agravo, além da indenização por dano material, moral ou à imagem.",
+            "O reconhecimento do direito de resposta exclui a possibilidade de indenização.",
+            "A manifestação do pensamento depende de licença prévia da autoridade competente."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "A casa é asilo inviolável do indivíduo (art. 5º, XI). Assinale a opção que apresenta hipótese que autoriza o ingresso no domicílio sem o consentimento do morador.",
+          "alternativas": [
+            "A qualquer hora do dia ou da noite, por simples determinação de autoridade policial.",
+            "Durante a noite, mediante ordem administrativa devidamente fundamentada.",
+            "A qualquer hora, mediante mandado de busca expedido por delegado de polícia.",
+            "Em caso de flagrante delito ou desastre, ou para prestar socorro, a qualquer hora; e, durante o dia, por determinação judicial.",
+            "Somente durante o dia, ainda que haja flagrante delito, e desde que com mandado judicial."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Acerca do sigilo das comunicações (art. 5º, XII), assinale a opção correta.",
+          "alternativas": [
+            "É absoluto o sigilo das comunicações telefônicas, não se admitindo qualquer exceção.",
+            "A interceptação telefônica pode ser determinada por autoridade policial, no interesse da investigação.",
+            "O sigilo de dados pode ser quebrado por ordem de comissão parlamentar de inquérito instaurada por Câmara Municipal.",
+            "A interceptação das comunicações telefônicas é admitida para a instrução de processo de natureza civil.",
+            "É inviolável o sigilo das comunicações telefônicas, salvo, por ordem judicial, nas hipóteses e na forma que a lei estabelecer, para fins de investigação criminal ou instrução processual penal."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "Assinale a opção correta a respeito da escusa de consciência (art. 5º, VIII).",
+          "alternativas": [
+            "Ninguém será privado de direitos por motivo de crença religiosa ou de convicção filosófica ou política, salvo se as invocar para eximir-se de obrigação legal a todos imposta e recusar-se a cumprir prestação alternativa, fixada em lei.",
+            "A crença religiosa autoriza, em qualquer hipótese, o descumprimento de obrigação legal imposta a todos.",
+            "Não se admite, em nenhum caso, a fixação de prestação alternativa à obrigação legal.",
+            "A privação de direitos por convicção política é vedada de forma absoluta, sem qualquer exceção.",
+            "A escusa de consciência aplica-se somente às obrigações de natureza militar."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Acerca do direito de reunião (art. 5º, XVI), assinale a opção correta.",
+          "alternativas": [
+            "A reunião em locais abertos ao público depende de autorização da autoridade competente.",
+            "Todos podem reunir-se pacificamente, sem armas, em locais abertos ao público, independentemente de autorização, desde que não frustrem outra reunião anteriormente convocada para o mesmo local, sendo apenas exigido o prévio aviso à autoridade competente.",
+            "É permitida a reunião armada, desde que de caráter pacífico.",
+            "É vedada toda e qualquer reunião realizada em locais abertos ao público.",
+            "Exige-se autorização judicial para a realização de qualquer reunião."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Sobre a liberdade de associação (art. 5º, XVII a XX), assinale a opção correta.",
+          "alternativas": [
+            "A criação de associações e de cooperativas depende de autorização estatal.",
+            "É livre a associação, inclusive a de caráter paramilitar, desde que com fins lícitos.",
+            "É plena a liberdade de associação para fins lícitos, vedada a de caráter paramilitar; a criação de associações independe de autorização, e as associações só poderão ser compulsoriamente dissolvidas por decisão judicial transitada em julgado.",
+            "As associações podem ser compulsoriamente dissolvidas por ato administrativo da autoridade competente.",
+            "A suspensão das atividades de uma associação independe de decisão judicial."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Nos termos do art. 5º, XXXV, da CF/88, assinale a opção correta sobre o princípio da inafastabilidade da jurisdição.",
+          "alternativas": [
+            "A lei poderá excluir da apreciação do Poder Judiciário a lesão a direito, desde que prevista expressa exceção legal.",
+            "Somente a lesão já consumada a direito pode ser apreciada pelo Poder Judiciário.",
+            "Exige-se, em regra, o prévio esgotamento das vias administrativas para o acesso ao Poder Judiciário.",
+            "A lei não excluirá da apreciação do Poder Judiciário lesão ou ameaça a direito.",
+            "A simples ameaça a direito não é tutelável pelo Poder Judiciário."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Acerca da legalidade e da retroatividade da lei penal (art. 5º, XXXIX e XL), assinale a opção correta.",
+          "alternativas": [
+            "Pode haver crime mesmo sem lei anterior que o defina, nos casos de maior gravidade.",
+            "A lei penal sempre retroage, independentemente de beneficiar ou prejudicar o réu.",
+            "A lei penal nunca retroage, ainda que para beneficiar o réu.",
+            "A pena pode ser cominada por ato administrativo, desde que motivado.",
+            "Não há crime sem lei anterior que o defina, nem pena sem prévia cominação legal; a lei penal não retroagirá, salvo para beneficiar o réu."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "Assinale a opção correta a respeito do princípio da pessoalidade da pena (art. 5º, XLV).",
+          "alternativas": [
+            "Nenhuma pena passará da pessoa do condenado, podendo a obrigação de reparar o dano e a decretação do perdimento de bens ser, nos termos da lei, estendidas aos sucessores e contra eles executadas, até o limite do valor do patrimônio transferido.",
+            "A pena privativa de liberdade pode passar da pessoa do condenado aos seus herdeiros.",
+            "A obrigação de reparar o dano jamais poderá atingir os sucessores do condenado.",
+            "A decretação do perdimento de bens não pode, em nenhuma hipótese, atingir os sucessores.",
+            "A pena privativa de liberdade pode ser cumprida pelos sucessores do condenado falecido."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Nos termos do art. 5º, XLVII, da CF/88, assinale a opção que apresenta pena ADMITIDA pelo ordenamento constitucional.",
+          "alternativas": [
+            "pena de banimento",
+            "pena de morte, em caso de guerra declarada, nos termos da lei",
+            "pena de caráter perpétuo",
+            "pena de trabalhos forçados",
+            "penas cruéis"
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Acerca do tratamento constitucional de determinados crimes no art. 5º (XLII e XLIII), assinale a opção correta.",
+          "alternativas": [
+            "A prática do racismo constitui crime afiançável e prescritível.",
+            "A tortura constitui crime afiançável e suscetível de graça.",
+            "A prática do racismo constitui crime inafiançável e imprescritível, sujeito à pena de reclusão, nos termos da lei.",
+            "Os crimes hediondos são, por expressa previsão constitucional, suscetíveis de graça e de anistia.",
+            "O tráfico ilícito de entorpecentes constitui crime afiançável."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Acerca da presunção de inocência e das provas no processo (art. 5º, LVI e LVII), assinale a opção correta.",
+          "alternativas": [
+            "São admissíveis, no processo, as provas obtidas por meios ilícitos, desde que relevantes.",
+            "Ninguém será considerado culpado, bastando, porém, a condenação proferida em primeira instância.",
+            "A presunção de inocência cessa com o indiciamento do investigado.",
+            "Ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória, sendo inadmissíveis, no processo, as provas obtidas por meios ilícitos.",
+            "As provas obtidas por meios ilícitos são admitidas quando favoráveis à acusação."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Acerca do devido processo legal, do contraditório e da ampla defesa (art. 5º, LIV e LV), assinale a opção correta.",
+          "alternativas": [
+            "A ampla defesa é assegurada apenas no âmbito do processo penal.",
+            "O contraditório não se aplica ao processo administrativo.",
+            "Admite-se a privação de bens sem o devido processo legal em situações de urgência.",
+            "Os meios e os recursos inerentes à defesa podem ser restringidos por ato administrativo.",
+            "Ninguém será privado da liberdade ou de seus bens sem o devido processo legal, assegurados o contraditório e a ampla defesa, com os meios e recursos a ela inerentes, aos litigantes em processo judicial ou administrativo e aos acusados em geral."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "Assinale a opção que apresenta o remédio constitucional cabível para proteger a liberdade de locomoção, sempre que alguém sofrer ou se achar ameaçado de sofrer violência ou coação em sua liberdade, por ilegalidade ou abuso de poder.",
+          "alternativas": [
+            "habeas corpus",
+            "mandado de segurança",
+            "mandado de injunção",
+            "habeas data",
+            "ação popular"
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Assinale o remédio constitucional cabível para proteger direito líquido e certo, não amparado por habeas corpus ou habeas data, quando o responsável pela ilegalidade ou abuso de poder for autoridade pública ou agente de pessoa jurídica no exercício de atribuições do Poder Público.",
+          "alternativas": [
+            "habeas corpus",
+            "mandado de segurança",
+            "mandado de injunção",
+            "habeas data",
+            "ação civil pública"
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Conceder-se-á ______ sempre que a falta de norma regulamentadora torne inviável o exercício dos direitos e liberdades constitucionais e das prerrogativas inerentes à nacionalidade, à soberania e à cidadania. Assinale a opção que completa corretamente a lacuna.",
+          "alternativas": [
+            "habeas data",
+            "mandado de segurança",
+            "mandado de injunção",
+            "habeas corpus",
+            "ação popular"
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Assinale o remédio constitucional destinado a assegurar o conhecimento de informações relativas à pessoa do impetrante, constantes de registros ou bancos de dados de entidades governamentais ou de caráter público, bem como a retificação de dados.",
+          "alternativas": [
+            "mandado de segurança",
+            "mandado de injunção",
+            "habeas corpus",
+            "habeas data",
+            "ação popular"
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Qualquer cidadão é parte legítima para propor ______ que vise a anular ato lesivo ao patrimônio público ou de entidade de que o Estado participe, à moralidade administrativa, ao meio ambiente e ao patrimônio histórico e cultural. Assinale a opção que completa corretamente a lacuna.",
+          "alternativas": [
+            "mandado de segurança coletivo",
+            "habeas data",
+            "mandado de injunção",
+            "habeas corpus",
+            "ação popular"
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "Acerca dos direitos e garantias fundamentais (art. 5º), julgue os itens a seguir.\nI São gratuitas, na forma da lei, as ações de habeas corpus e habeas data.\nII O Estado prestará assistência jurídica integral e gratuita a todos, independentemente de comprovação de insuficiência de recursos.\nIII A garantia da razoável duração do processo aplica-se somente ao âmbito judicial.\nAssinale a opção correta.",
+          "alternativas": [
+            "Somente o item I está certo.",
+            "Somente o item II está certo.",
+            "Somente o item III está certo.",
+            "Todos os itens estão certos.",
+            "Nenhum item está certo."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Nos termos do art. 5º, XXXIV, da CF/88, são assegurados, INDEPENDENTEMENTE do pagamento de taxas,",
+          "alternativas": [
+            "apenas o direito de petição aos Poderes Públicos em defesa de direitos.",
+            "o direito de petição aos Poderes Públicos em defesa de direitos ou contra ilegalidade ou abuso de poder, e a obtenção de certidões em repartições públicas, para defesa de direitos e esclarecimento de situações de interesse pessoal.",
+            "a obtenção de certidões em repartições públicas, mediante o pagamento de taxa de expediente.",
+            "o direito de petição dirigido somente ao Poder Judiciário.",
+            "a obtenção de certidões em repartições públicas apenas para fins eleitorais."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Acerca da liberdade de consciência e de crença (art. 5º, VI), assinale a opção correta.",
+          "alternativas": [
+            "A liberdade de consciência e de crença pode ser restringida por lei ordinária, por conveniência administrativa.",
+            "É vedado o livre exercício dos cultos religiosos no território nacional.",
+            "É inviolável a liberdade de consciência e de crença, sendo assegurado o livre exercício dos cultos religiosos e garantida, na forma da lei, a proteção aos locais de culto e a suas liturgias.",
+            "A proteção aos locais de culto independe de previsão legal e tem caráter absoluto.",
+            "A liberdade de crença não abrange a liberdade de consciência."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Acerca dos direitos e garantias do art. 5º da CF/88, julgue os itens a seguir.\nI É garantido o direito de propriedade, que atenderá a sua função social.\nII É livre o exercício de qualquer trabalho, ofício ou profissão, atendidas as qualificações profissionais que a lei estabelecer.\nIII É livre a locomoção no território nacional em tempo de paz, podendo qualquer pessoa, nos termos da lei, nele entrar, permanecer ou dele sair com seus bens.\nAssinale a opção correta.",
+          "alternativas": [
+            "Somente o item I está certo.",
+            "Somente os itens I e II estão certos.",
+            "Somente o item III está certo.",
+            "Todos os itens estão certos.",
+            "Nenhum item está certo."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Durante a noite, um policial persegue, em flagrante delito de tráfico de drogas, indivíduo que se refugia em sua própria residência, recusando-se a permitir a entrada. Com base no art. 5º, XI, da CF/88, assinale a opção correta.",
+          "alternativas": [
+            "O ingresso é vedado durante a noite, ainda que haja situação de flagrante delito.",
+            "O ingresso exige prévia ordem judicial, mesmo na hipótese de flagrante delito.",
+            "O ingresso só seria possível durante o dia e mediante mandado judicial.",
+            "Configura-se violação de domicílio, pois inexiste autorização do morador.",
+            "O ingresso é lícito, pois, em caso de flagrante delito, a casa pode ser adentrada a qualquer hora, independentemente de mandado judicial ou de consentimento do morador."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "Nos termos do art. 5º, § 3º, da CF/88, os tratados e convenções internacionais sobre direitos humanos que forem aprovados, em cada Casa do Congresso Nacional, em dois turnos, por três quintos dos votos dos respectivos membros, serão equivalentes a",
+          "alternativas": [
+            "emendas constitucionais.",
+            "leis complementares.",
+            "leis ordinárias.",
+            "decretos legislativos.",
+            "medidas provisórias."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Acerca da eficácia das normas definidoras dos direitos e garantias fundamentais (art. 5º, §§ 1º e 2º), assinale a opção correta.",
+          "alternativas": [
+            "As normas definidoras dos direitos e garantias fundamentais dependem sempre de regulamentação legal para produzir efeitos.",
+            "As normas definidoras dos direitos e garantias fundamentais têm aplicação imediata.",
+            "Os direitos e garantias expressos na Constituição excluem outros decorrentes do regime e dos princípios por ela adotados.",
+            "Os tratados internacionais de direitos humanos não podem, em hipótese alguma, ampliar o rol de direitos.",
+            "Os direitos fundamentais constituem rol taxativo e fechado, insuscetível de ampliação."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Nos termos do art. 5º, XXXVIII, da CF/88, é reconhecida a instituição do júri, com a organização que lhe der a lei, assegurados",
+          "alternativas": [
+            "a publicidade obrigatória das votações.",
+            "a incompetência para o julgamento dos crimes dolosos contra a vida.",
+            "a plenitude de defesa, o sigilo das votações, a soberania dos veredictos e a competência para o julgamento dos crimes dolosos contra a vida.",
+            "a expressa vedação à soberania dos veredictos.",
+            "a competência exclusiva para o julgamento dos crimes culposos contra a vida."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Acerca dos direitos do preso (art. 5º, LXII e LXIII), assinale a opção correta.",
+          "alternativas": [
+            "O preso não tem direito de permanecer calado durante o interrogatório.",
+            "A prisão de qualquer pessoa não precisa ser comunicada ao juiz competente.",
+            "O preso não tem direito à assistência de advogado durante a sua custódia.",
+            "O preso será informado de seus direitos, entre os quais o de permanecer calado, sendo-lhe assegurada a assistência da família e de advogado.",
+            "A identificação dos responsáveis por sua prisão é dispensável."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Acerca da extradição (art. 5º, LI e LII), assinale a opção correta.",
+          "alternativas": [
+            "O brasileiro nato poderá ser extraditado em caso de crime comum praticado no exterior.",
+            "O estrangeiro será extraditado por crime político ou de opinião.",
+            "O brasileiro naturalizado jamais será extraditado, em qualquer hipótese.",
+            "Nenhum brasileiro será extraditado, nato ou naturalizado, sem qualquer exceção.",
+            "Nenhum brasileiro será extraditado, salvo o naturalizado, em caso de crime comum praticado antes da naturalização, ou de comprovado envolvimento em tráfico ilícito de entorpecentes e drogas afins, na forma da lei."
+          ],
+          "gabarito": "E"
+        }
+      ]
+    }
+  ]
+}

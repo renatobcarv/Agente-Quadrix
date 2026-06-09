@@ -1,0 +1,10 @@
+# Dependências do motor de geração de materiais
+#
+# Instale com:  pip install -r engine/requirements.txt
+#
+# reportlab  -> gerador de PDF no layout fiel da Quadrix (gerar_prova_quadrix.py)
+reportlab>=4.0
+
+# O gerador HTML (gerar_material_html.py) NÃO precisa de dependências Python:
+# ele só escreve um .html. A conversão para PDF é feita pelo Google Chrome:
+#   chrome --headless=new --no-pdf-header-footer --print-to-pdf=saida.pdf arquivo.html
