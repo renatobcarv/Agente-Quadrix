@@ -53,11 +53,23 @@ Para questões comentadas, acrescente:
 
 ---
 
+## Regra de ouro dos distratores (equilíbrio de alternativas)
+
+> **A alternativa correta NÃO pode ser a mais longa nem a mais "completa".** Esse é o erro que mais entrega a resposta: o candidato marca "a que cita a lei inteira" e acerta sem saber nada.
+
+Como a Quadrix realmente faz (e como devemos fazer):
+
+- **Comprimento parelho.** As 5 alternativas devem ter tamanho parecido. Se a correta tem 20 palavras, os distratores também têm ~20. Nada de correta com 3 linhas e distratores com meia linha.
+- **Distrator também cita a lei** — só que com **um elemento trocado** (o mecanismo clássico da banca): `ordem judicial` → `autoridade policial`; `durante o dia` → `a qualquer hora`; `imprescritível` → `prescreve em 20 anos`; `salvo para beneficiar` → `em nenhuma hipótese`. Veja o modelo perfeito na questão da Lei 12.527 em `engine/exemplo_prova.json`: as 5 opções são quase idênticas, muda só "temporária/definitiva" e "Estado/sociedade".
+- **Varie quem é o mais longo.** Em parte das questões, faça um **distrator** ser o mais comprido; em outras, deixe a **correta curtíssima** (o texto literal e seco da lei). O comprimento não pode correlacionar com o gabarito.
+- **Sem "palavras-pista".** Evite que só a correta soe técnica/jurídica e os distratores soem amadores. Todos devem parecer plausíveis a quem não domina o ponto.
+
 ## Regras de qualidade do design
 
 - **Sem espaço morto.** Conteúdo flui em cards que não quebram no meio (`break-inside: avoid`). Nada de meia página em branco.
 - **Densidade alta, legível.** Mais conteúdo por página, sem virar muro de texto — use cards, grids de 2 colunas e listas.
 - **Gabarito equilibrado.** As respostas corretas se distribuem entre A–E, como numa prova real (nunca "quase tudo B").
+- **Distratores equilibrados em tamanho.** Ver "Regra de ouro dos distratores" acima — o comprimento da alternativa não pode entregar o gabarito.
 - **Acentuação correta.** Por isso o motor principal é HTML/CSS renderizado por navegador — controle tipográfico real.
 
 ---

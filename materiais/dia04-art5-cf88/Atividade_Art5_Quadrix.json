@@ -1,0 +1,232 @@
+{
+  "orgao": "Secretaria de Estado de Desenvolvimento Social do Distrito Federal (Sedes/DF)",
+  "cargo": "Técnico Administrativo — Atividade de Direito Constitucional (Art. 5º)",
+  "ano": 2026,
+  "blocos": [
+    {
+      "titulo": "Direito Constitucional — Art. 5º da CF/88 (Direitos e Deveres Individuais e Coletivos)",
+      "questoes": [
+        {
+          "enunciado": "Acerca do sigilo das comunicações (art. 5º, XII), assinale a opção correta.",
+          "alternativas": [
+            "É absoluto o sigilo das comunicações telefônicas, não se admitindo exceção a essa garantia constitucional.",
+            "A interceptação telefônica pode ser determinada diretamente pela autoridade policial no curso da investigação.",
+            "O sigilo das comunicações telefônicas pode ser afastado por ordem de comissão parlamentar de inquérito municipal.",
+            "A interceptação das comunicações telefônicas é admitida para instruir processo de natureza estritamente civil.",
+            "A interceptação telefônica é admitida por ordem judicial, na forma da lei, para fins de investigação criminal."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "A respeito da escusa de consciência (art. 5º, VIII), assinale a opção correta.",
+          "alternativas": [
+            "A crença religiosa autoriza, em qualquer hipótese, o descumprimento de obrigação legal imposta a todos.",
+            "A privação de direitos por motivo de convicção política é vedada de forma absoluta, sem qualquer exceção.",
+            "A escusa de consciência aplica-se somente às obrigações relacionadas ao serviço militar obrigatório.",
+            "Haverá privação de direitos se o indivíduo, escusando-se de obrigação legal, recusar a prestação alternativa fixada em lei.",
+            "Não se admite, em nenhum caso, a fixação de prestação alternativa à obrigação legal que tenha sido recusada."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Acerca do direito de reunião (art. 5º, XVI), assinale a opção correta.",
+          "alternativas": [
+            "A reunião em locais abertos ao público depende de prévia autorização da autoridade competente.",
+            "É permitida a reunião armada, desde que realizada de forma pacífica e em local aberto ao público.",
+            "A reunião pacífica, sem armas, em local aberto ao público, independe de autorização, exigido apenas aviso prévio.",
+            "É vedada toda e qualquer reunião realizada em locais abertos ao público sem a devida fiscalização estatal.",
+            "Exige-se autorização judicial para a realização de qualquer reunião, seja em local público, seja em local privado."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "A respeito do princípio da pessoalidade da pena (art. 5º, XLV), assinale a opção correta.",
+          "alternativas": [
+            "A pena privativa de liberdade pode passar da pessoa do condenado aos seus sucessores legítimos.",
+            "A obrigação de reparar o dano pode ser estendida aos sucessores, até o limite do patrimônio transferido.",
+            "A decretação do perdimento de bens não pode, em nenhuma hipótese, atingir os sucessores do condenado.",
+            "A obrigação de reparar o dano jamais poderá atingir os sucessores, ainda que dentro da herança recebida.",
+            "A pena privativa de liberdade pode ser cumprida pelos sucessores do condenado já falecido, conforme a lei."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Quanto à inviolabilidade do domicílio (art. 5º, XI), assinale a opção correta.",
+          "alternativas": [
+            "Durante o dia, a casa pode ser invadida por determinação judicial, na forma estabelecida em lei.",
+            "Em caso de flagrante delito, a casa só pode ser invadida durante o período diurno, jamais à noite.",
+            "O ingresso para prestar socorro depende sempre de prévia autorização judicial, ainda que durante o dia.",
+            "A determinação judicial autoriza o ingresso no domicílio a qualquer hora do dia ou da noite, indistintamente.",
+            "Em caso de desastre, o ingresso no domicílio exige o consentimento expresso do morador, mesmo se ausente."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Acerca dos destinatários dos direitos previstos no art. 5º, caput, da Constituição Federal, assinale a opção correta.",
+          "alternativas": [
+            "Os direitos do art. 5º são assegurados exclusivamente aos brasileiros natos, em razão da soberania nacional.",
+            "Os estrangeiros, ainda que apenas de passagem pelo território, equiparam-se em tudo aos residentes no País.",
+            "Asseguram-se os direitos aos brasileiros e aos estrangeiros residentes no País, sem distinção de qualquer natureza.",
+            "A igualdade prevista no caput refere-se à igualdade de resultados sociais entre todos os habitantes do País.",
+            "Os brasileiros naturalizados não são alcançados pela garantia de inviolabilidade do direito à vida e à liberdade."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Considerando o princípio da legalidade (art. 5º, II), assinale a opção correta.",
+          "alternativas": [
+            "O particular pode ser obrigado a fazer ou deixar de fazer algo em virtude de decreto do Poder Executivo.",
+            "A obrigação imposta ao particular pode decorrer de portaria editada por autoridade administrativa competente.",
+            "Os atos administrativos normativos têm força para criar obrigações novas aos particulares, independentemente de lei.",
+            "A Administração, em razão de sua supremacia, pode impor deveres ao particular sem fundamento em lei formal.",
+            "Ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "A respeito da liberdade de manifestação do pensamento (art. 5º, IV), assinale a opção correta.",
+          "alternativas": [
+            "A livre manifestação do pensamento é absoluta e afasta qualquer responsabilização posterior do seu autor.",
+            "É livre a manifestação do pensamento, sendo vedado o anonimato.",
+            "O anonimato é assegurado sempre que se mostrar necessário à proteção da fonte de informação jornalística.",
+            "A manifestação do pensamento depende de prévio licenciamento do órgão público de comunicação social competente.",
+            "A vedação ao anonimato aplica-se apenas às manifestações veiculadas em meios de comunicação impressos."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Quanto ao direito de resposta (art. 5º, V), assinale a opção correta.",
+          "alternativas": [
+            "O ofendido deve optar entre o direito de resposta e a indenização, que não podem ser exercidos em conjunto.",
+            "A indenização cabível restringe-se ao dano material, excluído o dano moral ou à imagem do ofendido.",
+            "O direito de resposta independe de proporcionalidade em relação ao agravo efetivamente sofrido pelo ofendido.",
+            "É assegurado o direito de resposta, proporcional ao agravo, além da indenização por dano material, moral ou à imagem.",
+            "A indenização por dano à imagem somente é devida quando inexistir a possibilidade do exercício do direito de resposta."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "A respeito da proteção à intimidade e à vida privada (art. 5º, X), assinale a opção correta.",
+          "alternativas": [
+            "São invioláveis a intimidade, a vida privada, a honra e a imagem, assegurado o direito a indenização pelo dano.",
+            "A proteção constitucional alcança a honra e a imagem, mas não abrange a intimidade nem a vida privada da pessoa.",
+            "A violação da imagem da pessoa gera o direito de resposta, mas não enseja a indenização por dano material.",
+            "O direito à indenização pressupõe a ocorrência de dano material, sendo, para tanto, insuficiente o mero dano moral.",
+            "A inviolabilidade da vida privada cede diante de qualquer interesse jornalístico de informação ao público, sem ressalvas."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Acerca do direito de petição e da obtenção de certidões (art. 5º, XXXIV), assinale a opção correta.",
+          "alternativas": [
+            "O direito de petição aos Poderes Públicos está condicionado ao pagamento de taxa de expediente administrativo.",
+            "São assegurados a todos, independentemente do pagamento de taxas, o direito de petição e a obtenção de certidões.",
+            "A obtenção de certidões para defesa de direitos depende de demonstração de interesse econômico do requerente.",
+            "O direito de petição é assegurado exclusivamente aos brasileiros natos e naturalizados, e não aos estrangeiros.",
+            "A obtenção de certidões pode ser cobrada quando o documento for solicitado em caráter de urgência pelo interessado."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "A respeito da inafastabilidade da jurisdição (art. 5º, XXXV), assinale a opção correta.",
+          "alternativas": [
+            "A lei pode excluir da apreciação do Judiciário a ameaça a direito, desde que ainda não consumada a lesão.",
+            "O acesso ao Poder Judiciário pressupõe o prévio esgotamento das instâncias administrativas, como regra geral.",
+            "Somente a lesão efetiva a direito, e não a simples ameaça, pode ser submetida à apreciação do Poder Judiciário.",
+            "A apreciação judicial depende de prévia autorização do órgão administrativo de origem do ato que se impugna.",
+            "A lei não excluirá da apreciação do Poder Judiciário lesão ou ameaça a direito."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "Considerando a proteção à segurança jurídica (art. 5º, XXXVI), assinale a opção correta.",
+          "alternativas": [
+            "A lei nova pode atingir o direito adquirido quando houver relevante interesse público devidamente motivado.",
+            "A coisa julgada pode ser desconstituída por lei posterior que discipline de modo diverso a matéria já decidida.",
+            "A lei não prejudicará o direito adquirido, o ato jurídico perfeito e a coisa julgada.",
+            "O ato jurídico perfeito protege-se apenas contra a lei penal, e não contra alterações da legislação civil.",
+            "A proteção constitucional alcança a mera expectativa de direito, equiparada, para esse fim, ao direito adquirido."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "A respeito da aplicação da lei penal no tempo (art. 5º, XL), assinale a opção correta.",
+          "alternativas": [
+            "A lei penal não retroage em nenhuma hipótese, ainda que mais benéfica ao réu que já tenha sido condenado.",
+            "A lei penal mais severa retroage para alcançar fatos praticados antes da sua entrada em vigor, conforme a lei.",
+            "A retroatividade da lei penal benéfica depende de expressa previsão de retroação na própria lei nova editada.",
+            "A lei penal não retroagirá, salvo para beneficiar o réu.",
+            "A lei penal mais benéfica retroage apenas em favor do réu que ainda não tenha sido condenado em definitivo."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Acerca do tratamento constitucional do racismo (art. 5º, XLII), assinale a opção correta.",
+          "alternativas": [
+            "A prática do racismo constitui crime inafiançável e imprescritível, sujeito à pena de reclusão, nos termos da lei.",
+            "A prática do racismo constitui contravenção penal afiançável, sujeita à pena de detenção, nos termos da lei.",
+            "O crime de racismo é inafiançável, mas prescreve no prazo máximo de vinte anos, a exemplo dos demais crimes.",
+            "O crime de racismo admite fiança quando o réu for primário e de bons antecedentes, na forma prevista em lei.",
+            "A prática do racismo é punível com reclusão, sendo, contudo, suscetível de anistia e de graça posteriores."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "A respeito dos crimes equiparados a hediondos (art. 5º, XLIII), assinale a opção correta.",
+          "alternativas": [
+            "Os crimes hediondos e equiparados são inafiançáveis e imprescritíveis, tal como ocorre com o crime de racismo.",
+            "A tortura, o tráfico, o terrorismo e os hediondos são inafiançáveis e insuscetíveis de graça ou de anistia.",
+            "Os crimes equiparados a hediondos admitem fiança quando não resultarem em morte ou lesão grave à vítima.",
+            "O tráfico ilícito de entorpecentes é suscetível de anistia, embora seja insuscetível de graça e de indulto.",
+            "Os crimes hediondos são imprescritíveis, mas admitem a concessão de anistia após o cumprimento da pena."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Acerca das penas vedadas pela Constituição (art. 5º, XLVII), assinale a opção correta.",
+          "alternativas": [
+            "É admitida a pena de caráter perpétuo para os crimes hediondos que resultem na morte da vítima.",
+            "São admitidas penas de trabalhos forçados nos estabelecimentos prisionais de segurança máxima do País.",
+            "A pena de banimento é admitida em caso de crime político praticado contra a ordem constitucional vigente.",
+            "A pena de morte é vedada de forma absoluta, não se admitindo qualquer exceção no ordenamento jurídico brasileiro.",
+            "Não haverá pena de morte, salvo em caso de guerra declarada, nem penas de caráter perpétuo."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "A respeito da extradição (art. 5º, LI), assinale a opção correta.",
+          "alternativas": [
+            "O brasileiro nato pode ser extraditado em caso de comprovado envolvimento com o tráfico de entorpecentes.",
+            "O brasileiro naturalizado não pode ser extraditado em nenhuma hipótese, por ostentar nacionalidade brasileira.",
+            "O brasileiro naturalizado pode ser extraditado por crime comum praticado antes da naturalização.",
+            "O estrangeiro será extraditado ainda que o pedido se fundamente em crime político ou de opinião, conforme a lei.",
+            "O brasileiro nato pode ser extraditado desde que haja autorização expressa do Supremo Tribunal Federal."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Acerca da presunção de inocência (art. 5º, LVII), assinale a opção correta.",
+          "alternativas": [
+            "A condenação proferida em primeira instância é suficiente para a consideração da culpa definitiva do acusado.",
+            "A presunção de inocência cessa com a condenação confirmada em segunda instância pelo tribunal competente.",
+            "O acusado é considerado culpado a partir do recebimento da denúncia pelo juízo criminal competente.",
+            "Ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória.",
+            "A presunção de inocência aplica-se apenas aos crimes punidos com pena de reclusão, e não de detenção."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Assinale a opção que apresenta o remédio constitucional cabível quando a falta de norma regulamentadora torne inviável o exercício de um direito ou liberdade constitucional (art. 5º, LXXI).",
+          "alternativas": [
+            "habeas corpus",
+            "mandado de injunção",
+            "habeas data",
+            "mandado de segurança",
+            "ação popular"
+          ],
+          "gabarito": "B"
+        }
+      ]
+    }
+  ]
+}
