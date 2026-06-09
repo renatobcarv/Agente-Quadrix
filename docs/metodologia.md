@@ -1,6 +1,20 @@
 # Metodologia — como um bom material de concurso deve ensinar
 
 > Documento-guia do **Agente Quadrix**. Todo material gerado deve seguir estes princípios.
+> O **padrão operacional completo** (parâmetros, estrutura por tipo, checklist) está no
+> [`prompt-mestre.md`](prompt-mestre.md) — leitura obrigatória antes de gerar.
+
+## Padrão adotado (resumo do Prompt Mestre)
+- **Densidade de apostila**: prosa explicativa em parágrafos completos (4–6 linhas), cobertura
+  exaustiva do tema, exemplos por extenso. Sem tópicos soltos, sem cards-resumo, sem folha em branco.
+- **Calibragem da banca** em boxes: `[FONTE OFICIAL]`, `[COMO A QUADRIX COBRA]`, `[PEGADINHA]`,
+  `[MNEMÔNICO]`, `[EXEMPLO RESOLVIDO]`. A Quadrix troca **um elemento** (palavra, número, conectivo,
+  nome) para criar o erro — destaque sempre esse elemento.
+- **Questões**: misturar CERTO/ERRADO e A–E; **gabarito comentado completo** — justificar a correta
+  E explicar por que **cada errada** está errada (qual elemento inverteu o sentido).
+- **Trava de precisão**: dado/número volátil recebe `[CONFERIR FONTE ATUAL]` em vez de chute.
+- **Pipeline**: nunca `page-break-before: always` por seção; `page-break-inside: avoid` só em blocos
+  pequenos; `orphans/widows: 3`; corpo ~11.5–12pt. Preencher a folha.
 
 ## O erro mais comum
 
