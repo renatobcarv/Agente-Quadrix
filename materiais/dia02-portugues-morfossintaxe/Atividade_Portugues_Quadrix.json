@@ -1,0 +1,347 @@
+{
+  "orgao": "Secretaria de Estado de Desenvolvimento Social do Distrito Federal (Sedes/DF)",
+  "cargo": "Técnico Administrativo — Atividade de Língua Portuguesa (Ortografia e Morfossintaxe)",
+  "ano": 2026,
+  "blocos": [
+    {
+      "titulo": "Língua Portuguesa — Ortografia",
+      "questoes": [
+        {
+          "enunciado": "Assinale a opção em que o emprego de por que / porque / por quê / porquê está correto.",
+          "alternativas": [
+            "Você ainda está aqui? Por quê?",
+            "Não sei porque ele se atrasou para a reunião de hoje.",
+            "Ninguém soube explicar o por que daquela decisão.",
+            "Estudo bastante, porquê quero ser aprovado no concurso.",
+            "Ela faltou por quê estava doente naquela manhã."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Assinale a opção em que a palavra destacada (mau / mal) está empregada corretamente.",
+          "alternativas": [
+            "Ele se comportou mau durante toda a aula de ontem.",
+            "O tempo está mau hoje; certamente vai chover à tarde.",
+            "Ela dormiu muito mau e acordou indisposta.",
+            "Tudo acabou mau para os envolvidos no caso.",
+            "Ele sempre foi um mal aluno, segundo os professores."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Assinale a opção em que a grafia (mas / mais) está correta.",
+          "alternativas": [
+            "Ele tem muito mas dinheiro do que o irmão mais velho.",
+            "Estudei bastante para a prova, mais infelizmente não passei.",
+            "Quero estudar, mas não tenho tempo suficiente agora.",
+            "Preciso de mas algum tempo para terminar a tarefa.",
+            "Ela é mas alta e mais esforçada do que a colega."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Assinale a opção em que o emprego de a / há (indicação de tempo) está correto.",
+          "alternativas": [
+            "Cheguei a dois dias nesta cidade para trabalhar.",
+            "Daqui há uma semana eu viajarei para o litoral.",
+            "Estou aqui a três horas esperando ser atendido.",
+            "Não o vejo há muitos anos, desde a formatura.",
+            "Espero por uma resposta a muito tempo."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Assinale a opção em que o emprego de senão / se não está correto.",
+          "alternativas": [
+            "Estude bastante, se não você será reprovado na prova.",
+            "Ele não deseja outra coisa se não vencer a disputa.",
+            "Apresse-se agora, se não chegará atrasado ao trabalho.",
+            "Não havia ninguém na sala, se não o velho porteiro.",
+            "Se não chover amanhã, faremos o passeio combinado."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "Assinale a opção em que o emprego de onde / aonde está correto.",
+          "alternativas": [
+            "Aonde você vai com tanta pressa neste fim de tarde?",
+            "Aonde você mora atualmente com a sua família?",
+            "A cidade aonde nasci é bem pequena e tranquila.",
+            "Não consigo lembrar aonde deixei as minhas chaves.",
+            "O escritório aonde estou agora é bastante silencioso."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Assinale a opção em que o emprego de acerca de / há cerca de / a cerca de está correto.",
+          "alternativas": [
+            "Conversamos há cerca de política durante todo o jantar.",
+            "Os dois discutiram acerca de questões muito importantes.",
+            "Ele chegou ao local acerca de uma hora, já cansado.",
+            "A nova loja fica acerca de duzentos metros daqui.",
+            "Acerca de dez anos, mudei-me para outra cidade."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Assinale a opção em que a grafia (afim / a fim de) está correta.",
+          "alternativas": [
+            "Estudo muito afim de ser aprovado no concurso público.",
+            "São pessoas a fim, com gostos e ideias parecidos.",
+            "Trabalho diariamente a fim de garantir o meu futuro.",
+            "Eles têm ideias a fim a respeito de todo o assunto.",
+            "Vim até aqui afim de resolver logo esse problema."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Assinale a opção em que o emprego de sessão / seção / cessão está correto.",
+          "alternativas": [
+            "A cessão de cinema das oito horas já está esgotada.",
+            "Ele trabalha na sessão de esportes de um grande jornal.",
+            "Houve a seção dos direitos autorais ao verdadeiro autor.",
+            "Comprei o aparelho na seção de eletrônicos da loja.",
+            "A cessão plenária do conselho durou mais de três horas."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Assinale a opção em que todas as palavras estão grafadas conforme o Acordo Ortográfico vigente.",
+          "alternativas": [
+            "idéia, vôo, heróico",
+            "ideia, vôo, heroico",
+            "idéia, voo, heróico",
+            "ideía, voo, heroíco",
+            "ideia, voo, heroico"
+          ],
+          "gabarito": "E"
+        }
+      ]
+    },
+    {
+      "titulo": "Língua Portuguesa — Morfossintaxe e Coesão Textual",
+      "questoes": [
+        {
+          "enunciado": "Em “Faltaram três candidatos à prova”, o termo “três candidatos” exerce a função sintática de",
+          "alternativas": [
+            "sujeito.",
+            "objeto direto.",
+            "adjunto adverbial.",
+            "complemento nominal.",
+            "predicativo do sujeito."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Em “Necessita-se de novos servidores”, a palavra “se” classifica-se como",
+          "alternativas": [
+            "pronome apassivador.",
+            "índice de indeterminação do sujeito.",
+            "conjunção condicional.",
+            "conjunção integrante.",
+            "pronome reflexivo."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Em “Alugam-se apartamentos para temporada”, a palavra “se” é",
+          "alternativas": [
+            "índice de indeterminação do sujeito.",
+            "conjunção integrante.",
+            "pronome apassivador.",
+            "pronome reflexivo.",
+            "partícula expletiva."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Em “Este é o relatório que entreguei à chefia”, a palavra “que” classifica-se como",
+          "alternativas": [
+            "conjunção integrante.",
+            "conjunção subordinativa causal.",
+            "advérbio de intensidade.",
+            "pronome relativo.",
+            "preposição essencial."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Em “Disseram que a prova será adiada”, a palavra “que” classifica-se como",
+          "alternativas": [
+            "pronome relativo.",
+            "conjunção subordinativa consecutiva.",
+            "pronome interrogativo.",
+            "partícula expletiva de realce.",
+            "conjunção integrante."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "Em “Os turistas assistiram ao espetáculo”, o verbo “assistir” classifica-se como",
+          "alternativas": [
+            "transitivo indireto.",
+            "transitivo direto.",
+            "intransitivo.",
+            "de ligação.",
+            "transitivo direto e indireto."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Em “O candidato permaneceu calmo durante toda a prova”, o termo “calmo” exerce a função de",
+          "alternativas": [
+            "objeto direto.",
+            "predicativo do sujeito.",
+            "adjunto adnominal.",
+            "complemento nominal.",
+            "adjunto adverbial."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Em “A aprovação do projeto animou a equipe”, o termo “do projeto” exerce a função de",
+          "alternativas": [
+            "adjunto adverbial.",
+            "objeto indireto.",
+            "complemento nominal.",
+            "adjunto adnominal.",
+            "agente da passiva."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Em “Embora estivesse cansado, continuou trabalhando”, a oração destacada é subordinada adverbial",
+          "alternativas": [
+            "causal.",
+            "condicional.",
+            "temporal.",
+            "concessiva.",
+            "consecutiva."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Em “Penso, logo existo”, a segunda oração classifica-se como coordenada sindética",
+          "alternativas": [
+            "aditiva.",
+            "adversativa.",
+            "explicativa.",
+            "alternativa.",
+            "conclusiva."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "A frase “O relatório foi assinado pelo diretor” encontra-se na voz",
+          "alternativas": [
+            "passiva analítica.",
+            "ativa.",
+            "passiva sintética.",
+            "reflexiva.",
+            "reflexiva recíproca."
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Em “O servidor aspira a uma promoção”, o termo “a uma promoção” exerce a função de",
+          "alternativas": [
+            "objeto direto.",
+            "objeto indireto.",
+            "complemento nominal.",
+            "adjunto adverbial.",
+            "predicativo do objeto."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Assinale a opção em que o emprego do acento grave indicativo de crase está correto.",
+          "alternativas": [
+            "Refiro-me à essa questão apresentada na reunião.",
+            "Cheguei à Brasília na manhã do último domingo.",
+            "Entreguei o documento à diretora do departamento.",
+            "Estou inteiramente disposto à ajudar você agora.",
+            "Falei à respeito do seu caso com o supervisor."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Assinale a opção em que a colocação pronominal está correta.",
+          "alternativas": [
+            "Me empreste o seu livro de gramática, por favor.",
+            "Não diga-me uma coisa dessas diante de todos.",
+            "Quem contou-te toda a verdade sobre o ocorrido?",
+            "Nunca se deve faltar ao respeito a um colega.",
+            "Tudo resolveu-se muito rapidamente naquela tarde."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Quantas orações há no período “Quando chegamos, a reunião já havia começado”?",
+          "alternativas": [
+            "uma.",
+            "três.",
+            "quatro.",
+            "nenhuma.",
+            "duas."
+          ],
+          "gabarito": "E"
+        },
+        {
+          "enunciado": "No período “Esforçou-se muito; ____, não obteve o resultado esperado”, a lacuna, para exprimir oposição, deve ser preenchida com",
+          "alternativas": [
+            "contudo",
+            "portanto",
+            "porque",
+            "assim que",
+            "à medida que"
+          ],
+          "gabarito": "A"
+        },
+        {
+          "enunciado": "Assinale a opção em que o conectivo destacado exprime ideia de conclusão.",
+          "alternativas": [
+            "Faltou ao trabalho PORQUE adoeceu de repente.",
+            "Estudou bastante; PORTANTO, foi aprovado no exame.",
+            "EMBORA chovesse muito, ele saiu assim mesmo.",
+            "Tudo correu CONFORME havia sido previamente combinado.",
+            "Ela saiu da sala LOGO QUE o sinal tocou."
+          ],
+          "gabarito": "B"
+        },
+        {
+          "enunciado": "Em “O diretor convocou os gerentes, mas eles não compareceram”, o pronome “eles” retoma o termo",
+          "alternativas": [
+            "o diretor.",
+            "a convocação.",
+            "os gerentes.",
+            "o setor.",
+            "a empresa."
+          ],
+          "gabarito": "C"
+        },
+        {
+          "enunciado": "Em “Não saímos, pois estava chovendo muito”, a conjunção “pois” exprime ideia de",
+          "alternativas": [
+            "conclusão.",
+            "oposição.",
+            "condição.",
+            "causa.",
+            "finalidade."
+          ],
+          "gabarito": "D"
+        },
+        {
+          "enunciado": "Em “O cão latia sem parar; o animal parecia assustado”, o termo “o animal” retoma “o cão” por meio de",
+          "alternativas": [
+            "elipse do sujeito.",
+            "catáfora.",
+            "repetição do mesmo termo.",
+            "emprego de pronome relativo.",
+            "substituição por hiperônimo."
+          ],
+          "gabarito": "E"
+        }
+      ]
+    }
+  ]
+}
