@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head><meta charset="utf-8"><style>
+@page { size: A4; margin: 14mm 13mm 16mm 13mm; }
+* { box-sizing: border-box; }
+body { font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif; color:#1f2733; font-size:10.2px; line-height:1.5; margin:0;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+h1,h2,h3,h4 { margin:0; font-weight:700; }
+.cover { height:252mm; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;
+  background:linear-gradient(135deg,#064e3b 0%,#047857 55%,#065f46 100%); color:#fff; border-radius:6px;
+  page-break-after:always; padding:0 24mm; }
+.cover .kicker { letter-spacing:4px; font-size:12px; opacity:.85; font-weight:600; }
+.cover h1 { font-size:44px; line-height:1.05; margin:10px 0 6px; }
+.cover .sub { font-size:16px; font-weight:400; opacity:.95; max-width:135mm; }
+.cover .rule { width:70px; height:4px; background:#ffd27a; margin:22px 0; border-radius:2px; }
+.cover .meta { font-size:12.5px; opacity:.9; line-height:1.7; }
+.cover .badge { margin-top:26px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.4);
+  padding:9px 18px; border-radius:40px; font-size:13px; font-weight:600; }
+.section-title { font-size:19px; color:#047857; border-bottom:3px solid #047857; padding-bottom:5px; margin:4px 0 12px; page-break-after:avoid; }
+.lead { font-size:11px; color:#3a4658; margin-bottom:10px; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
+.grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:9px; }
+.callout { border-radius:7px; padding:9px 11px; margin:7px 0; page-break-inside:avoid; }
+.c-why { background:#fff5f5; border-left:4px solid #c0392b; }
+.c-key { background:#eefaf1; border-left:4px solid #047857; }
+.c-tip { background:#eef9f5; border-left:4px solid #0e7490; }
+.callout h4 { font-size:11px; margin-bottom:4px; text-transform:uppercase; letter-spacing:.5px; }
+.c-why h4 { color:#c0392b; } .c-key h4 { color:#047857; } .c-tip h4 { color:#0e7490; }
+.callout ul { margin:3px 0 0; padding-left:16px; } .callout li { margin:2px 0; }
+.card { border:1px solid #e2e6ee; border-radius:9px; padding:11px 13px; margin:0 0 11px; page-break-inside:avoid;
+  background:#fff; box-shadow:0 1px 2px rgba(20,30,50,.04); }
+.card .head { display:flex; align-items:center; gap:9px; margin-bottom:6px; }
+.card .tit { font-size:12px; color:#064e3b; font-weight:700; border-left:4px solid #047857; padding-left:8px; }
+.card .num { background:#047857; color:#fff; font-weight:700; font-size:11px; padding:3px 9px; border-radius:6px; }
+.block { margin-top:4px; }
+table { width:100%; border-collapse:collapse; margin:6px 0 4px; font-size:9.6px; page-break-inside:avoid; }
+th { background:#064e3b; color:#fff; text-align:left; padding:6px 7px; }
+td { border:1px solid #e2e6ee; padding:6px 7px; vertical-align:top; }
+tr:nth-child(even) td { background:#f5faf8; }
+td .rn { font-weight:700; color:#047857; }
+/* modelo comentado */
+.legenda { display:flex; gap:14px; flex-wrap:wrap; font-size:9px; margin:6px 0 10px; }
+.legenda span { padding:2px 8px; border-radius:4px; font-weight:700; }
+.lg-tese { background:#fde68a; color:#7c5e00; } .lg-con { background:#dbeafe; color:#1e40af; } .lg-rep { background:#dcfce7; color:#166534; }
+.modelo-bloco { border:1px solid #e2e6ee; border-radius:9px; margin:0 0 10px; overflow:hidden; page-break-inside:avoid; }
+.modelo-rotulo { background:#047857; color:#fff; font-weight:700; font-size:10px; text-transform:uppercase; letter-spacing:.5px; padding:4px 11px; }
+.modelo-grid { display:grid; grid-template-columns:1.35fr 1fr; }
+.modelo-texto { padding:10px 12px; font-size:10px; line-height:1.65; text-align:justify; border-right:1px solid #eef0f4; }
+.modelo-analise { padding:9px 11px; background:#fafbfd; }
+.an-item { font-size:8.7px; line-height:1.4; margin-bottom:6px; color:#46536a; }
+.an-tag { display:inline-block; background:#047857; color:#fff; font-weight:700; font-size:7.8px; text-transform:uppercase;
+  letter-spacing:.3px; padding:1px 6px; border-radius:10px; margin-bottom:2px; }
+.tese { background:#fde68a; border-radius:3px; padding:0 2px; font-weight:600; }
+.con { background:#dbeafe; border-radius:3px; padding:0 2px; }
+.rep { background:#dcfce7; border-radius:3px; padding:0 2px; }
+.passo { counter-reset:step; }
+.passo .p { position:relative; padding-left:30px; margin-bottom:8px; font-size:9.8px; }
+.passo .p::before { counter-increment:step; content:counter(step); position:absolute; left:0; top:-2px;
+  width:21px; height:21px; background:#047857; color:#fff; border-radius:50%; text-align:center; line-height:21px; font-weight:700; font-size:11px; }
+.h-chapter { page-break-before:always; }
+</style></head>
+<body>
+
+<div class="cover">
+  <div class="kicker">REDAÇÃO</div>
+  <h1>Dissertativo-<br>Argumentativa</h1>
+  <div class="rule"></div>
+  <div class="sub">Estrutura, técnicas e um modelo NOTA MÁXIMA comentado parágrafo a parágrafo</div>
+  <div class="meta" style="margin-top:26px;">Concurso <b>Sedes/DF</b> · Banca <b>Quadrix</b> · 2026<br>Técnico Administrativo (Cargo 202)</div>
+  <div class="badge">Dia 12 · Estrutura da redação</div>
+</div>
+
+<!-- 1. O QUE A BANCA COBRA -->
+<h2 class="section-title">1. O que a banca cobra</h2>
+<p class="lead">A redação de concurso é <b>dissertativo-argumentativa</b>: você defende um ponto de vista sobre um tema, com argumentos e linguagem formal. Não é narração nem opinião solta — é <b>tese + provas + fechamento</b>. A Quadrix avalia, em regra, quatro eixos:</p>
+<div class="grid2">
+  <div class="callout c-key">
+    <h4>Os 4 critérios de correção</h4>
+    <ul>
+      <li><b>Conteúdo / tema</b> — atendeu ao que foi pedido e defendeu uma tese?</li>
+      <li><b>Estrutura</b> — introdução, desenvolvimento e conclusão bem divididos?</li>
+      <li><b>Coesão e coerência</b> — as ideias se ligam e progridem com lógica?</li>
+      <li><b>Língua (norma culta)</b> — ortografia, concordância, regência, pontuação, crase.</li>
+    </ul>
+  </div>
+  <div class="callout c-why">
+    <h4>O que mais derruba nota</h4>
+    <ul>
+      <li><b>Fuga ao tema</b> — o erro que mais zera. Releia o comando.</li>
+      <li><b>Não tomar posição</b> — texto que ‘fala sobre’ sem defender nada.</li>
+      <li><b>Erros de norma culta</b> — cada deslize de gramática custa pontos.</li>
+      <li><b>Passar/faltar linhas</b> — respeite o limite mínimo e máximo.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 2. ESTRUTURA -->
+<h2 class="section-title h-chapter">2. A estrutura em 4 parágrafos</h2>
+<p class="lead">O modelo mais seguro para concurso tem <b>4 parágrafos</b>: 1 introdução + 2 de desenvolvimento + 1 conclusão. Decore essa arquitetura — ela organiza o raciocínio e agrada à banca.</p>
+<div class="grid2">
+  <div class="card"><div class="head"><span class="num">P1</span><span class="tit">Introdução</span></div>
+    <div class="block"><b>Contextualiza</b> o tema (1–2 frases) e termina com a <b>TESE</b> — seu ponto de vista, anunciando os 2 argumentos que virão. É a bússola do texto.</div></div>
+  <div class="card"><div class="head"><span class="num">P2</span><span class="tit">Desenvolvimento 1</span></div>
+    <div class="block">Defende o <b>1º argumento</b>. Começa com um tópico frasal, traz <b>repertório</b> (lei, dado, autor, fato) e fecha amarrando a ideia.</div></div>
+  <div class="card"><div class="head"><span class="num">P3</span><span class="tit">Desenvolvimento 2</span></div>
+    <div class="block">Defende o <b>2º argumento</b>, diferente do primeiro (progressão). Mesma receita: tópico frasal + repertório + fechamento.</div></div>
+  <div class="card"><div class="head"><span class="num">P4</span><span class="tit">Conclusão</span></div>
+    <div class="block"><b>Retoma a tese</b> e os 2 argumentos e apresenta um <b>fechamento/proposta</b> (quem faz o quê e como). Nunca abre assunto novo.</div></div>
+</div>
+
+<!-- 3. INTRODUÇÃO E TESE -->
+<h2 class="section-title h-chapter">3. A introdução e a construção da tese</h2>
+<div class="grid2">
+  <div class="callout c-tip">
+    <h4>3 formas de começar a introdução</h4>
+    <ul>
+      <li><b>Repertório histórico/legal:</b> “A CF/88 estabeleceu…”.</li>
+      <li><b>Contexto + problema:</b> “Embora o Brasil tenha avançado em X, persiste Y”.</li>
+      <li><b>Conceito/definição:</b> partir do significado de um termo-chave do tema.</li>
+    </ul>
+  </div>
+  <div class="callout c-key">
+    <h4>Fórmula da tese</h4>
+    <ul>
+      <li>Tese = <b>seu posicionamento</b> + <b>os 2 eixos</b> que vai defender.</li>
+      <li>Modelo: “<i>X depende tanto de [argumento 1] quanto de [argumento 2]</i>”.</li>
+      <li>Se a tese anuncia os 2 argumentos, os parágrafos já estão definidos.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 4. DESENVOLVIMENTO -->
+<h2 class="section-title">4. Desenvolvimento: argumento + repertório</h2>
+<div class="grid3">
+  <div class="card"><div class="head"><span class="tit">Tópico frasal</span></div><div class="block">1ª frase do parágrafo anuncia o argumento. Tudo no parágrafo serve a ele.</div></div>
+  <div class="card"><div class="head"><span class="tit">Repertório</span></div><div class="block">Prova legítima: lei (CF/88, SUAS), dado (IBGE/IPEA), autor (Sen, Bobbio), fato histórico. Sempre <b>ligado</b> ao argumento.</div></div>
+  <div class="card"><div class="head"><span class="tit">Fechamento</span></div><div class="block">Frase de arremate que conclui o raciocínio do parágrafo e prepara o próximo.</div></div>
+</div>
+<div class="callout c-why"><h4>Cuidado</h4>Repertório só conta se for <b>produtivo</b> — usado para sustentar o argumento, não enfeite jogado. Citar um autor e não explicar a relação com o tema não pontua.</div>
+
+<!-- 5. CONCLUSAO -->
+<h2 class="section-title">5. Conclusão que fecha o texto</h2>
+<div class="grid2">
+  <div class="callout c-key"><h4>A receita</h4>
+    <ul>
+      <li>Comece com conectivo conclusivo (<b>Portanto</b>, <b>Dessa forma</b>).</li>
+      <li><b>Retome a tese</b> e os 2 argumentos em poucas palavras.</li>
+      <li>Apresente uma <b>proposta/encaminhamento</b>: agente + ação + finalidade.</li>
+    </ul>
+  </div>
+  <div class="callout c-why"><h4>Não faça</h4>
+    <ul>
+      <li>Não traga <b>argumento novo</b> na conclusão.</li>
+      <li>Não termine com pergunta nem com frase vaga (“é preciso refletir”).</li>
+      <li>Não copie a introdução — <b>retome</b>, com outras palavras.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 6. CONECTIVOS -->
+<h2 class="section-title h-chapter">6. Conectivos para a redação</h2>
+<p class="lead">A coesão é um dos critérios. Tenha um repertório de conectivos por função — eles guiam o leitor e mostram domínio da norma.</p>
+<table><thead><tr><th style="width:26%">Função no texto</th><th>Conectivos</th></tr></thead><tbody><tr><td><span class='rn'>Introduzir / iniciar</span></td><td>Inicialmente, Em primeiro lugar, Diante disso, Nesse contexto</td></tr><tr><td><span class='rn'>Adicionar argumento</span></td><td>Ademais, Além disso, Outrossim, Soma-se a isso, Não só… mas também</td></tr><tr><td><span class='rn'>Opor / contrapor</span></td><td>Todavia, Contudo, Entretanto, Não obstante, Em contrapartida, Por outro lado</td></tr><tr><td><span class='rn'>Causa / explicação</span></td><td>Visto que, Uma vez que, Posto que, Em razão de, Tendo em vista que</td></tr><tr><td><span class='rn'>Consequência</span></td><td>Por conseguinte, De modo que, Logo, Como resultado</td></tr><tr><td><span class='rn'>Exemplificar / citar</span></td><td>A título de exemplo, Segundo, Conforme, De acordo com, Como afirma</td></tr><tr><td><span class='rn'>Concluir</span></td><td>Portanto, Dessa forma, Em síntese, Logo, Diante do exposto, Por fim</td></tr></tbody></table>
+
+<!-- 7. ERROS -->
+<h2 class="section-title h-chapter">7. Erros que derrubam a nota</h2>
+<div class="grid2"><div class='card'><div class='head'><span class='tit'>Fugir do tema</span></div><div class='block'>Escrever sobre algo próximo, mas não exatamente o que foi pedido. <b>Zera ou derruba muito.</b> Sublinhe as palavras-chave do tema antes de começar.</div></div><div class='card'><div class='head'><span class='tit'>Tese vaga ou ausente</span></div><div class='block'>Introdução que ‘fala sobre o assunto’ mas não toma posição. A banca precisa enxergar seu <b>ponto de vista</b> claro na introdução.</div></div><div class='card'><div class='head'><span class='tit'>Parágrafo sem unidade</span></div><div class='block'>Misturar dois argumentos no mesmo parágrafo. Regra: <b>um argumento por parágrafo</b>, anunciado no tópico frasal.</div></div><div class='card'><div class='head'><span class='tit'>Senso comum / ‘achismo’</span></div><div class='block'>‘Todos sabem que…’, ‘desde os primórdios…’. Substitua por <b>repertório legítimo</b>: lei, dado, autor, fato histórico.</div></div><div class='card'><div class='head'><span class='tit'>1ª pessoa e informalidade</span></div><div class='block'>‘Eu acho’, ‘a gente’, gírias, abreviações. A dissertação é <b>impessoal e formal</b> (3ª pessoa).</div></div><div class='card'><div class='head'><span class='tit'>Cópia do texto motivador</span></div><div class='block'>Repetir trechos da coletânea. Use as ideias, mas com <b>suas palavras</b>; cópia não pontua.</div></div><div class='card'><div class='head'><span class='tit'>Conclusão que abre tema novo</span></div><div class='block'>Conclusão deve <b>retomar e fechar</b>, nunca introduzir argumento inédito.</div></div><div class='card'><div class='head'><span class='tit'>Letra/estrutura</span></div><div class='block'>Sem título quando exigido, sem parágrafos visíveis, rasuras. Cuide da <b>apresentação</b> e do número de linhas.</div></div></div>
+
+<!-- 8. MODELO NOTA MAXIMA -->
+<h2 class="section-title h-chapter">8. Modelo NOTA MÁXIMA — comentado</h2>
+<p class="lead"><b>Tema:</b> “A efetivação da assistência social como instrumento de redução das desigualdades no Brasil.” À esquerda, a redação; à direita, a análise de <b>por que cada parágrafo funciona</b>.</p>
+<div class="legenda">
+  <span class="lg-tese">tese</span>
+  <span class="lg-con">conectivos / operadores</span>
+  <span class="lg-rep">repertório</span>
+</div>
+
+    <div class="modelo-bloco">
+      <div class="modelo-rotulo">Introdução</div>
+      <div class="modelo-grid">
+        <div class="modelo-texto">A Constituição Federal de 1988 inaugurou um novo paradigma ao reconhecer a <span class='rep'>assistência social como direito do cidadão e dever do Estado</span>, independentemente de contribuição. <span class='con'>Não obstante</span> esse avanço normativo, a efetivação plena desse direito ainda esbarra em obstáculos estruturais. <span class='con'>Desse modo</span>, <span class='tese'>a redução das desigualdades sociais no Brasil depende tanto do fortalecimento dos serviços socioassistenciais quanto da superação da cultura assistencialista que historicamente marcou o país.</span></div>
+        <div class="modelo-analise"><div class='an-item'><span class='an-tag'>Contextualização</span> Abre com um fato histórico-normativo (a CF/88) — repertório que situa o tema sem enrolação.</div><div class='an-item'><span class='an-tag'>Problematização</span> ‘Não obstante esse avanço… esbarra em obstáculos’ cria a tensão que justifica o texto.</div><div class='an-item'><span class='an-tag'>Tese (a parte mais importante)</span> A última frase apresenta a tese e já anuncia os DOIS eixos que serão desenvolvidos: (1) fortalecer serviços e (2) superar o assistencialismo. Isso dá direção a toda a redação.</div></div>
+      </div>
+    </div>
+    <div class="modelo-bloco">
+      <div class="modelo-rotulo">Desenvolvimento 1</div>
+      <div class="modelo-grid">
+        <div class="modelo-texto"><span class='con'>Em primeiro lugar</span>, o fortalecimento da rede de proteção social mostra-se imprescindível. O <span class='rep'>Sistema Único de Assistência Social (SUAS)</span>, ao organizar serviços como os ofertados nos Centros de Referência de Assistência Social (CRAS), aproxima o Estado das famílias em situação de vulnerabilidade. <span class='con'>Segundo dados do IBGE</span>, milhões de brasileiros vivem abaixo da linha da pobreza, o que evidencia a relevância de equipamentos públicos capilarizados. <span class='con'>Assim</span>, investir em infraestrutura e em equipes técnicas qualificadas é condição para que a assistência deixe de ser promessa e se torne prática.</div>
+        <div class="modelo-analise"><div class='an-item'><span class='an-tag'>Tópico frasal</span> A 1ª frase anuncia o argumento do parágrafo (fortalecer a rede). Cada parágrafo defende UMA ideia.</div><div class='an-item'><span class='an-tag'>Repertório legítimo</span> Cita o SUAS e os CRAS (conhecimento da própria área do concurso) e dados do IBGE — repertório produtivo, ligado ao argumento.</div><div class='an-item'><span class='an-tag'>Fechamento</span> ‘Assim, investir… é condição’ amarra o parágrafo retomando o argumento. Frase de arremate.</div></div>
+      </div>
+    </div>
+    <div class="modelo-bloco">
+      <div class="modelo-rotulo">Desenvolvimento 2</div>
+      <div class="modelo-grid">
+        <div class="modelo-texto"><span class='con'>Ademais</span>, é preciso romper com a lógica do assistencialismo, que reduz o beneficiário à condição de mero receptor de favores. <span class='con'>Conforme o economista Amartya Sen</span>, <span class='rep'>o desenvolvimento deve ser compreendido como a ampliação das liberdades e das capacidades dos indivíduos</span>. <span class='con'>Nessa perspectiva</span>, programas de transferência de renda só cumprem seu papel quando articulados a ações de educação, qualificação profissional e geração de emprego, promovendo a autonomia e a emancipação dos cidadãos.</div>
+        <div class="modelo-analise"><div class='an-item'><span class='an-tag'>Progressão (não repete o D1)</span> ‘Ademais’ marca um SEGUNDO argumento, diferente do primeiro — o texto avança, não anda em círculos.</div><div class='an-item'><span class='an-tag'>Repertório de autoridade</span> Cita Amartya Sen com pertinência (liberdades/capacidades) — eleva o texto e sustenta o argumento da autonomia.</div><div class='an-item'><span class='an-tag'>Aprofundamento</span> Liga a transferência de renda a educação e trabalho: mostra raciocínio próprio, não senso comum.</div></div>
+      </div>
+    </div>
+    <div class="modelo-bloco">
+      <div class="modelo-rotulo">Conclusão</div>
+      <div class="modelo-grid">
+        <div class="modelo-texto"><span class='con'>Portanto</span>, a assistência social só se concretizará como direito quando o Estado conjugar a ampliação dos serviços à promoção da autonomia dos beneficiários. <span class='con'>Para tanto</span>, <span class='rep'>é fundamental que o poder público, em parceria com a sociedade civil, amplie o financiamento do SUAS e invista na formação continuada dos servidores</span>, garantindo, dessa forma, que a proteção social seja, de fato, um instrumento de justiça e de redução das desigualdades.</div>
+        <div class="modelo-analise"><div class='an-item'><span class='an-tag'>Retomada da tese</span> ‘Portanto… conjugar a ampliação dos serviços à promoção da autonomia’ retoma os DOIS eixos da introdução. Fecha o círculo.</div><div class='an-item'><span class='an-tag'>Proposta/encaminhamento</span> Aponta o que fazer (quem + o quê + como): poder público + sociedade civil ampliam financiamento e formação. Concreto, não vago.</div><div class='an-item'><span class='an-tag'>Frase de impacto</span> ‘instrumento de justiça e de redução das desigualdades’ encerra retomando o tema com elegância.</div></div>
+      </div>
+    </div>
+<div class="callout c-key"><h4>Por que essa redação tira nota máxima</h4>
+  <ul>
+    <li><b>Tese clara</b> na introdução, com 2 eixos que organizam todo o texto.</li>
+    <li><b>Cada parágrafo</b> defende um argumento, com repertório produtivo (CF/88, SUAS, IBGE, Amartya Sen).</li>
+    <li><b>Progressão</b>: o D2 não repete o D1 — avança para a ideia de autonomia.</li>
+    <li><b>Conclusão</b> retoma os 2 eixos e propõe encaminhamento concreto (agente + ação).</li>
+    <li><b>Coesão</b> impecável (Não obstante, Desse modo, Ademais, Portanto) e <b>norma culta</b> sem deslizes.</li>
+  </ul>
+</div>
+
+<!-- 9. PASSO A PASSO -->
+<h2 class="section-title h-chapter">9. Como escrever a sua — passo a passo</h2>
+<div class="passo">
+  <div class="p"><b>Leia o comando e sublinhe as palavras-chave.</b> Defina exatamente o que a banca pede. (2–3 min)</div>
+  <div class="p"><b>Defina sua tese e os 2 argumentos</b> num rascunho de 3 linhas. Sem isso, não comece a escrever.</div>
+  <div class="p"><b>Liste o repertório</b> que vai usar em cada parágrafo (uma lei, um dado, um autor).</div>
+  <div class="p"><b>Escreva a introdução</b>: 1–2 frases de contexto + a tese com os 2 eixos.</div>
+  <div class="p"><b>Escreva os 2 desenvolvimentos</b>: tópico frasal → repertório → fechamento.</div>
+  <div class="p"><b>Escreva a conclusão</b>: retome a tese + proposta (agente + ação + finalidade).</div>
+  <div class="p"><b>Revise</b> concordância, regência, crase, pontuação e o número de linhas. (3–5 min)</div>
+</div>
+<div class="callout c-tip"><h4>Checklist final (marque antes de entregar)</h4>
+  <ul>
+    <li>☐ Tese clara na introdução, com posicionamento.</li>
+    <li>☐ Um argumento por parágrafo, com repertório produtivo.</li>
+    <li>☐ Conclusão retoma a tese e traz proposta.</li>
+    <li>☐ 3ª pessoa, formal, sem gíria nem ‘eu acho’.</li>
+    <li>☐ Conectivos variados ligando os parágrafos.</li>
+    <li>☐ Norma culta revisada e linhas dentro do limite.</li>
+  </ul>
+</div>
+
+</body></html>
