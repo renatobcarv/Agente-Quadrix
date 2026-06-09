@@ -4,6 +4,7 @@ Catálogo dos materiais de estudo produzidos pelo **Agente Quadrix**, organizado
 
 | Dia | Tema | Pasta | Destaque |
 |---|---|---|---|
+| **D2** | Português — ortografia, morfossintaxe e coesão textual | [`dia02-portugues-morfossintaxe/`](dia02-portugues-morfossintaxe/) | Teoria + 35 questões de morfossintaxe comentadas (`Dia2_Portugues_Morfossintaxe_PRO.pdf`) |
 | **D4** | Constitucional — Art. 5º (direitos e deveres individuais e coletivos) | [`dia04-art5-cf88/`](dia04-art5-cf88/) | Teoria detalhada + 35 questões comentadas (`Dia4_Art5_PRO.pdf`) |
 
 > Cada material segue a [metodologia](../docs/metodologia.md): lógica antes de memória, pegadinha integrada, macete e design para reconhecimento de padrões.
