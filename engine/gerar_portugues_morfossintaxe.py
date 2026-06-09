@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Material de estudo: Português — Ortografia, Morfossintaxe e Coesão Textual.
-Gera HTML profissional (render via Chrome) com teoria + 35 questões comentadas.
-
-Uso:
-    python engine/gerar_portugues_morfossintaxe.py
-    chrome --headless=new --no-pdf-header-footer --print-to-pdf=saida.pdf arquivo.html
+"""Material DENSO (apostila) — Dia 2: Português: ortografia, classes de palavras,
+morfossintaxe e coesão textual + 35 questões (15 Certo/Errado + 20 A-E) com
+gabarito comentado completo. Segue docs/prompt-mestre.md. Render via Chrome.
 """
 import os
 
@@ -12,525 +9,284 @@ _HERE = os.path.dirname(os.path.abspath(__file__))
 _REPO = os.path.dirname(_HERE)
 OUTDIR = os.path.join(_REPO, "materiais", "dia02-portugues-morfossintaxe")
 os.makedirs(OUTDIR, exist_ok=True)
-OUT = os.path.join(OUTDIR, "Dia2_Portugues_Morfossintaxe.html")
+OUT = os.path.join(OUTDIR, "Dia2_Portugues_Completo.html")
 
-# ============================================================
-# ORTOGRAFIA — pares e regras que mais caem
-# ============================================================
-ORTO = [
-    ("Por que · Porque · Por quê · Porquê",
-     "<b>Por que</b> (separado, sem acento) = pergunta ou “pelo qual”. <b>Porque</b> (junto) = resposta/causa. "
-     "<b>Por quê</b> (separado, com acento) = fim de frase. <b>Porquê</b> (junto, com acento) = substantivo (“o motivo”).",
-     "“<b>Por que</b> você faltou? <b>Porque</b> fiquei doente. Faltei, mas não sei <b>por quê</b>. Ninguém entendeu o <b>porquê</b>.”",
-     "A banca troca os quatro. Se vier <b>artigo antes</b> (o, um), é o substantivo <b>porquê</b>. Se for fim de frase, leva acento.",
-     "Pergunta = separado · Resposta = junto · Fim de frase = acento."),
-
-    ("Mau × Mal",
-     "<b>Mau</b> é adjetivo (oposto de <b>bom</b>). <b>Mal</b> é advérbio (oposto de <b>bem</b>) ou substantivo (“o mal”).",
-     "“Ele é um <b>mau</b> aluno (bom).” / “Ele dormiu <b>mal</b> (bem).” / “O <b>mal</b> venceu.”",
-     "Troque por <b>bom/bem</b>: se couber “bom” → <b>mau</b>; se couber “bem” → <b>mal</b>.",
-     "mAU ↔ bOM · maL ↔ beM (as vogais combinam)."),
-
-    ("Mas × Mais",
-     "<b>Mas</b> = conjunção adversativa (= porém). <b>Mais</b> = advérbio de intensidade (oposto de <b>menos</b>).",
-     "“Estudei muito, <b>mas</b> não passei.” / “Quero <b>mais</b> tempo.”",
-     "Se equivale a <b>porém</b>, é <b>mas</b>. Se for quantidade/intensidade, é <b>mais</b>.",
-     "maS = porém · maIs = quantIdade."),
-
-    ("A × Há (tempo)",
-     "<b>Há</b> (verbo haver) = tempo <b>passado/decorrido</b> (= faz). <b>A</b> (preposição) = tempo <b>futuro</b> ou distância.",
-     "“Cheguei <b>há</b> dois dias (passado).” / “Volto daqui <b>a</b> dois dias (futuro).”",
-     "Passado → <b>há</b>. Futuro/distância → <b>a</b>. Nunca use “<b>há</b> atrás” (redundância).",
-     "Há = já passou (faz). A = ainda vai."),
-
-    ("Senão × Se não",
-     "<b>Senão</b> (junto) = “caso contrário”, “a não ser”, “mas sim”. <b>Se não</b> (separado) = “caso não” (condição).",
-     "“Corra, <b>senão</b> perderá o ônibus (caso contrário).” / “<b>Se não</b> chover, sairemos (caso não).”",
-     "Se puder trocar por <b>caso não</b>, escreve separado. Se for “caso contrário/a não ser”, junto.",
-     "“Caso não” = separado."),
-
-    ("Onde × Aonde",
-     "<b>Onde</b> = lugar fixo (verbos sem movimento: estar, ficar). <b>Aonde</b> = lugar com <b>movimento</b> (= a + onde; verbos ir, chegar).",
-     "“<b>Onde</b> você mora?” / “<b>Aonde</b> você vai?”",
-     "Verbo de movimento (ir, chegar, dirigir-se) pede <b>aonde</b>. A banca usa “aonde você está” (errado).",
-     "Movimento → aOnde (tem o ‘a’ de ‘ação’)."),
-
-    ("Acerca de · Há cerca de · A cerca de",
-     "<b>Acerca de</b> = sobre, a respeito de. <b>Há cerca de</b> = faz aproximadamente (tempo). <b>A cerca de</b> = a uma distância aproximada.",
-     "“Falamos <b>acerca de</b> política.” / “Saiu <b>há cerca de</b> uma hora.” / “Fica <b>a cerca de</b> 3 km.”",
-     "“a respeito de” = <b>acerca de</b>. Tempo decorrido = <b>há cerca de</b> (verbo haver).",
-     "Acerca = Assunto."),
-
-    ("Afim × A fim de",
-     "<b>Afim</b> (adjetivo) = semelhante, que tem afinidade. <b>A fim de</b> (locução) = com a finalidade de / com vontade de.",
-     "“São áreas <b>afins</b> (semelhantes).” / “Estudo <b>a fim de</b> passar (para).”",
-     "Se equivale a <b>para</b>/finalidade, é <b>a fim de</b> (separado).",
-     "Finalidade = a Fim de (Para)."),
-
-    ("Sessão · Seção/Secção · Cessão",
-     "<b>Sessão</b> = período de tempo (reunião, cinema). <b>Seção/Secção</b> = divisão, repartição. <b>Cessão</b> = ato de ceder.",
-     "“<b>Sessão</b> de cinema.” / “<b>Seção</b> de esportes do jornal.” / “<b>Cessão</b> de direitos.”",
-     "Reunião/tempo = <b>Sessão</b>. Parte/divisão = <b>Seção</b>. Ceder = <b>Cessão</b>.",
-     "Sessão = teSSão de tempo · Cessão = Ceder."),
-
-    ("Acentuação (Acordo Ortográfico)",
-     "Paroxítonas com ditongos abertos <b>éi/ói</b> perderam o acento (<b>ideia, heroico, jiboia</b>). Hiatos <b>oo/ee</b> sem acento (<b>voo, creem, leem</b>). "
-     "O <b>trema</b> foi abolido. Mantêm-se os acentos diferenciais <b>pôde</b> (passado) × pode, <b>pôr</b> (verbo) × por.",
-     "“A <b>ideia</b> do <b>voo</b> foi <b>heroica</b>.” / “Ele <b>pôde</b> ontem o que não <b>pode</b> hoje.”",
-     "A banca cobra “idéia/heróico/vôo” (grafia antiga = erradas hoje) e o diferencial <b>pôde × pode</b>.",
-     "Ditongo aberto em paroxítona: sem acento (ideia)."),
+# ============ QUESTÕES CERTO/ERRADO (15) ============
+# (afirmacao, 'C'|'E', comentario)
+QCE = [
+    ("Na frase “Fazem dois anos que ele partiu”, o verbo “fazer” está corretamente flexionado.",
+     "E", "O verbo “fazer” indicando tempo decorrido é IMPESSOAL e fica sempre no singular: “Faz dois anos”. A flexão no plural é justamente a armadilha mais cobrada pela banca."),
+    ("Em “Houve muitos problemas na reunião”, o verbo “haver”, no sentido de existir, é impessoal e permanece no singular.",
+     "C", "Correto. “Haver” = existir não tem sujeito (oração sem sujeito) e não vai ao plural; “muitos problemas” é objeto direto. Dizer “Houveram” seria o erro."),
+    ("Conforme o Acordo Ortográfico vigente, as palavras “ideia”, “heroico” e “voo” são grafadas sem acento.",
+     "C", "Correto. Paroxítonas com ditongos abertos “ei/oi” perderam o acento (ideia, heroico) e os hiatos “oo” também (voo). As grafias “idéia/heróico/vôo” estão erradas hoje."),
+    ("Na frase “Ele se comportou mau na reunião”, a palavra “mau” está empregada corretamente.",
+     "E", "Errado. Aqui se exige o ADVÉRBIO “mal” (oposto de “bem”): “comportou-se mal”. “Mau” é adjetivo (oposto de “bom”). Teste: cabe “bem” → usa-se “mal”."),
+    ("Em “Aonde você nasceu?”, o emprego de “aonde” está de acordo com a norma culta.",
+     "E", "Errado. “Nascer” não exprime movimento; o correto é “Onde você nasceu?”. “Aonde” (a + onde) só com verbos de movimento (ir, chegar): “Aonde você vai?”."),
+    ("Em “Alugam-se salas comerciais”, o “se” é partícula apassivadora e “salas comerciais” funciona como sujeito.",
+     "C", "Correto. Verbo transitivo direto (“alugar”) + “se” = voz passiva sintética; “salas” é sujeito paciente, por isso o verbo concorda no plural (“Alugam-se”)."),
+    ("Em “Precisa-se de vendedores”, o verbo deve ir para o plural — “Precisam-se de vendedores”.",
+     "E", "Errado. “Precisar de” é transitivo indireto; o “se” é índice de indeterminação do sujeito e o verbo fica no SINGULAR: “Precisa-se de vendedores”."),
+    ("Em “Este é o relatório que assinei ontem”, a palavra “que” é conjunção integrante.",
+     "E", "Errado. O “que” retoma “o relatório” e equivale a “o qual” → é PRONOME RELATIVO, que inicia oração subordinada adjetiva. Conjunção integrante completaria um verbo (“Disse que…”)."),
+    ("Em “Não sei se ela virá à reunião”, a palavra “se” é conjunção integrante.",
+     "C", "Correto. “Se” introduz oração que completa o verbo “saber” (objeto direto): “Não sei [isto]” → conjunção integrante (oração subordinada substantiva)."),
+    ("Na frase “Assisti o jogo ontem à noite”, a regência do verbo “assistir” está de acordo com a norma culta.",
+     "E", "Errado. “Assistir” no sentido de “ver/presenciar” é transitivo indireto e exige a preposição “a”: “Assisti AO jogo”. Sem a preposição, viola a norma culta."),
+    ("Em “Faz cinco anos que moro nesta cidade”, o verbo “fazer” está corretamente empregado no singular.",
+     "C", "Correto. “Fazer” indicando tempo decorrido é impessoal e fica no singular. “Fazem cinco anos” seria o erro."),
+    ("O conectivo “portanto” estabelece, entre as orações, uma relação de causa.",
+     "E", "Errado. “Portanto” exprime CONCLUSÃO (“Estudou; portanto, passou”). Causa seria “porque/pois (antes do verbo)”. Trocar conclusão por causa é pegadinha clássica de coesão."),
+    ("Em “O candidato que se preparou foi aprovado”, a oração “que se preparou” é subordinada adjetiva restritiva.",
+     "C", "Correto. Sem vírgulas, a oração restringe o sentido (só o candidato que se preparou) → adjetiva restritiva. Com vírgulas, seria explicativa."),
+    ("Em “Meu irmão, que mora em Brasília, virá amanhã”, as vírgulas isolam uma oração subordinada adjetiva explicativa.",
+     "C", "Correto. A informação entre vírgulas apenas acrescenta um dado (ele tem um irmão); por isso é explicativa. Retirá-la não muda o referente."),
+    ("Em “Ninguém sabe o porquê da decisão”, a grafia “porquê” (junta e acentuada) está correta.",
+     "C", "Correto. Precedido do artigo “o”, “porquê” é substantivo (= o motivo) e, por isso, vem junto e acentuado. O artigo é a pista que confirma a grafia."),
 ]
 
-# ============================================================
-# MORFOSSINTAXE — conceitos-chave
-# ============================================================
-MORFO = [
-    ("Frase · Oração · Período",
-     "<b>Frase</b>: enunciado com sentido (pode não ter verbo: “Fogo!”). <b>Oração</b>: tem <b>verbo</b>. "
-     "<b>Período</b>: frase com uma (simples) ou mais orações (composto). Conta-se uma oração por verbo/locução.",
-     "“Que susto!” (frase sem verbo) · “Estudo.” (período simples) · “Estudo porque quero passar.” (período composto: 2 verbos).",
-     "Conte os <b>verbos</b> para achar quantas orações há. Locução verbal (“vou estudar”) conta como <b>uma</b> oração.",
-     "1 verbo (ou locução) = 1 oração."),
-
-    ("Sujeito — tipos",
-     "<b>Simples</b> (1 núcleo), <b>Composto</b> (2+ núcleos), <b>Oculto/elíptico</b> (desinência), "
-     "<b>Indeterminado</b> (verbo na 3ª pl. sem referente, ou VTI + <b>se</b>), <b>Oração sem sujeito</b> (haver=existir, fazer/ser de tempo, fenômenos da natureza).",
-     "“<b>Os alunos</b> chegaram.” (simples) · “Chegamos.” (oculto: nós) · “Roubaram o banco.” (indeterminado) · “<b>Havia</b> erros.” (sem sujeito).",
-     "“<b>Há</b> pessoas” NÃO tem sujeito — “pessoas” é <b>objeto direto</b>. Trocar por “existir” mostra o erro de concordância (<b>haver</b> fica no singular).",
-     "Haver = existir → impessoal, fica no singular."),
-
-    ("Predicado — tipos",
-     "<b>Verbal</b> (núcleo é verbo de ação). <b>Nominal</b> (verbo de ligação + <b>predicativo do sujeito</b>). "
-     "<b>Verbo-nominal</b> (ação + predicativo).",
-     "“Ela <b>correu</b>.” (verbal) · “Ela <b>está cansada</b>.” (nominal: ‘cansada’ = predicativo) · “Ela <b>chegou cansada</b>.” (verbo-nominal).",
-     "Verbo de ligação (ser, estar, parecer, permanecer, ficar, continuar, andar) pede <b>predicativo</b>, não objeto.",
-     "VL + estado = predicado nominal."),
-
-    ("Transitividade verbal",
-     "<b>VI</b> (intransitivo): sentido completo. <b>VTD</b>: pede objeto <b>direto</b> (sem preposição). "
-     "<b>VTI</b>: pede objeto <b>indireto</b> (com preposição). <b>VTDI</b>: os dois. <b>VL</b> (de ligação): liga sujeito a predicativo.",
-     "“Ele <b>chegou</b>.” (VI) · “Comprei <b>o livro</b>.” (VTD) · “Gosto <b>de música</b>.” (VTI) · “Dei <b>um presente a ela</b>.” (VTDI).",
-     "“Assistir” (=ver) é <b>VTI</b>: “assisti <b>ao</b> filme”. “Obedecer/visar/aspirar(=desejar)” também regem preposição.",
-     "Tem preposição obrigatória = objeto indireto (VTI)."),
-
-    ("Adjunto adnominal × Complemento nominal",
-     "Ambos vêm com preposição após um nome. <b>Complemento nominal</b> = <b>paciente</b> (alvo da ação/sentido). "
-     "<b>Adjunto adnominal</b> = <b>agente</b> ou posse/qualidade. Só nomes <b>abstratos</b> têm complemento nominal.",
-     "“A destruição <b>da cidade</b>” → se a cidade <b>foi</b> destruída = complemento nominal (paciente); se a cidade <b>destruiu</b> = adjunto adnominal (agente).",
-     "Pergunta clássica da banca. Teste: o termo <b>sofre</b> a ação (CN) ou <b>pratica</b>/possui (adj. adnominal)?",
-     "Paciente = Complemento Nominal. Agente/posse = Adjunto Adnominal."),
-
-    ("Termos da oração — mapa",
-     "<b>Essenciais</b>: sujeito e predicado. <b>Integrantes</b> (completam): objeto direto, objeto indireto, complemento nominal, agente da passiva. "
-     "<b>Acessórios</b>: adjunto adnominal, adjunto adverbial, aposto. À parte: <b>vocativo</b> (chamamento).",
-     "“<b>Pedro</b> (sujeito) <b>deu</b> (predicado) <b>um livro</b> (OD) <b>ao amigo</b> (OI) <b>ontem</b> (adj. adverbial).”",
-     "<b>Vocativo</b> não pertence à oração (é um chamamento, isolado por vírgula): “<b>João</b>, venha!”. Não confundir com sujeito.",
-     "Vocativo = chamar alguém (vírgula isola)."),
-
-    ("Período composto — coordenação × subordinação",
-     "<b>Coordenadas</b>: orações independentes (aditiva: e; adversativa: mas; alternativa: ou; conclusiva: logo, portanto; explicativa: pois). "
-     "<b>Subordinadas</b>: dependem da principal — <b>substantivas</b> (função de nome), <b>adjetivas</b> (função de adjetivo, iniciadas por relativo), <b>adverbiais</b> (circunstância).",
-     "“Estudei, <b>mas</b> não passei.” (coord. adversativa) · “Espero <b>que você venha</b>.” (sub. substantiva) · “O livro <b>que comprei</b>…” (sub. adjetiva).",
-     "Conjunção <b>integrante</b> (que/se) inicia <b>substantiva</b>; pronome <b>relativo</b> (que/o qual/cujo) inicia <b>adjetiva</b>.",
-     "Relativo (retoma nome) = adjetiva · Integrante (completa verbo) = substantiva."),
-
-    ("Os valores do “QUE”",
-     "<b>Pronome relativo</b> (retoma um nome, = ‘o qual’): “o livro <b>que</b> li”. <b>Conjunção integrante</b> (introduz substantiva): “Disse <b>que</b> viria”. "
-     "<b>Conj. subordinativa</b> (causal/consecutiva): “tão alto <b>que</b> caiu”. <b>Substantivo</b>: “um <b>quê</b> de mistério”. <b>Partícula expletiva</b> (realce): “Quase <b>que</b> não vim”.",
-     "Teste do relativo: substitua por <b>o qual / a qual</b>. Se couber, é pronome relativo.",
-     "Banca adora pedir o valor do “que”. Se vier após substantivo e puder virar “o qual”, é <b>relativo</b> (inicia adjetiva).",
-     "Cabe ‘o qual’? → pronome relativo."),
-
-    ("Os valores do “SE”",
-     "<b>Conj. integrante</b>: “Não sei <b>se</b> virá”. <b>Conj. condicional</b>: “<b>Se</b> chover, fico”. "
-     "<b>Pronome apassivador</b> (com VTD, há sujeito): “Vendem-<b>se</b> casas” (=casas são vendidas). "
-     "<b>Índice de indeterminação do sujeito</b> (com VTI/VI, verbo no singular): “Precisa-<b>se</b> de pedreiros”. <b>Pronome reflexivo</b>: “Ele se feriu”.",
-     "“Aluga-<b>se</b> salas” → VTD, ‘salas’ é <b>sujeito</b> (apassivador) → verbo concorda: “Alugam-se salas”.",
-     "VTD + se = apassivador (verbo concorda com o sujeito). VTI/VI + se = IIS (verbo fica no singular).",
-     "VTD→apassivador (plural) · VTI→indeterminação (singular)."),
-
-    ("Classes de palavras (10)",
-     "<b>Variáveis</b>: substantivo, artigo, adjetivo, numeral, pronome, verbo. <b>Invariáveis</b>: advérbio, preposição, conjunção, interjeição. "
-     "A função muda conforme o contexto: a mesma palavra pode ser de classes diferentes.",
-     "“O <b>jantar</b> (substantivo) está pronto.” × “Vamos <b>jantar</b> (verbo).” · “Ele fala <b>bem</b> (advérbio).”",
-     "A banca destaca uma palavra e pede a classe <b>naquele contexto</b>. ‘Que’, ‘a’, ‘como’ e ‘se’ mudam de classe.",
-     "Classe depende do contexto, não da palavra isolada."),
+# ============ QUESTÕES MÚLTIPLA ESCOLHA A-E (20) ============
+# (tema, enunciado, [A..E], idx_correto, comentario_completo)
+QME = [
+    ("Ortografia", "Assinale a opção em que o emprego de por que / porque / por quê / porquê está correto.",
+     ["Não sei porque ele se atrasou para a reunião.", "Ela faltou por quê estava doente.", "Você ainda está aqui? Por quê?", "Ninguém explicou o por que da decisão.", "Estudo muito, porquê quero passar."],
+     2, "Gabarito C: em fim de frase usa-se “por quê” (separado e acentuado). ✗A: pergunta indireta pede “por que” separado. ✗B: relação de causa pede “porque” junto. ✗D: com artigo “o” seria o substantivo “porquê”. ✗E: causa = “porque” junto, sem acento."),
+    ("Ortografia", "Assinale a opção em que a palavra destacada (mau/mal) está empregada corretamente.",
+     ["Ele se comportou mau na entrevista.", "O tempo está mau hoje; vai chover.", "Ela dormiu muito mau ontem.", "Tudo acabou mau para eles.", "Ele é um mal aluno."],
+     1, "Gabarito B: “mau” é adjetivo (oposto de “bom”) e qualifica “tempo” → “tempo está mau (ruim)”. ✗A, ✗C, ✗D: exigem o advérbio “mal” (comportou-se mal, dormiu mal, acabou mal). ✗E: antes de substantivo é adjetivo → “mau aluno”."),
+    ("Ortografia", "Assinale a opção em que o emprego de a / há (tempo) está correto.",
+     ["Cheguei a dois dias na cidade.", "Daqui há uma semana viajarei.", "Estou aqui a três horas esperando.", "Não o vejo há muitos anos.", "Espero por ele a muito tempo."],
+     3, "Gabarito D: tempo passado/decorrido pede “há” (verbo haver). ✗A e ✗C: passado também pediria “há” (há dois dias; há três horas). ✗B: tempo futuro pede “a” (daqui a uma semana). ✗E: passado → “há muito tempo”."),
+    ("Ortografia", "Assinale a opção em que todas as palavras estão grafadas conforme o Acordo Ortográfico.",
+     ["idéia, vôo, heróico", "ideia, vôo, heroico", "idéia, voo, heróico", "ideía, voo, heroíco", "ideia, voo, heroico"],
+     4, "Gabarito E: paroxítonas com ditongo aberto (ideia, heroico) e hiato “oo” (voo) não levam acento. ✗A, ✗B, ✗C: mantêm acentos abolidos (idéia, vôo, heróico). ✗D: acentuação inexistente (ideía, heroíco)."),
+    ("Ortografia/Crase", "Assinale a opção em que o emprego do acento grave (crase) está correto.",
+     ["Refiro-me à essa questão.", "Cheguei à Brasília ontem.", "Entreguei o documento à diretora.", "Estou disposto à ajudar.", "Falei à respeito do caso."],
+     2, "Gabarito C: “entregar a” + “a diretora” (feminino) = à. ✗A: pronome demonstrativo “essa” não admite crase. ✗B: “Brasília” não exige artigo (cidade sem artigo) → “a Brasília”. ✗D: antes de verbo não há crase. ✗E: “a respeito” (masculino) não tem crase."),
+    ("Ortografia", "Assinale a opção em que o emprego de senão / se não está correto.",
+     ["Estude, se não você será reprovado.", "Ele não quer outra coisa se não vencer.", "Apresse-se, se não chegará atrasado.", "Não havia ninguém, se não o porteiro.", "Se não chover, faremos o passeio."],
+     4, "Gabarito E: “se não” (separado) = “caso não” (condição). ✗A e ✗C: equivalem a “caso contrário” → “senão” junto. ✗B e ✗D: equivalem a “a não ser” → “senão” junto."),
+    ("Classes de palavras", "Em “Ele fala bem demais”, as palavras “bem” e “demais” classificam-se, respectivamente, como",
+     ["adjetivo e substantivo.", "substantivo e advérbio.", "advérbio e advérbio.", "advérbio e adjetivo.", "preposição e advérbio."],
+     2, "Gabarito C: “bem” modifica o verbo “fala” e “demais” intensifica “bem” → ambos advérbios (invariáveis). ✗ demais opções classificam errado: “bem”/“demais” aqui não são adjetivo, substantivo nem preposição."),
+    ("Classes de palavras", "Em “O jantar foi servido às oito”, a palavra “jantar” classifica-se como",
+     ["verbo.", "substantivo.", "adjetivo.", "advérbio.", "preposição."],
+     1, "Gabarito B: precedida do artigo “O”, a palavra está substantivada → substantivo. ✗A: seria verbo em “Vamos jantar”. A classe depende do contexto, e o artigo é a pista decisiva."),
+    ("Classes de palavras", "Em “Ela é a aluna que mais estuda”, a palavra “que” classifica-se como",
+     ["pronome relativo.", "conjunção integrante.", "preposição.", "interjeição.", "advérbio."],
+     0, "Gabarito A: “que” retoma “a aluna” (= a qual) → pronome relativo, iniciando oração adjetiva. ✗B: integrante completaria verbo (Disse que…). ✗C/D/E: não exerce esses papéis aqui."),
+    ("Morfossintaxe", "Em “Faltaram três candidatos à prova”, o termo “três candidatos” exerce a função de",
+     ["sujeito.", "objeto direto.", "adjunto adverbial.", "complemento nominal.", "predicativo do sujeito."],
+     0, "Gabarito A: “faltar” é intransitivo; quem falta pratica a ação → sujeito (o verbo concorda: “Faltaram”). ✗B: não há objeto, pois o verbo não é transitivo. ✗C/D/E: não cabem à estrutura."),
+    ("Morfossintaxe", "Em “Vendem-se imóveis usados”, a palavra “se” classifica-se como",
+     ["índice de indeterminação do sujeito.", "conjunção integrante.", "pronome apassivador.", "pronome reflexivo.", "conjunção condicional."],
+     2, "Gabarito C: VTD “vender” + “se” = voz passiva sintética; “imóveis” é sujeito paciente (verbo no plural). ✗A: o IIS ocorre com VTI/VI (verbo no singular). ✗B/D/E: funções diversas, não cabíveis."),
+    ("Morfossintaxe", "Em “Os alunos assistiram ao documentário”, o verbo “assistir” classifica-se como",
+     ["transitivo indireto.", "transitivo direto.", "intransitivo.", "de ligação.", "transitivo direto e indireto."],
+     0, "Gabarito A: “assistir” = ver exige preposição “a” → transitivo indireto (“ao documentário” = objeto indireto). ✗B: seria VTD se não exigisse preposição. ✗C/D/E: não correspondem à regência."),
+    ("Morfossintaxe", "Em “A construção da ponte durou meses”, o termo “da ponte” exerce a função de",
+     ["adjunto adverbial.", "objeto indireto.", "complemento nominal.", "adjunto adnominal.", "agente da passiva."],
+     2, "Gabarito C: a ponte SOFRE a ação (foi construída) e “construção” é nome abstrato → complemento nominal. ✗D: seria adjunto adnominal se a ponte praticasse/possuísse (ex.: “a torre da igreja”). ✗A/B/E: não cabem."),
+    ("Morfossintaxe", "Em “Embora estivesse cansado, terminou o serviço”, a oração destacada é subordinada adverbial",
+     ["causal.", "condicional.", "temporal.", "concessiva.", "consecutiva."],
+     3, "Gabarito D: “embora” introduz concessão (um obstáculo que não impede o fato). ✗A: causa seria “porque”. ✗B: condição seria “se”. ✗C: tempo seria “quando”. ✗E: consequência seria “tão… que”."),
+    ("Morfossintaxe", "A frase “O projeto foi aprovado pela comissão” está na voz",
+     ["passiva analítica.", "ativa.", "passiva sintética.", "reflexiva.", "reflexiva recíproca."],
+     0, "Gabarito A: “ser + particípio” = voz passiva analítica; “pela comissão” é agente da passiva. ✗C: a sintética usa “se” (Aprovou-se o projeto). ✗B/D/E: não correspondem à estrutura."),
+    ("Morfossintaxe", "Assinale a opção em que a colocação pronominal está correta.",
+     ["Me empreste o seu livro.", "Não diga-me isso.", "Quem contou-te a verdade?", "Nunca se deve mentir.", "Tudo resolveu-se rápido."],
+     3, "Gabarito D: “Nunca” é palavra atrativa → próclise obrigatória (“se deve”). ✗A: não se inicia frase com pronome átono. ✗B: a negação atrai (“Não me diga”). ✗C: “Quem” atrai (“Quem te contou”). ✗E: “Tudo” atrai (“Tudo se resolveu”)."),
+    ("Morfossintaxe", "Quantas orações há no período “Quando cheguei, todos já tinham saído”?",
+     ["uma.", "duas.", "três.", "quatro.", "nenhuma."],
+     1, "Gabarito B: conta-se uma oração por verbo ou locução verbal — “cheguei” (1) e “tinham saído” (locução = 1) → duas. ✗ As demais erram a contagem; a pegadinha é contar a locução como dois verbos."),
+    ("Coesão", "No período “Esforçou-se muito; ____, não obteve o resultado esperado”, a lacuna, para exprimir oposição, deve ser preenchida com",
+     ["contudo", "portanto", "porque", "assim que", "à medida que"],
+     0, "Gabarito A: há contraste → conectivo adversativo “contudo”. ✗B: “portanto” daria conclusão. ✗C: “porque” daria causa. ✗D: “assim que” é tempo. ✗E: “à medida que” é proporção."),
+    ("Coesão", "Assinale a opção em que o conectivo destacado exprime CONCLUSÃO.",
+     ["Faltou ao trabalho PORQUE adoeceu.", "Estudou muito; PORTANTO, foi aprovado.", "EMBORA chovesse, ele saiu.", "Tudo correu CONFORME o combinado.", "Saiu LOGO QUE o sinal tocou."],
+     1, "Gabarito B: “portanto” = conclusão. ✗A: “porque” = causa. ✗C: “embora” = concessão. ✗D: “conforme” = conformidade. ✗E: “logo que” = tempo."),
+    ("Coesão", "Em “O cão latia sem parar; o animal parecia assustado”, o termo “o animal” retoma “o cão” por meio de",
+     ["elipse do sujeito.", "catáfora.", "repetição do mesmo termo.", "emprego de pronome relativo.", "substituição por hiperônimo."],
+     4, "Gabarito E: “animal” é palavra de sentido mais amplo que “cão” → substituição por hiperônimo (coesão referencial). ✗A: não há omissão. ✗B: catáfora antecipa, não retoma. ✗C: não houve repetição. ✗D: não há pronome relativo."),
 ]
 
-# ============================================================
-# COESÃO TEXTUAL — teoria
-# ============================================================
-CONECTIVOS = [
-    ("Adição", "e, também, não só… mas também, além disso, ademais"),
-    ("Oposição / Adversidade", "mas, porém, contudo, todavia, entretanto, no entanto"),
-    ("Concessão", "embora, ainda que, mesmo que, conquanto, apesar de"),
-    ("Conclusão", "portanto, logo, por isso, assim, então, pois (após o verbo)"),
-    ("Causa", "porque, pois (antes do verbo), já que, visto que, uma vez que"),
-    ("Consequência", "tão/tanto… que, de modo que, de sorte que"),
-    ("Condição", "se, caso, contanto que, desde que, a menos que, salvo se"),
-    ("Finalidade", "para que, a fim de que, com o intuito de"),
-    ("Conformidade", "conforme, segundo, consoante, como"),
-    ("Proporção", "à medida que, à proporção que, quanto mais… mais"),
-    ("Tempo", "quando, enquanto, assim que, logo que, antes que, depois que"),
-    ("Explicação", "que, porque, pois, porquanto"),
-]
-
-# ============================================================
-# 35 QUESTÕES DE MORFOSSINTAXE — gabarito variado A–E
-# (tema, enunciado, [A..E], índice_correto, comentário)
-# ============================================================
-Q = [
-    ("Tipo de sujeito", "Em “Faltaram dois funcionários à reunião”, o termo destacado “dois funcionários” exerce a função de:",
-     ["Objeto direto", "Sujeito simples", "Adjunto adverbial", "Complemento nominal", "Predicativo do sujeito"],
-     1, "‘Faltar’ é VI; quem falta, falta — ‘dois funcionários’ é quem pratica = sujeito. O verbo concorda com ele (Faltaram). PEGADINHA: achar que é objeto."),
-
-    ("Oração sem sujeito", "Na frase “Havia muitos problemas na empresa”, é correto afirmar que:",
-     ["‘muitos problemas’ é o sujeito do verbo haver", "o verbo deveria ir para o plural: ‘Haviam’", "a oração não tem sujeito; ‘muitos problemas’ é objeto direto", "‘na empresa’ é o sujeito", "o sujeito é indeterminado"],
-     2, "‘Haver’ = existir é impessoal: oração SEM sujeito, fica no singular, e ‘muitos problemas’ é objeto direto. PEGADINHA clássica: ‘Haviam’ (errado)."),
-
-    ("Valor do SE", "Em “Precisa-se de bons profissionais”, a palavra “se” é:",
-     ["Pronome apassivador", "Conjunção condicional", "Índice de indeterminação do sujeito", "Conjunção integrante", "Pronome reflexivo"],
-     2, "‘Precisar de’ é VTI → o ‘se’ é índice de indeterminação do sujeito; o verbo fica no singular. Se fosse VTD (‘Vendem-se casas’), seria apassivador."),
-
-    ("Valor do SE", "Em “Alugam-se salas comerciais”, o “se” é pronome apassivador porque:",
-     ["o verbo é intransitivo", "‘salas comerciais’ é o sujeito paciente, com o qual o verbo concorda", "indica condição", "introduz oração substantiva", "indica reflexão do sujeito"],
-     1, "VTD ‘alugar’ + se = voz passiva sintética: ‘salas’ é sujeito paciente; por isso o verbo vai ao plural (Alugam-se). Equivale a ‘salas são alugadas’."),
-
-    ("Valor do QUE", "Em “O documento que assinei está válido”, a palavra “que”:",
-     ["é conjunção integrante", "é pronome relativo, retomando ‘o documento’", "é advérbio de intensidade", "é partícula expletiva", "é conjunção causal"],
-     1, "Cabe trocar por ‘o qual’ (‘o documento o qual assinei’) → pronome relativo; inicia oração subordinada adjetiva. PEGADINHA: confundir com integrante."),
-
-    ("Valor do QUE", "Em “Afirmo que cumprirei o prazo”, o “que” é:",
-     ["pronome relativo", "conjunção integrante, introduzindo oração subordinada substantiva", "preposição", "conjunção adversativa", "pronome interrogativo"],
-     1, "‘Afirmo [algo]’ — a oração ‘que cumprirei o prazo’ completa o verbo (objeto direto) → conjunção integrante (substantiva). Não cabe ‘o qual’."),
-
-    ("Transitividade verbal", "Em “Os espectadores assistiram ao filme”, o verbo ‘assistir’ é:",
-     ["transitivo direto", "intransitivo", "transitivo indireto", "de ligação", "transitivo direto e indireto"],
-     2, "‘Assistir’ no sentido de ‘ver’ rege a preposição ‘a’ → VTI (‘assistiram AO filme’). ‘ao filme’ é objeto indireto. PEGADINHA: tratar como VTD."),
-
-    ("Predicado", "Em “O candidato permaneceu tranquilo durante a prova”, o predicado é:",
-     ["verbal", "nominal, e ‘tranquilo’ é predicativo do sujeito", "verbo-nominal", "nominal, e ‘tranquilo’ é objeto direto", "verbal, e ‘tranquilo’ é adjunto adverbial"],
-     1, "‘Permanecer’ é verbo de ligação (estado); ‘tranquilo’ é predicativo do sujeito → predicado nominal. VL não tem objeto."),
-
-    ("Função sintática", "Em “Entreguei o relatório ao diretor”, os termos ‘o relatório’ e ‘ao diretor’ são, respectivamente:",
-     ["sujeito e objeto direto", "objeto direto e objeto indireto", "objeto indireto e objeto direto", "objeto direto e adjunto adverbial", "complemento nominal e objeto direto"],
-     1, "‘Entregar’ é VTDI: ‘o relatório’ (sem prep.) = OD; ‘ao diretor’ (com prep.) = OI. Ordem importa."),
-
-    ("Adj. adnominal × Compl. nominal", "Em “A nomeação do servidor ocorreu ontem”, o termo ‘do servidor’ é:",
-     ["complemento nominal, pois o servidor sofre a nomeação", "adjunto adnominal de posse", "objeto indireto", "agente da passiva", "adjunto adverbial"],
-     0, "O servidor é PACIENTE (foi nomeado) e ‘nomeação’ é nome abstrato → complemento nominal. Se fosse agente (‘a chegada do servidor’), seria adjunto adnominal."),
-
-    ("Vocativo", "Em “Senhores, a sessão está encerrada”, o termo ‘Senhores’ é:",
-     ["sujeito", "aposto", "vocativo", "objeto direto", "predicativo"],
-     2, "‘Senhores’ é um chamamento, isolado por vírgula, fora da estrutura da oração → vocativo. Não é sujeito (o sujeito é ‘a sessão’)."),
-
-    ("Aposto", "Em “Brasília, capital do país, completou anos”, o termo ‘capital do país’ é:",
-     ["vocativo", "aposto explicativo", "sujeito", "adjunto adverbial", "objeto direto"],
-     1, "Explica/identifica ‘Brasília’, entre vírgulas → aposto explicativo. Difere do vocativo (que chama o interlocutor)."),
-
-    ("Oração subordinada", "Em “Embora estivesse cansado, terminou o trabalho”, a oração destacada é subordinada adverbial:",
-     ["causal", "condicional", "concessiva", "temporal", "final"],
-     2, "‘Embora’ introduz concessão (um obstáculo que não impede o fato) → adverbial concessiva. PEGADINHA: confundir com causal (‘porque’)."),
-
-    ("Oração coordenada", "Em “Estudou muito, portanto merece passar”, a segunda oração é coordenada sindética:",
-     ["aditiva", "adversativa", "alternativa", "conclusiva", "explicativa"],
-     3, "‘Portanto’ indica conclusão → coordenada sindética conclusiva. Sentido de consequência lógica do que se afirmou antes."),
-
-    ("Coesão — conectivo", "“O prazo terminou; ____, ninguém foi penalizado.” A lacuna, para indicar OPOSIÇÃO, é preenchida por:",
-     ["portanto", "porque", "no entanto", "à medida que", "assim que"],
-     2, "Há contraste (terminou, mas não houve punição) → conectivo adversativo ‘no entanto’. ‘Portanto’ daria conclusão (errado)."),
-
-    ("Coesão — conectivo", "Assinale a opção em que o conectivo destacado exprime CONCLUSÃO:",
-     ["Saiu cedo PORQUE estava cansado.", "EMBORA chovesse, saiu.", "Estudou; LOGO, foi aprovado.", "Fez tudo CONFORME pediram.", "Chegou ASSIM QUE pôde."],
-     2, "‘Logo’ = conclusão. ‘Porque’=causa, ‘embora’=concessão, ‘conforme’=conformidade, ‘assim que’=tempo."),
-
-    ("Coesão referencial", "Em “Maria comprou um livro e o leu num dia”, o pronome ‘o’ retoma:",
-     ["Maria", "um livro", "um dia", "comprou", "leu"],
-     1, "‘o’ é pronome anafórico que retoma ‘um livro’ (coesão referencial por substituição pronominal). Garante economia e ligação entre as orações."),
-
-    ("Classe de palavra", "Em “Ele chegou bem cedo”, a palavra ‘bem’ pertence à classe:",
-     ["adjetivo", "substantivo", "advérbio", "preposição", "conjunção"],
-     2, "‘bem’ intensifica o advérbio ‘cedo’ → advérbio (de intensidade). Invariável. PEGADINHA: tratar como adjetivo."),
-
-    ("Classe de palavra", "Em “O jantar foi servido às oito”, a palavra ‘jantar’ é:",
-     ["verbo", "substantivo", "adjetivo", "advérbio", "preposição"],
-     1, "Precedida do artigo ‘O’, ‘jantar’ está substantivada → substantivo. A mesma palavra seria verbo em ‘Vamos jantar’. A classe depende do contexto."),
-
-    ("Concordância verbal", "Assinale a frase com concordância CORRETA:",
-     ["Houveram muitas reclamações.", "Fazem dois anos que parti.", "Existem soluções viáveis.", "Tratam-se de casos graves.", "Aluga-se casas."],
-     2, "‘Existir’ é verbo pessoal e concorda com o sujeito ‘soluções’ → ‘Existem’. As demais erram: haver/fazer impessoais ficam no singular; ‘tratar-se de’ é invariável; ‘alugar-se’ (VTD) vai ao plural."),
-
-    ("Concordância nominal", "Assinale a opção correta quanto à concordância nominal:",
-     ["É proibido entrada.", "Seguem anexo os documentos.", "Ela mesma resolveu.", "Bastante pessoas vieram.", "Água é bom para a saúde."],
-     2, "‘mesma’ concorda com ‘Ela’ (= ela própria). Erros: ‘proibida a entrada’ (com artigo concorda), ‘anexos’, ‘Bastantes pessoas’ (adjetivo), ‘boa para a saúde’."),
-
-    ("Regência verbal", "Em “Aspiro a um cargo melhor”, o verbo ‘aspirar’:",
-     ["é VTD e ‘a um cargo’ é objeto direto", "é VTI (aspirar = almejar) e ‘a um cargo’ é objeto indireto", "é intransitivo", "é de ligação", "exige objeto direto preposicionado"],
-     1, "‘Aspirar’ no sentido de ‘desejar/almejar’ é VTI e rege ‘a’ → ‘a um cargo’ é objeto indireto. (Aspirar=cheirar seria VTD.)"),
-
-    ("Voz verbal", "A frase “A proposta foi aprovada pela comissão” está na voz:",
-     ["ativa", "passiva analítica, sendo ‘pela comissão’ o agente da passiva", "passiva sintética", "reflexiva", "ativa com sujeito indeterminado"],
-     1, "‘ser + particípio’ = voz passiva analítica; ‘pela comissão’ pratica a ação = agente da passiva. Na ativa: ‘A comissão aprovou a proposta’."),
-
-    ("Função do termo", "Em “A casa de Pedro é grande”, o termo ‘de Pedro’ é:",
-     ["complemento nominal", "adjunto adnominal (posse)", "objeto indireto", "agente da passiva", "aposto"],
-     1, "Indica posse e liga-se a nome concreto (‘casa’) → adjunto adnominal. Nome concreto não admite complemento nominal."),
-
-    ("Pronome relativo CUJO", "Assinale o emprego correto de ‘cujo’:",
-     ["O autor cujo li o livro.", "O autor cujo o livro li.", "O autor cujo livro li.", "O autor que o livro li.", "O autor de cujo livro."],
-     2, "‘cujo’ indica posse e NÃO admite artigo depois: ‘O autor cujo livro li’ (= o livro do autor). Concorda com o termo possuído (livro)."),
-
-    ("Sujeito indeterminado", "Em “Telefonaram para você hoje”, o sujeito é:",
-     ["simples: ‘você’", "oculto: eles", "indeterminado", "inexistente (oração sem sujeito)", "‘para você’"],
-     2, "Verbo na 3ª pessoa do plural sem referente identificável → sujeito indeterminado. Não se sabe quem telefonou."),
-
-    ("Predicativo do objeto", "Em “O júri considerou o réu inocente”, o termo ‘inocente’ é:",
-     ["adjunto adnominal", "predicativo do objeto", "objeto direto", "aposto", "complemento nominal"],
-     1, "‘inocente’ atribui qualidade ao objeto ‘o réu’ → predicativo do objeto (predicado verbo-nominal). Quem considera, considera alguém [como] algo."),
-
-    ("Locução adjetiva", "A locução ‘de manhã’ em “reunião de manhã” equivale ao adjetivo:",
-     ["matinal", "noturno", "diário", "mensal", "anual"],
-     0, "‘de manhã’ = matinal → locução adjetiva (preposição + substantivo com valor de adjetivo). Funciona como adjunto adnominal de ‘reunião’."),
-
-    ("Classe — porquê", "Em “Ninguém entendeu o porquê da decisão”, a palavra ‘porquê’ é:",
-     ["conjunção", "advérbio", "substantivo", "preposição", "pronome"],
-     2, "Precedido do artigo ‘o’, ‘porquê’ é substantivo (= o motivo) e por isso vem junto e acentuado. A presença do artigo é a pista."),
-
-    ("Oração subordinada substantiva", "Em “É necessário que todos colaborem”, a oração destacada é subordinada substantiva:",
-     ["subjetiva (funciona como sujeito)", "objetiva direta", "completiva nominal", "predicativa", "apositiva"],
-     0, "‘que todos colaborem’ é o sujeito de ‘É necessário’ → subordinada substantiva subjetiva. Teste: ‘Isso é necessário’ — ‘isso’ = a oração."),
-
-    ("Crase", "Assinale a frase em que o uso do acento grave (crase) está CORRETO:",
-     ["Refiro-me à você.", "Cheguei à Brasília.", "Entreguei o livro à secretária.", "Ando à pé.", "Falei à respeito disso."],
-     2, "‘Entregar a’ + ‘a secretária’ (palavra feminina) = à. Erros: ‘a você’ (pronome não admite), ‘a Brasília’ (cidade sem artigo), ‘a pé’ (palavra masculina), ‘a respeito’ (masculina)."),
-
-    ("Colocação pronominal", "Assinale a colocação pronominal correta:",
-     ["Me diga a verdade.", "Não diga-me mentiras.", "Nunca se esqueça disso.", "Tudo resolveu-se.", "Quem disse-te isso?"],
-     2, "Palavra atrativa (‘Nunca’) exige próclise: ‘se esqueça’. Erros: início de frase com átono, negação/‘quem’/‘tudo’ atraem o pronome (próclise obrigatória)."),
-
-    ("Função sintática do termo", "Em “Gosto muito de poesia”, o termo ‘de poesia’ é:",
-     ["objeto direto", "objeto indireto", "complemento nominal", "adjunto adverbial", "predicativo"],
-     1, "‘Gostar’ é VTI (gostar DE algo) → ‘de poesia’ é objeto indireto (completa um VERBO). Se completasse um nome, seria complemento nominal."),
-
-    ("Conjunção — valor", "Em “Não foi à aula, pois estava doente”, a conjunção ‘pois’ tem valor:",
-     ["conclusivo", "explicativo/causal", "adversativo", "temporal", "condicional"],
-     1, "‘pois’ ANTES (aqui equivale a ‘porque’) exprime causa/explicação. Se viesse depois do verbo (‘Estava doente; não foi, pois, à aula’), seria conclusivo."),
-
-    ("Período — nº de orações", "Quantas orações há em “Quando cheguei, todos já tinham saído”?",
-     ["Uma", "Duas", "Três", "Quatro", "Nenhuma"],
-     1, "Conta-se uma oração por verbo OU locução verbal: ‘cheguei’ (1) e ‘tinham saído’ (locução = 1) → duas orações. PEGADINHA: contar a locução ‘tinham saído’ como dois verbos."),
-]
-
-
-def render_card(it, accent_tags=True):
-    tit, expl, ex, peg, mac = it
-    return f"""
-    <div class="card">
-      <div class="head"><span class="tit">{tit}</span></div>
-      <div class="block"><span class="tag t-trad">Como funciona</span><br>{expl}</div>
-      <div class="row">
-        <div class="block"><span class="tag t-ex">Exemplo</span><br>{ex}</div>
-        <div class="block peg"><span class="tag t-peg">Pegadinha Quadrix</span><br>{peg}</div>
-      </div>
-      <div class="block mac"><span class="tag t-mac">Macete</span> &nbsp;{mac}</div>
-    </div>"""
-
-
-def render_q(i, q):
-    tema, enun, opts, ok, com = q
-    lis = "".join(f'<li class="{"ok" if j==ok else ""}">{o}</li>' for j, o in enumerate(opts))
-    letra = "ABCDE"[ok]
-    return f"""
-    <div class="q">
-      <div class="tema">{tema}</div>
-      <div class="qh"><span class="qn">Questão {i}.</span> {enun}</div>
-      <ol>{lis}</ol>
-      <div class="com"><b class="g">Gabarito: {letra}.</b> {com}</div>
-    </div>"""
-
-
-def render_gabarito():
-    cells = "".join(f'<div class="cell">{i}<b> {"ABCDE"[q[3]]}</b></div>' for i, q in enumerate(Q, 1))
-    from collections import Counter
-    cnt = Counter("ABCDE"[q[3]] for q in Q)
-    dist = " · ".join(f"{k}: {cnt.get(k,0)}" for k in "ABCDE")
-    return f"""
-    <div class="gabarito">
-      <h3>Gabarito — 35 questões</h3>
-      <div class="grid">{cells}</div>
-      <div class="note">Distribuição das respostas — {dist}.</div>
-    </div>"""
-
-
+# ---------- CSS ----------
 CSS = """
-@page { size: A4; margin: 14mm 13mm 16mm 13mm; }
-* { box-sizing: border-box; }
-body { font-family: 'Segoe UI','Helvetica Neue',Arial,sans-serif; color:#1f2733; font-size:10.2px; line-height:1.5; margin:0;
-  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+@page { size:A4; margin:13mm 13mm 15mm 13mm; }
+* { box-sizing:border-box; }
+body { font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif; color:#1d2733; font-size:11px; line-height:1.6; margin:0; orphans:3; widows:3; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 h1,h2,h3,h4 { margin:0; font-weight:700; }
-.cover { height:252mm; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;
-  background: linear-gradient(135deg,#13235e 0%,#1d4ed8 55%,#16307a 100%); color:#fff; border-radius:6px;
-  page-break-after: always; padding:0 24mm; }
+p { margin:0 0 7px; text-align:justify; orphans:3; widows:3; }
+.cover { height:250mm; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:linear-gradient(135deg,#13235e 0%,#1d4ed8 55%,#16307a 100%); color:#fff; border-radius:6px; page-break-after:always; padding:0 24mm; }
 .cover .kicker { letter-spacing:4px; font-size:12px; opacity:.85; font-weight:600; }
-.cover h1 { font-size:44px; line-height:1.05; margin:10px 0 6px; }
-.cover .sub { font-size:16px; font-weight:400; opacity:.95; max-width:135mm; }
+.cover h1 { font-size:42px; line-height:1.06; margin:10px 0 6px; }
+.cover .sub { font-size:15px; font-weight:400; opacity:.95; max-width:140mm; }
 .cover .rule { width:70px; height:4px; background:#ffd27a; margin:22px 0; border-radius:2px; }
 .cover .meta { font-size:12.5px; opacity:.9; line-height:1.7; }
-.cover .badge { margin-top:26px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.4);
-  padding:9px 18px; border-radius:40px; font-size:13px; font-weight:600; }
-.section-title { font-size:19px; color:#1d4ed8; border-bottom:3px solid #1d4ed8; padding-bottom:5px; margin:4px 0 12px; page-break-after: avoid; }
-.lead { font-size:11px; color:#3a4658; margin-bottom:10px; }
-.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
-.callout { border-radius:7px; padding:9px 11px; margin:7px 0; page-break-inside: avoid; }
-.c-why { background:#fff5f5; border-left:4px solid #c0392b; }
+.cover .badge { margin-top:26px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.4); padding:9px 18px; border-radius:40px; font-size:13px; font-weight:600; }
+.section-title { font-size:17px; color:#1d4ed8; border-bottom:3px solid #1d4ed8; padding-bottom:4px; margin:16px 0 9px; page-break-after:avoid; }
+.section-title:first-of-type { margin-top:4px; }
+.subhead { font-size:12.5px; color:#13235e; font-weight:700; margin:11px 0 4px; border-left:4px solid #1d4ed8; padding-left:8px; page-break-after:avoid; }
+.box2 { display:grid; grid-template-columns:1fr 1fr; gap:9px; margin:7px 0; }
+.callout { border-radius:7px; padding:9px 12px; page-break-inside:avoid; margin:6px 0; }
+.c-banca { background:#eef4ff; border-left:4px solid #1d4ed8; }
+.c-peg { background:#fff5f5; border-left:4px solid #c0392b; }
+.c-mnem { background:#fff8e6; border-left:4px solid #d4a017; }
 .c-key { background:#eefaf1; border-left:4px solid #1f9d57; }
-.c-tip { background:#eef4ff; border-left:4px solid #1d4ed8; }
-.callout h4 { font-size:11px; margin-bottom:4px; text-transform:uppercase; letter-spacing:.5px; }
-.c-why h4 { color:#c0392b; } .c-key h4 { color:#1f9d57; } .c-tip h4 { color:#1d4ed8; }
-.callout ul { margin:3px 0 0; padding-left:16px; } .callout li { margin:2px 0; }
-.card { border:1px solid #e2e6ee; border-radius:9px; padding:11px 13px; margin:0 0 11px; page-break-inside: avoid;
-  background:#fff; box-shadow:0 1px 2px rgba(20,30,50,.04); }
-.card .head { display:flex; align-items:center; gap:9px; margin-bottom:6px; }
-.card .tit { font-size:12.5px; color:#13235e; font-weight:700; border-left:4px solid #1d4ed8; padding-left:8px; }
-.card .row { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:5px; }
-.tag { font-weight:700; font-size:9px; text-transform:uppercase; letter-spacing:.4px; }
-.t-trad { color:#1d4ed8; } .t-ex { color:#7a5c00; } .t-peg { color:#c0392b; } .t-mac { color:#1f9d57; }
-.block { margin-top:4px; }
-.block.peg { background:#fff5f5; border-radius:5px; padding:6px 8px; }
-.block.mac { background:#eefaf1; border-radius:5px; padding:6px 8px; }
-table { width:100%; border-collapse:collapse; margin:6px 0 4px; font-size:9.5px; page-break-inside: avoid; }
-th { background:#13235e; color:#fff; text-align:left; padding:6px 7px; font-size:9.5px; }
-td { border:1px solid #e2e6ee; padding:6px 7px; vertical-align:top; }
-tr:nth-child(even) td { background:#f7f9fc; }
+.callout h4 { font-size:10.5px; margin-bottom:4px; text-transform:uppercase; letter-spacing:.4px; }
+.c-banca h4 { color:#1d4ed8; } .c-peg h4 { color:#c0392b; } .c-mnem h4 { color:#a07400; } .c-key h4 { color:#1f9d57; }
+.callout ul { margin:3px 0 0; padding-left:15px; } .callout li { margin:2.5px 0; }
+table { width:100%; border-collapse:collapse; margin:7px 0; font-size:9.9px; page-break-inside:avoid; }
+th { background:#13235e; color:#fff; text-align:left; padding:6px 8px; }
+td { border:1px solid #e2e6ee; padding:6px 8px; vertical-align:top; }
+tr:nth-child(even) td { background:#f6f8fc; }
 td .rn { font-weight:700; color:#1d4ed8; }
-.q { border:1px solid #e2e6ee; border-radius:8px; padding:9px 11px; margin:0 0 9px; page-break-inside: avoid; }
-.q .qh { font-size:10.5px; font-weight:700; color:#1f2733; margin-bottom:5px; }
-.q .qh .qn { color:#1d4ed8; }
-.q .tema { display:inline-block; background:#eef0f5; color:#56627a; font-size:8.3px; font-weight:700; text-transform:uppercase;
-  letter-spacing:.4px; padding:2px 7px; border-radius:20px; margin-bottom:5px; }
-.q ol { margin:4px 0 0; padding-left:0; list-style:none; counter-reset:opt; }
-.q ol li { counter-increment:opt; margin:2.5px 0; padding-left:20px; position:relative; font-size:9.6px; }
-.q ol li::before { content: counter(opt, upper-alpha); position:absolute; left:0; top:0; font-weight:700; color:#56627a; }
-.q ol li.ok::before { color:#1f9d57; }
-.q ol li.ok { background:#eefaf1; border-radius:4px; }
-.q .com { margin-top:6px; font-size:9.1px; color:#46536a; background:#fafbfd; border-left:3px solid #1f9d57; border-radius:4px; padding:5px 8px; }
-.q .com b.g { color:#1f9d57; }
-.gabarito { background:#13235e; color:#fff; border-radius:9px; padding:14px 16px; page-break-inside: avoid; }
-.gabarito h3 { color:#ffd27a; font-size:14px; margin-bottom:8px; }
-.gabarito .grid { display:grid; grid-template-columns:repeat(7,1fr); gap:5px; }
-.gabarito .cell { background:rgba(255,255,255,.08); border-radius:5px; text-align:center; padding:5px 0; font-size:9.5px; }
-.gabarito .cell b { color:#ffd27a; }
-.note { font-size:8.6px; color:#9fb0d0; margin-top:8px; }
-.h-chapter { page-break-before: always; }
+.qbox { border:1px solid #e2e6ee; border-radius:8px; padding:9px 12px; margin:0 0 8px; page-break-inside:avoid; }
+.qbox .qn { color:#1d4ed8; font-weight:700; }
+.qbox .tema { display:inline-block; background:#eef0f5; color:#56627a; font-size:8.2px; font-weight:700; text-transform:uppercase; letter-spacing:.4px; padding:2px 7px; border-radius:20px; margin-left:6px; }
+.qbox ol { margin:5px 0 0; padding-left:0; list-style:none; counter-reset:opt; }
+.qbox ol li { counter-increment:opt; margin:2.5px 0; padding-left:20px; position:relative; }
+.qbox ol li::before { content:counter(opt,upper-alpha)")"; position:absolute; left:0; top:0; font-weight:700; color:#56627a; }
+.ce { margin-top:5px; font-size:10px; color:#56627a; font-weight:700; }
+.gab-item { border-bottom:1px solid #eef0f4; padding:6px 0; page-break-inside:avoid; }
+.gab-item .n { font-weight:700; color:#13235e; }
+.gab-item .resp { font-weight:700; }
+.gab-c { color:#1f9d57; } .gab-e { color:#c0392b; }
+.pagebreak { page-break-before:always; }
+.lead { font-size:11px; color:#33414f; }
 """
 
-orto_html = "".join(render_card(c) for c in ORTO)
-morfo_html = "".join(render_card(c) for c in MORFO)
-conectivos_rows = "".join(
-    f"<tr><td><span class='rn'>{sentido}</span></td><td>{lista}</td></tr>" for (sentido, lista) in CONECTIVOS
-)
-questoes_html = "".join(render_q(i, q) for i, q in enumerate(Q, 1))
+# ---------- montagem das questões ----------
+ce_html = ""
+for i, (af, _g, _c) in enumerate(QCE, 1):
+    ce_html += (f'<div class="qbox"><span class="qn">{i}.</span> {af}'
+                f'<div class="ce">(&nbsp;&nbsp;) Certo&nbsp;&nbsp;&nbsp;(&nbsp;&nbsp;) Errado</div></div>')
 
-HTML = f"""<!DOCTYPE html>
-<html lang="pt-br"><head><meta charset="utf-8"><style>{CSS}</style></head>
-<body>
+me_html = ""
+for k, (tema, enun, opts, ok, com) in enumerate(QME, 16):
+    lis = "".join(f"<li>{o}</li>" for o in opts)
+    me_html += (f'<div class="qbox"><span class="qn">{k}.</span> {enun}'
+                f'<span class="tema">{tema}</span><ol>{lis}</ol></div>')
+
+# gabarito comentado
+gab_html = ""
+for i, (af, g, c) in enumerate(QCE, 1):
+    cls = "gab-c" if g == "C" else "gab-e"
+    rotulo = "CERTO" if g == "C" else "ERRADO"
+    gab_html += f'<div class="gab-item"><span class="n">{i}.</span> <span class="resp {cls}">{rotulo}</span> — {c}</div>'
+for k, (tema, enun, opts, ok, com) in enumerate(QME, 16):
+    gab_html += f'<div class="gab-item"><span class="n">{k}.</span> {com}</div>'
+
+HTML = f"""<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"><style>{CSS}</style></head><body>
 
 <div class="cover">
   <div class="kicker">LÍNGUA PORTUGUESA</div>
   <h1>Ortografia,<br>Morfossintaxe<br>&amp; Coesão</h1>
   <div class="rule"></div>
-  <div class="sub">Regras que mais caem, análise sintática sem decoreba e 35 questões de morfossintaxe comentadas</div>
+  <div class="sub">Apostila completa: ortografia, classes de palavras, análise sintática e coesão textual — com 35 questões e gabarito comentado</div>
   <div class="meta" style="margin-top:26px;">Concurso <b>Sedes/DF</b> · Banca <b>Quadrix</b> · 2026<br>Técnico Administrativo (Cargo 202)</div>
-  <div class="badge">Português · Meta: 35 questões</div>
+  <div class="badge">Dia 2 · 35 questões para fazer agora</div>
 </div>
 
-<!-- 1. ABERTURA -->
 <h2 class="section-title">1. Por que Português decide a prova</h2>
-<p class="lead">Português é a matéria com mais questões e a que mais elimina por descuido. A Quadrix cobra <b>regra aplicada</b>, não teoria: identificar a função de um termo, o valor de uma palavra (‘que’, ‘se’), o sentido de um conectivo. Quem domina morfossintaxe acerta também concordância, regência, crase e pontuação — tudo depende de enxergar a <b>estrutura da frase</b>.</p>
-<div class="grid2">
-  <div class="callout c-why">
-    <h4>Onde o candidato perde ponto</h4>
+<p>Português é a matéria com o maior número de questões na maioria dos concursos e, não por acaso, a que mais elimina candidatos por descuido. A Quadrix é uma banca de <b>literalidade</b>: ela cobra a regra de forma fria e, para criar o erro, troca <b>um único elemento</b> — uma palavra, um acento, uma preposição, um conectivo. Quem entende a lógica por trás da regra reconhece essa troca; quem apenas decorou nomenclatura cai na armadilha. Por isso, este material não lista regras soltas: explica o porquê de cada uma e aponta exatamente onde a banca costuma mexer.</p>
+<p>O dia de hoje cobre quatro frentes que se sustentam mutuamente. A <b>ortografia</b> trata da grafia correta das palavras e dos pares que confundem (mau/mal, por que/porque, a/há). As <b>classes de palavras</b> identificam a que categoria gramatical cada vocábulo pertence — e mostram que a mesma palavra muda de classe conforme o contexto. A <b>morfossintaxe</b> une morfologia (classe) e sintaxe (função): é o coração da prova, porque dela dependem concordância, regência, crase e pontuação. Por fim, a <b>coesão textual</b> cuida da amarração entre as partes do texto. Domine essas quatro frentes e você terá a base de quase todas as questões de língua.</p>
+
+<h2 class="section-title">2. Ortografia: os pares que mais confundem</h2>
+<p>A ortografia de concurso quase nunca cobra palavras difíceis isoladas; cobra <b>parônimos</b> — palavras parecidas com sentidos diferentes — e o emprego correto de pequenas expressões. O segredo não é decorar, e sim ter um <b>teste rápido</b> para cada par. A tabela a seguir reúne os casos mais cobrados, com o critério de decisão de cada um.</p>
+<table>
+  <thead><tr><th style="width:22%">Par / expressão</th><th style="width:40%">Regra (o teste)</th><th>Exemplo correto</th></tr></thead>
+  <tbody>
+    <tr><td><span class="rn">por que / porque</span></td><td>Separado em perguntas (cabe “por qual motivo”); junto nas respostas (causa). Acento no fim de frase (por quê) e no substantivo (o porquê).</td><td>“Por que faltou? Porque adoeceu. Não sei por quê. Eis o porquê.”</td></tr>
+    <tr><td><span class="rn">mau / mal</span></td><td>“Mau” = adjetivo (oposto de bom); “mal” = advérbio (oposto de bem) ou substantivo.</td><td>“Um mau exemplo.” / “Agiu mal.”</td></tr>
+    <tr><td><span class="rn">mas / mais</span></td><td>“Mas” = porém (oposição); “mais” = quantidade/intensidade (oposto de menos).</td><td>“Tentou, mas falhou.” / “Quero mais tempo.”</td></tr>
+    <tr><td><span class="rn">a / há (tempo)</span></td><td>“Há” = tempo passado (= faz); “a” = tempo futuro ou distância. Nunca “há… atrás”.</td><td>“Saiu há uma hora.” / “Volto daqui a uma hora.”</td></tr>
+    <tr><td><span class="rn">senão / se não</span></td><td>“Senão” = caso contrário / a não ser; “se não” = caso não (condição + verbo).</td><td>“Corra, senão cairá.” / “Se não chover, sairemos.”</td></tr>
+    <tr><td><span class="rn">onde / aonde</span></td><td>“Onde” = lugar fixo (estar); “aonde” = movimento (ir, chegar).</td><td>“Onde mora?” / “Aonde vai?”</td></tr>
+    <tr><td><span class="rn">afim / a fim de</span></td><td>“Afim” = semelhante; “a fim de” = com a finalidade de.</td><td>“Áreas afins.” / “Estudo a fim de passar.”</td></tr>
+    <tr><td><span class="rn">sessão / seção / cessão</span></td><td>Sessão = tempo/reunião; seção = divisão; cessão = ato de ceder.</td><td>“Sessão de cinema.” / “Seção de esportes.” / “Cessão de direitos.”</td></tr>
+  </tbody>
+</table>
+<p class="subhead">Acentuação pelo Acordo Ortográfico</p>
+<p>O Acordo Ortográfico mudou alguns acentos que a banca adora cobrar na grafia antiga. As <b>paroxítonas</b> com os ditongos abertos “ei” e “oi” <b>perderam o acento</b>: escreve-se <i>ideia, heroico, jiboia, assembleia</i>. Os <b>hiatos</b> “oo” e “ee” também ficaram sem acento: <i>voo, enjoo, creem, leem</i>. O <b>trema</b> foi abolido (<i>linguiça, sequência</i>). Permaneceram, porém, os <b>acentos diferenciais</b> que evitam ambiguidade: <i>pôde</i> (pretérito) × <i>pode</i> (presente) e <i>pôr</i> (verbo) × <i>por</i> (preposição). Já <i>pára</i> (do verbo parar) perdeu o acento e virou <i>para</i>, igual à preposição.</p>
+<div class="callout c-banca"><h4>Como a Quadrix cobra ortografia</h4>A banca apresenta uma frase com a grafia antiga (“idéia”, “vôo”, “heróico”) e pede que você a julgue como correta — é a troca de um único elemento. Também explora o par certo no contexto errado (“assisti o filme”, “aonde você está”). Leia cada palavra destacada e aplique o teste rápido.</div>
+
+<h2 class="section-title">3. As dez classes de palavras</h2>
+<p>Classe de palavra (ou classe gramatical) é a categoria a que um vocábulo pertence. São <b>dez</b>, divididas em <b>variáveis</b> — que flexionam em gênero, número ou grau — e <b>invariáveis</b>. As variáveis são <b>substantivo</b> (nomeia seres e conceitos), <b>artigo</b> (define ou indetermina o substantivo), <b>adjetivo</b> (qualifica o substantivo), <b>numeral</b> (indica quantidade ou ordem), <b>pronome</b> (substitui ou acompanha o substantivo) e <b>verbo</b> (exprime ação, estado ou fenômeno). As invariáveis são <b>advérbio</b> (modifica verbo, adjetivo ou outro advérbio), <b>preposição</b> (liga termos), <b>conjunção</b> (liga orações) e <b>interjeição</b> (exprime emoção).</p>
+<p>O ponto que a banca explora é simples e poderoso: <b>a classe de uma palavra depende do contexto</b>, não da palavra isolada. A mesma forma pode pertencer a classes diferentes conforme a função que exerce na frase. Por isso, ao classificar, observe o <b>papel</b> da palavra naquela oração específica.</p>
+<div class="box2">
+  <div class="callout c-key"><h4>A mesma palavra, classes diferentes</h4>
     <ul>
-      <li><b>Decora nomenclatura</b> sem saber identificar na frase real.</li>
-      <li><b>Erra o valor da palavra</b> — o mesmo ‘se’/‘que’ muda de função conforme o contexto.</li>
-      <li><b>Confunde conectivos</b> — troca causa por conclusão, oposição por adição.</li>
-      <li><b>Ignora a regência</b> — ‘assistir’, ‘aspirar’, ‘visar’ mudam de sentido com a preposição.</li>
-    </ul>
-  </div>
-  <div class="callout c-key">
-    <h4>A estratégia deste material</h4>
+      <li>“O <b>jantar</b> está pronto” (substantivo) × “Vou <b>jantar</b> cedo” (verbo).</li>
+      <li>“Ele fala <b>bem</b>” (advérbio) × “Quero o seu <b>bem</b>” (substantivo).</li>
+      <li>“<b>A</b> aluna chegou” (artigo) × “Dei o livro <b>a</b> ela” (preposição).</li>
+    </ul></div>
+  <div class="callout c-peg"><h4>Pegadinha: palavras camaleão</h4>
     <ul>
-      <li><b>Testes práticos</b>: troque por ‘o qual’, por ‘bom/bem’, por ‘porém’ — e a resposta aparece.</li>
-      <li><b>Morfossintaxe como mapa</b>: achar o verbo → achar o sujeito → classificar o resto.</li>
-      <li><b>Coesão</b> ensinada pelo sentido do conectivo, não pela lista decorada.</li>
-      <li>35 questões no estilo da banca, comentadas com a <b>estratégia de resolução</b>.</li>
-    </ul>
-  </div>
+      <li><b>que</b>: pronome relativo, conjunção integrante, advérbio, substantivo…</li>
+      <li><b>se</b>: conjunção (integrante/condicional), pronome (apassivador/reflexivo), IIS.</li>
+      <li><b>como</b>: advérbio, conjunção, preposição. Sempre veja o contexto.</li>
+    </ul></div>
 </div>
 
-<!-- 2. ORTOGRAFIA -->
-<h2 class="section-title h-chapter">2. Ortografia — os pares que mais caem</h2>
-<p class="lead">A banca adora as palavras parônimas (parecidas) e a acentuação do Novo Acordo. Cada card traz o teste rápido para não errar.</p>
-{orto_html}
+<h2 class="section-title">4. Morfossintaxe: a estrutura da oração</h2>
+<p>Morfossintaxe é o estudo conjunto da <b>classe</b> (morfologia) e da <b>função</b> (sintaxe) das palavras. O caminho seguro para analisar qualquer frase é sempre o mesmo: localize o <b>verbo</b>, descubra sua <b>transitividade</b>, identifique o <b>sujeito</b> e, então, classifique os demais termos. Dominar esse roteiro resolve não só as questões de análise sintática, mas também as de concordância, regência e crase.</p>
+<p class="subhead">Termos da oração</p>
+<p>Os termos dividem-se em três grupos. Os <b>essenciais</b> são o <b>sujeito</b> (de quem se fala) e o <b>predicado</b> (o que se diz). Os <b>integrantes</b> completam o sentido: <b>objeto direto</b> (sem preposição), <b>objeto indireto</b> (com preposição), <b>complemento nominal</b> (completa um nome) e <b>agente da passiva</b>. Os <b>acessórios</b> acrescentam informação: <b>adjunto adnominal</b> (liga-se a um nome, indicando posse ou qualidade), <b>adjunto adverbial</b> (circunstância: tempo, lugar, modo) e <b>aposto</b> (explica um termo). À parte fica o <b>vocativo</b>, que é um chamamento e não pertence à estrutura da oração.</p>
+<p class="subhead">Transitividade verbal</p>
+<p>É a relação do verbo com seus complementos. O <b>intransitivo</b> (VI) tem sentido completo (“Ele chegou”). O <b>transitivo direto</b> (VTD) pede objeto sem preposição (“Comprei o livro”). O <b>transitivo indireto</b> (VTI) pede objeto com preposição (“Gosto de música”). O <b>transitivo direto e indireto</b> (VTDI) pede os dois (“Dei um presente a ela”). O <b>verbo de ligação</b> (VL) liga o sujeito a um predicativo (“Ela está cansada”). A transitividade é decisiva: dela depende a regência — e é nela que mora a pegadinha de verbos como “assistir”, “obedecer”, “aspirar” e “visar”, que exigem preposição.</p>
+<p class="subhead">Sujeito e predicado</p>
+<p>O sujeito pode ser <b>simples</b> (um núcleo), <b>composto</b> (dois ou mais), <b>oculto</b> (identificável pela desinência), <b>indeterminado</b> (verbo na 3ª pessoa do plural sem referente, ou VTI + “se”) ou inexistente — caso das <b>orações sem sujeito</b>, com verbos como “haver” (= existir), “fazer”/“ser” indicando tempo e os que exprimem fenômenos da natureza. O predicado é <b>verbal</b> (núcleo de ação), <b>nominal</b> (verbo de ligação + predicativo) ou <b>verbo-nominal</b> (ação + predicativo).</p>
+<div class="callout c-peg"><h4>Pegadinha: adjunto adnominal × complemento nominal</h4>Ambos vêm com preposição depois de um nome. O <b>complemento nominal</b> é PACIENTE (sofre a ação): “a construção <b>da casa</b>” (a casa é construída). O <b>adjunto adnominal</b> é AGENTE ou posse: “a chegada <b>do trem</b>” (o trem chega) / “o carro <b>do João</b>” (posse). Teste: o termo sofre a ação (complemento nominal) ou pratica/possui (adjunto adnominal)?</div>
+<p class="subhead">Os valores do “que” e do “se”</p>
+<p>Duas palavras concentram boa parte das questões. O <b>“que”</b> é mais comumente <b>pronome relativo</b> (retoma um nome e equivale a “o qual”: “o livro <b>que</b> li”) ou <b>conjunção integrante</b> (introduz oração que completa um verbo: “Disse <b>que</b> viria”). O teste decisivo: se couber “o qual”, é pronome relativo. O <b>“se”</b>, por sua vez, pode ser <b>conjunção integrante</b> (“Não sei <b>se</b> virá”), <b>conjunção condicional</b> (“<b>Se</b> chover, fico”), <b>pronome apassivador</b> (com VTD, havendo sujeito: “Vendem-<b>se</b> casas”) ou <b>índice de indeterminação do sujeito</b> (com VTI/VI, verbo no singular: “Precisa-<b>se</b> de pedreiros”).</p>
+<table>
+  <thead><tr><th style="width:20%">Palavra/uso</th><th style="width:40%">Como identificar</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td><span class="rn">que (relativo)</span></td><td>Retoma um nome; cabe “o qual”. Inicia oração adjetiva.</td><td>“A prova que fiz foi difícil.”</td></tr>
+    <tr><td><span class="rn">que (integrante)</span></td><td>Completa um verbo; inicia oração substantiva.</td><td>“Espero que você venha.”</td></tr>
+    <tr><td><span class="rn">se (apassivador)</span></td><td>VTD + se; há sujeito paciente; verbo concorda (plural).</td><td>“Alugam-se salas.”</td></tr>
+    <tr><td><span class="rn">se (indet. do sujeito)</span></td><td>VTI/VI + se; verbo no singular; sujeito indeterminado.</td><td>“Precisa-se de ajudantes.”</td></tr>
+  </tbody>
+</table>
+<p class="subhead">Período composto: coordenação × subordinação</p>
+<p>Quando o período tem mais de uma oração, elas se relacionam por <b>coordenação</b> (orações independentes) ou <b>subordinação</b> (uma depende da outra). As <b>coordenadas sindéticas</b> classificam-se pelo conectivo: aditiva (e), adversativa (mas), alternativa (ou), conclusiva (logo, portanto) e explicativa (pois). As <b>subordinadas</b> exercem função de termo da oração principal: <b>substantivas</b> (valor de nome, iniciadas por conjunção integrante), <b>adjetivas</b> (valor de adjetivo, iniciadas por pronome relativo) e <b>adverbiais</b> (valor de advérbio, exprimindo circunstância: causal, condicional, concessiva, temporal etc.).</p>
 
-<!-- 3. MORFOSSINTAXE -->
-<h2 class="section-title h-chapter">3. Morfossintaxe — a estrutura da frase</h2>
-<p class="lead">Morfologia = a <b>classe</b> da palavra. Sintaxe = a <b>função</b> dela na oração. Morfossintaxe junta as duas: a mesma palavra muda de classe e de função conforme o contexto. O caminho seguro: ache o <b>verbo</b>, descubra sua <b>transitividade</b>, ache o <b>sujeito</b>, classifique o resto.</p>
-{morfo_html}
-
-<!-- 4. COESAO -->
-<h2 class="section-title h-chapter">4. Coesão Textual</h2>
-<p class="lead"><b>Coesão</b> é a amarração entre as partes do texto (a “costura” gramatical). Não confunda com <b>coerência</b> (a lógica de sentido). Um texto pode estar coeso e incoerente. A coesão tem dois grandes tipos: <b>referencial</b> (retomar termos) e <b>sequencial</b> (ligar ideias com conectivos).</p>
-
-<div class="grid2">
-  <div class="callout c-tip">
-    <h4>Coesão referencial (retomada)</h4>
-    <ul>
-      <li><b>Anáfora</b>: retoma termo já dito (“Comprei um livro e <b>o</b> li”).</li>
-      <li><b>Catáfora</b>: antecipa o que vem (“Só quero <b>isto</b>: paz”).</li>
-      <li><b>Elipse</b>: omite termo recuperável (“João entrou e [ele] sentou”).</li>
-      <li><b>Substituição lexical</b>: sinônimo/hiperônimo (“o cão… o <b>animal</b>”).</li>
-    </ul>
-  </div>
-  <div class="callout c-tip">
-    <h4>Coesão sequencial (conexão)</h4>
-    <ul>
-      <li>Feita por <b>conjunções, advérbios e preposições</b> que ligam orações e parágrafos.</li>
-      <li>O conectivo <b>determina a relação de sentido</b> — trocá-lo muda o texto.</li>
-      <li><b>Pegadinha:</b> a banca substitui o conectivo por outro de sentido diferente e pede se o sentido se mantém.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="card">
-  <div class="head"><span class="tit">Conectivos por sentido (decore a relação, não a lista)</span></div>
-  <table>
-    <thead><tr><th style="width:26%">Relação</th><th>Principais conectivos</th></tr></thead>
-    <tbody>{conectivos_rows}</tbody>
-  </table>
-</div>
-<div class="callout c-why">
-  <h4>Pegadinhas de coesão preferidas da Quadrix</h4>
+<h2 class="section-title">5. Coesão textual</h2>
+<p><b>Coesão</b> é a amarração gramatical entre as partes de um texto — a “costura” que liga frases e parágrafos. Não se confunde com <b>coerência</b>, que é a lógica de sentido: um texto pode estar coeso (bem ligado) e, ainda assim, incoerente (sem lógica). A coesão se realiza de dois modos principais: a <b>coesão referencial</b>, que retoma termos já ditos, e a <b>coesão sequencial</b>, que conecta ideias por meio de conectivos.</p>
+<p>A <b>coesão referencial</b> evita a repetição e mantém o texto amarrado. Faz-se por <b>anáfora</b> (retomada de um termo anterior: “Comprei um livro e <b>o</b> li”), <b>catáfora</b> (antecipação do que virá: “Só quero <b>isto</b>: justiça”), <b>elipse</b> (omissão de termo recuperável: “João entrou e [ele] sentou-se”) e <b>substituição lexical</b> por sinônimos ou hiperônimos (“o cão… o <b>animal</b>”). A <b>coesão sequencial</b>, por sua vez, depende dos conectivos, que estabelecem a relação de sentido entre as orações — e trocá-los muda o texto.</p>
+<table>
+  <thead><tr><th style="width:26%">Relação de sentido</th><th>Principais conectivos</th></tr></thead>
+  <tbody>
+    <tr><td><span class="rn">Adição</span></td><td>e; também; além disso; não só… mas também</td></tr>
+    <tr><td><span class="rn">Oposição</span></td><td>mas; porém; contudo; todavia; no entanto; entretanto</td></tr>
+    <tr><td><span class="rn">Conclusão</span></td><td>portanto; logo; por isso; assim; pois (após o verbo)</td></tr>
+    <tr><td><span class="rn">Causa</span></td><td>porque; pois (antes do verbo); já que; visto que; uma vez que</td></tr>
+    <tr><td><span class="rn">Condição</span></td><td>se; caso; contanto que; desde que; a menos que</td></tr>
+    <tr><td><span class="rn">Concessão</span></td><td>embora; ainda que; mesmo que; conquanto; apesar de</td></tr>
+  </tbody>
+</table>
+<div class="callout c-peg"><h4>Pegadinhas de coesão preferidas da banca</h4>
   <ul>
-    <li><b>‘pois’</b> antes do verbo = causa/explicação; depois do verbo = conclusão. (“Estava doente, <b>pois</b> faltou” × “Faltou; estava, <b>pois</b>, doente”.)</li>
-    <li><b>‘mas’/‘porém’</b> = oposição; trocar por ‘e’ (adição) altera o sentido.</li>
-    <li><b>‘portanto’</b> (conclusão) ≠ <b>‘porque’</b> (causa). A banca inverte os dois.</li>
-    <li>Pronome retomando o <b>referente errado</b>: confira sempre a quem o ‘ele/o/que’ se refere.</li>
-  </ul>
-</div>
+    <li><b>“pois”</b> antes do verbo = causa; depois do verbo = conclusão. (“Faltou, pois adoeceu” × “Adoeceu; faltou, pois, à aula.”)</li>
+    <li><b>“portanto”</b> (conclusão) ≠ <b>“porque”</b> (causa). A banca inverte os dois.</li>
+    <li>Pronome retomando o <b>referente errado</b>: confira sempre a quem o “ele/o/que” se refere.</li>
+  </ul></div>
 
-<!-- 5. QUESTOES -->
-<h2 class="section-title h-chapter">5. 35 Questões de Morfossintaxe</h2>
-<p class="lead">Antes de marcar, faça os testes: ache o verbo, classifique a transitividade, teste ‘o qual’ no ‘que’. A correta vem destacada e comentada.</p>
-{questoes_html}
+<h2 class="section-title pagebreak">6. 35 questões para fazer agora</h2>
+<p class="lead">Resolva sem olhar o gabarito. <b>Itens 1 a 15:</b> julgue como CERTO ou ERRADO (estilo Quadrix). <b>Itens 16 a 35:</b> múltipla escolha (A–E). O gabarito comentado, com a justificativa da correta e o motivo de cada alternativa errada, está na seção 7.</p>
+<p class="subhead">Parte I — Julgue os itens (Certo / Errado)</p>
+{ce_html}
+<p class="subhead">Parte II — Múltipla escolha (A–E)</p>
+{me_html}
 
-<!-- 6. GABARITO -->
-<h2 class="section-title h-chapter">6. Gabarito</h2>
-{render_gabarito()}
+<h2 class="section-title pagebreak">7. Gabarito comentado</h2>
+<p class="lead">Cada item traz a resposta e a explicação: por que a correta está certa e, nas de múltipla escolha, qual elemento torna cada alternativa errada.</p>
+{gab_html}
 
 </body></html>"""
 
 with open(OUT, "w", encoding="utf-8") as f:
     f.write(HTML)
-print("HTML gerado:", OUT)
-print("Cards orto:", len(ORTO), "| Cards morfo:", len(MORFO), "| Questoes:", len(Q))
+print("HTML gerado:", OUT, "| C/E:", len(QCE), "| A-E:", len(QME), "| total:", len(QCE)+len(QME))

@@ -4,7 +4,7 @@ Catálogo dos materiais de estudo produzidos pelo **Agente Quadrix**, organizado
 
 | Dia | Tema | Pasta | Destaque |
 |---|---|---|---|
-| **D2** | Português — ortografia, morfossintaxe e coesão textual | [`dia02-portugues-morfossintaxe/`](dia02-portugues-morfossintaxe/) | Teoria + 35 questões comentadas (`Dia2_Portugues_Morfossintaxe_PRO.pdf`) · Atividade no layout oficial Quadrix, 30 questões (`Atividade_Portugues_Quadrix.pdf`) |
+| **D2** | Português — ortografia, classes, morfossintaxe e coesão textual | [`dia02-portugues-morfossintaxe/`](dia02-portugues-morfossintaxe/) | **Apostila densa + 35 questões (15 C/E + 20 A–E) com gabarito comentado** (`Dia2_Portugues_Completo_PRO.pdf`) · Atividade no layout oficial Quadrix, 30 questões (`Atividade_Portugues_Quadrix.pdf`) |
 | **D4** | Constitucional — Art. 5º (direitos e deveres individuais e coletivos) | [`dia04-art5-cf88/`](dia04-art5-cf88/) | Teoria + 35 questões comentadas (`Dia4_Art5_PRO.pdf`) · Atividade no layout oficial Quadrix, 20 questões (`Atividade_Art5_Quadrix.pdf`) |
 | **D5** | Constitucional — direitos sociais (arts. 6º–11) | [`dia05-direitos-sociais/`](dia05-direitos-sociais/) | Teoria em cards + 20 questões comentadas (`Dia5_Direitos_Sociais_PRO.pdf`) |
 | **D12** | Redação — dissertativo-argumentativa | [`dia12-redacao-dissertativa/`](dia12-redacao-dissertativa/) | Estrutura, técnicas e **modelo nota máxima comentado** parágrafo a parágrafo (`Dia12_Redacao_Dissertativa_PRO.pdf`) |
