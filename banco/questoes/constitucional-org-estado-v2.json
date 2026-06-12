@@ -1,0 +1,227 @@
+{
+ "materia": "Direito Constitucional",
+ "tema": "Organização do Estado e Administração Pública (arts. 18–44)",
+ "revisar": false,
+ "questoes": [
+  {
+   "id": "org-ce-01",
+   "tipo": "CE",
+   "enunciado": "A República Federativa do Brasil é formada pela União, pelos Estados, pelo Distrito Federal e pelos Municípios.",
+   "gabarito": "C",
+   "comentario": "Correto. Literalidade do art. 1º — são os quatro entes federados que compõem a federação."
+  },
+  {
+   "id": "org-ce-02",
+   "tipo": "CE",
+   "enunciado": "O Distrito Federal possui regime jurídico igual ao dos Estados, sem qualquer particularidade.",
+   "gabarito": "E",
+   "comentario": "Errado. O DF tem regime jurídico próprio (art. 32); não é puro Estado nem puro Município — é ente federado singular."
+  },
+  {
+   "id": "org-ce-03",
+   "tipo": "CE",
+   "enunciado": "A competência legislativa concorrente permite que a União fixe normas gerais e os Estados complementem, respeitando as normas gerais.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 24, § 2º: a competência concorrente funciona assim — União fixa o teto, Estado anda dentro dele."
+  },
+  {
+   "id": "org-ce-04",
+   "tipo": "CE",
+   "enunciado": "O veto presidencial a lei aprovada pelo Congresso pode ser derrubado por maioria de 2/5 dos deputados e senadores.",
+   "gabarito": "E",
+   "comentario": "Errado. Art. 66, § 4º: o veto derruba-se por MAIORIA ABSOLUTA (não 2/5) de cada Casa do Congresso, em sessão conjunta."
+  },
+  {
+   "id": "org-ce-05",
+   "tipo": "CE",
+   "enunciado": "A Câmara dos Deputados é composta por 513 deputados, número fixado constitucionalmente e imutável.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 45, § 1º — o número é constitucionalmente fixo (513) e distribuído proporcionalmente entre os Estados."
+  },
+  {
+   "id": "org-ce-06",
+   "tipo": "CE",
+   "enunciado": "O Senado Federal tem 3 senadores por Estado, totalizando 81 senadores incluindo o Distrito Federal.",
+   "gabarito": "C",
+   "comentario": "Correto. 3 × 27 (26 Estados + 1 DF) = 81 (art. 46, § 1º)."
+  },
+  {
+   "id": "org-ce-07",
+   "tipo": "CE",
+   "enunciado": "Lei complementar e lei ordinária têm igual hierarquia; ambas podem ser revogadas uma pela outra.",
+   "gabarito": "E",
+   "comentario": "Errado. Lei complementar é superior — só outra lei complementar a revoga. Lei ordinária não pode revogá-la."
+  },
+  {
+   "id": "org-ce-08",
+   "tipo": "CE",
+   "enunciado": "Medida provisória tem validade de 60 dias, podendo ser prorrogada uma única vez por mais 60 dias (máximo 120).",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 62, § 3º — MP valida por 60 dias, prorrogável uma vez (total: 120 dias máximo)."
+  },
+  {
+   "id": "org-ce-09",
+   "tipo": "CE",
+   "enunciado": "A intervenção federal em um Estado é sempre unilateral, sem necessidade de qualquer ato judicial ou congressual.",
+   "gabarito": "E",
+   "comentario": "Errado. A intervenção exige requisitos específicos (arts. 34–36) e, em vários casos, decisão judicial ou autorização do Congresso."
+  },
+  {
+   "id": "org-ce-10",
+   "tipo": "CE",
+   "enunciado": "O Presidente da República é simultaneamente Chefe de Estado e Chefe de Governo no sistema presidencialista.",
+   "gabarito": "C",
+   "comentario": "Correto. No presidencialismo brasileiro, o Presidente acumula ambas as funções (art. 76)."
+  },
+  {
+   "id": "org-me-01",
+   "tipo": "ME",
+   "tag": "Federação",
+   "enunciado": "A federação brasileira é constituída por",
+   "alternativas": [
+    "União, Estados, Distrito Federal e Municípios",
+    "apenas a União e os Estados, excluindo Distrito Federal e Municípios",
+    "28 Estados equiparados ao Distrito Federal como unidades federadas",
+    "União e Municípios, sendo os Estados meras divisões administrativas",
+    "Unidade federada suprema (União) e territórios inferiores subordinados"
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A. Art. 24, parágrafo 2º: União fixa normas gerais; Estado complementa respeitando-as. B-original: seria a alternativa de fixação apenas pela União, não complementação. C: não é cessão. D: não há veto. E: Senado não aprova cada lei."
+  },
+  {
+   "id": "org-me-02",
+   "tipo": "ME",
+   "tag": "Competência",
+   "enunciado": "Na competência concorrente entre União e Estados, a função da União é",
+   "alternativas": [
+    "legislar livremente, ignorando as leis estaduais posteriores",
+    "fixar normas gerais que os Estados complementam, respeitando-as",
+    "ceder ao Estado toda competência para legislar autonomamente",
+    "vetar qualquer lei estadual antes de sua entrada em vigor",
+    "exigir aprovação do Senado para cada lei estadual nessa matéria"
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B. Art. 24, § 2º: União fixa normas gerais; Estado complementa respeitando-as. A: ignora a hierarquia. C: não é cessão. D: não há veto prévio. E: não há exigência de Senado."
+  },
+  {
+   "id": "org-me-03",
+   "tipo": "ME",
+   "tag": "Veto",
+   "enunciado": "O veto presidencial a lei aprovada pelo Congresso é derrubado por",
+   "alternativas": [
+    "decisão unilateral do Presidente da República, se reconsiderar",
+    "maioria simples de cada Casa do Congresso, em votação separada",
+    "maioria absoluta de cada Casa do Congresso, em sessão conjunta",
+    "2/5 dos deputados e senadores combinados, conforme a lei",
+    "aprovação do Supremo Tribunal Federal, por maioria de ministros"
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C. Art. 66, § 4º: maioria absoluta de cada Casa. A: Presidente não derruba veto dele. B: é maioria absoluta, não simples. D: 2/5 é incorreto. E: STF não derruba veto."
+  },
+  {
+   "id": "org-me-04",
+   "tipo": "ME",
+   "tag": "Câmara",
+   "enunciado": "A Câmara dos Deputados é composta por",
+   "alternativas": [
+    "513 deputados, distribuídos proporcionalmente entre os Estados",
+    "número variável conforme a população de cada Estado e ano",
+    "um máximo de 513, podendo reduzir a cada legislatura",
+    "mais de 600 membros, um por município brasileiro",
+    "número fixado pelo Congresso Nacional a cada cinco anos"
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A. Art. 45, parágrafo 1º: 513 deputados, fixo e distribuído proporcionalmente. B-original: era variável. C: máximo implica variação. D: impossível. E: Congresso não altera constituição."
+  },
+  {
+   "id": "org-me-05",
+   "tipo": "ME",
+   "tag": "Senado",
+   "enunciado": "O Senado Federal possui",
+   "alternativas": [
+    "um senador por Estado, totalizando 27 membros",
+    "dois senadores por Estado, totalizando 54 membros",
+    "três senadores por Estado, totalizando 81 membros incluindo o DF",
+    "número variável conforme a população estadual, entre 20 e 30",
+    "85 membros eleitos conjuntamente com a Câmara"
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C. Art. 46, § 1º: 3 senadores × 27 unidades = 81. A: faltam senadores. B: só 2 por Estado. D: é fixo, não variável. E: número errado."
+  },
+  {
+   "id": "org-me-06",
+   "tipo": "ME",
+   "tag": "Lei complementar",
+   "enunciado": "Comparada à lei ordinária, a lei complementar",
+   "alternativas": [
+    "é inferior hierarquicamente e pode ser revogada por lei ordinária",
+    "é superior hierarquicamente e só pode ser revogada por outra lei complementar",
+    "tem idêntico status; a diferença é apenas de processo legislativo",
+    "nunca pode ser revogada, nem mesmo por emenda constitucional",
+    "só é válida se aprovada também pelo Senado Federal"
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B. Lei complementar é superior; exige maioria absoluta. A: é superior, não inferior. C: status diferentes. D: pode ser revogada por outra LC. E: Senado já vota em ambas."
+  },
+  {
+   "id": "org-me-07",
+   "tipo": "ME",
+   "tag": "Medida provisória",
+   "enunciado": "A medida provisória, segundo a Constituição, tem vigência de",
+   "alternativas": [
+    "indefinida, até ser votada pelo Congresso Nacional",
+    "30 dias, improrrogável sob qualquer circunstância",
+    "60 dias, prorrogável uma única vez por mais 60 dias",
+    "120 dias, podendo prorrogar-se quantas vezes forem necessárias",
+    "tempo fixado pelo Presidente da República, sem limite constitucional"
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C. Art. 62, § 3º: 60 + 60 = máximo 120. A: é limitada. B: é prorrogável. D: é prorrogável só uma vez. E: Presidente não fixa livremente."
+  },
+  {
+   "id": "org-me-08",
+   "tipo": "ME",
+   "tag": "Separação de poderes",
+   "enunciado": "O princípio da separação de poderes significa que",
+   "alternativas": [
+    "um Poder não pode jamais interferir nas funções de outro",
+    "cada Poder é independente, mas há sistema de freios e contrapesos",
+    "o Poder Legislativo é hierarquicamente superior aos demais",
+    "o Executivo executa leis do Legislativo sem possibilidade de participação",
+    "o Judiciário é irrestritamente soberano em matéria de direitos"
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B. Art. 2º: independência + sistema de checks and balances. A: há interferência legítima (veto, impeachment). C: não há hierarquia. D: Executivo veta e propõe. E: Judiciário tem limites."
+  },
+  {
+   "id": "org-me-09",
+   "tipo": "ME",
+   "tag": "Distrito Federal",
+   "enunciado": "O Distrito Federal, no ordenamento constitucional,",
+   "alternativas": [
+    "é equiparado exatamente a um Estado em todas as competências",
+    "é equiparado exatamente a um Município em sua organização",
+    "possui regime jurídico singular, não sendo puro Estado nem Município",
+    "não é considerado ente da federação para fins de repartição",
+    "pode ser suprimido por lei complementar, conforme necessidade"
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C. Art. 32: regime próprio. A: tem singularidades (acumula funções). B: não é Município. D: é ente federado sim. E: supressão seria inconstitucional."
+  },
+  {
+   "id": "org-me-10",
+   "tipo": "ME",
+   "tag": "Autonomia municipal",
+   "enunciado": "O Município tem autonomia em matéria de",
+   "alternativas": [
+    "legislação criminal, organização judiciária e direito internacional",
+    "receita, administração e legislação sobre assuntos de interesse local",
+    "educação federal, saúde nacional e defesa interna do país",
+    "determinação de taxas de câmbio, moeda e política monetária",
+    "regulação de comércio entre Estados e tributos interestaduais"
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B. Art. 30: autonomia em receita, administração e interesse local. A: criminal/judiciário/internacional são da União. C: são direitos sociais, não exclusivos municipais. D: moeda/câmbio são federais. E: comércio interestadual é federal."
+  }
+ ]
+}

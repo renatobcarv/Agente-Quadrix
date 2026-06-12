@@ -1,0 +1,227 @@
+{
+ "materia": "Direito Constitucional",
+ "tema": "Servidores Públicos (arts. 37–41)",
+ "revisar": false,
+ "questoes": [
+  {
+   "id": "serv-ce-01",
+   "tipo": "CE",
+   "enunciado": "A Administração Pública deve obedecer aos princípios de legalidade, impessoalidade, moralidade, publicidade e eficiência.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 37, caput: são os cinco princípios fundamentais — ordem que a banca adora cobrar."
+  },
+  {
+   "id": "serv-ce-02",
+   "tipo": "CE",
+   "enunciado": "Servidor em estágio probatório pode ser exonerado sem justa causa se não aprovado ao final.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 41, § 1º: o estágio probatório permite exoneração imotivada; após 3 anos, adquire estabilidade."
+  },
+  {
+   "id": "serv-ce-03",
+   "tipo": "CE",
+   "enunciado": "Servidor estável pode perder a estabilidade apenas por sentença judicial transitada em julgado.",
+   "gabarito": "E",
+   "comentario": "Errado. Art. 41, § 1º: estabilidade pode ser perdida por sentença, processo administrativo ou insuficiência em avaliação periódica de desempenho."
+  },
+  {
+   "id": "serv-ce-04",
+   "tipo": "CE",
+   "enunciado": "É permitido ao servidor público acumular dois cargos de professor ou um cargo de professor mais um técnico-científico.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 37, inciso XVI: são as duas exceções permitidas — nunca a terceira combinação (dois não-professores)."
+  },
+  {
+   "id": "serv-ce-05",
+   "tipo": "CE",
+   "enunciado": "A remuneração de servidores estaduais não pode exceder o subsídio do Governador do Estado.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 37, § 11: teto estadual é o subsídio do Governador; federal é o do Presidente."
+  },
+  {
+   "id": "serv-ce-06",
+   "tipo": "CE",
+   "enunciado": "Cargos e funções públicos podem ser criados por decreto do Executivo, dispensando lei.",
+   "gabarito": "E",
+   "comentario": "Errado. Art. 37, § 5º: criação de cargos, funções e empregos exige LEI em cada ente federado — decreto não basta."
+  },
+  {
+   "id": "serv-ce-07",
+   "tipo": "CE",
+   "enunciado": "Servidores públicos não têm direito de greve conforme a Constituição.",
+   "gabarito": "E",
+   "comentario": "Errado. Art. 37, § 7º: o direito de greve é assegurado aos servidores, conforme lei que o regulamenta."
+  },
+  {
+   "id": "serv-ce-08",
+   "tipo": "CE",
+   "enunciado": "A estabilidade do servidor é absoluta e inviolável, sem qualquer exceção possível.",
+   "gabarito": "E",
+   "comentario": "Errado. Estabilidade tem exceções: sentença, processo administrativo regular, avaliação periódica de desempenho (art. 41)."
+  },
+  {
+   "id": "serv-ce-09",
+   "tipo": "CE",
+   "enunciado": "O Presidente da República é submetido ao regime de estágio probatório de 3 anos.",
+   "gabarito": "E",
+   "comentario": "Errado. Presidente é cargo eletivo; não segue o regime dos servidores públicos — não há estágio probatório."
+  },
+  {
+   "id": "serv-ce-10",
+   "tipo": "CE",
+   "enunciado": "Lei complementar é hierarquicamente superior a lei ordinária e só pode ser revogada por outra lei complementar.",
+   "gabarito": "C",
+   "comentario": "Correto. Lei complementar exige maioria absoluta; é superior e só revogável por outra LC (não por ordinária)."
+  },
+  {
+   "id": "serv-me-01",
+   "tipo": "ME",
+   "tag": "Legalidade",
+   "enunciado": "O princípio da legalidade na Administração Pública significa que",
+   "alternativas": [
+    "a Administração pode fazer tudo que não é expressamente proibido em lei",
+    "a Administração só pode fazer aquilo que lei expressamente autoriza",
+    "a Administração é livre de vinculações normativas para atuar com eficiência",
+    "leis ordinárias não se aplicam à atividade administrativa, apenas decretos",
+    "a Administração está vinculada ao que é legal apenas em matérias penais"
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B. Art. 37, caput: Administração só faz o autorizado (oposto do particular). A: para Adm., regra contrária. C: há vinculação total. D: leis valem sim. E: legalidade é geral."
+  },
+  {
+   "id": "serv-me-02",
+   "tipo": "ME",
+   "tag": "Estágio probatório",
+   "enunciado": "Servidor em estágio probatório de 3 anos pode ser",
+   "alternativas": [
+    "demitido apenas mediante processo administrativo formal com direito à defesa",
+    "automaticamente promovido após 2 anos de bom desempenho",
+    "exonerado sem justa causa, se não aprovado ao final do período",
+    "afastado indefinidamente sem qualquer avaliação de seu desempenho",
+    "transformado em servidor vitalício automaticamente após 1 ano"
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A. Art. 41, parágrafo 1º: estágio permite exoneração imotivada. B-original: não há promoção. D-original: há avaliação. E-original: nada de vitalício."
+  },
+  {
+   "id": "serv-me-03",
+   "tipo": "ME",
+   "tag": "Estabilidade",
+   "enunciado": "Servidor estável pode perder a estabilidade por",
+   "alternativas": [
+    "decisão arbitrária do Presidente da República, sem processo",
+    "falta em um único dia de trabalho, sem motivo comprovado",
+    "sentença judicial transitada em julgado, processo administrativo ou avaliação periódica",
+    "recusa em realizar atividades não previstas no plano de trabalho",
+    "opinião política discordante daquela defendida pelo governo"
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C. Art. 41, § 1º: as três formas legais. A: nenhuma arbitrariedade. B: uma falta não causa perda. D: pode recusar atividades ilícitas. E: liberdade política protegida."
+  },
+  {
+   "id": "serv-me-04",
+   "tipo": "ME",
+   "tag": "Acumulação",
+   "enunciado": "É permitido ao servidor público acumular",
+   "alternativas": [
+    "quantos cargos públicos desejar, sem limite constitucional",
+    "dois cargos de qualquer natureza, sem distinção de função",
+    "dois cargos de professor ou um professor mais um técnico-científico",
+    "três ou mais cargos técnicos, desde que nas mesmas autarquias",
+    "um cargo público com uma função de magistério, sem limite"
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C. Art. 37, inciso XVI: exatamente duas combinações permitidas. A: há limite. B: devem ser professor. D: máximo dois cargos. E: limite existe."
+  },
+  {
+   "id": "serv-me-05",
+   "tipo": "ME",
+   "tag": "Teto remuneratório",
+   "enunciado": "A remuneração de servidores municipais não pode ultrapassar",
+   "alternativas": [
+    "o subsídio do Prefeito Municipio",
+    "valor arbitrado pelo Prefeito conforme a capacidade orçamentária",
+    "o dobro do salário mínimo da região",
+    "o subsídio do Governador do Estado",
+    "o subsídio do Presidente da República"
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A. Art. 37, parágrafo 11: teto municipal é subsídio do Prefeito. B-original: não é múltiplo. C-original: era Governador. D: Governador é estadual. E: Presidente é federal."
+  },
+  {
+   "id": "serv-me-06",
+   "tipo": "ME",
+   "tag": "Criação de cargos",
+   "enunciado": "Cargos e funções públicos devem ser criados por",
+   "alternativas": [
+    "decreto do Executivo, conforme a necessidade administrativa",
+    "portaria da autoridade administrativa competente",
+    "lei em cada ente federado",
+    "resolução do tribunal administrativo competente",
+    "costume administrativo, com aprovação do sindicato"
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C. Art. 37, § 5º: lei em cada ente. A: decreto não basta. B: portaria não cria cargo. D: tribunal não tem poder. E: costume não cria direito público."
+  },
+  {
+   "id": "serv-me-07",
+   "tipo": "ME",
+   "tag": "Greve",
+   "enunciado": "O direito de greve de servidores públicos",
+   "alternativas": [
+    "é inexistente conforme a Constituição — servidores não podem greve",
+    "é assegurado, conforme lei que o regulamenta",
+    "depende de autorização prévia do Presidente da República",
+    "está limitado apenas a sindicatos, não ao servidor isolado",
+    "não pode ser regulamentado por lei, pois é direito absoluto"
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B. Art. 37, § 7º: direito assegurado, com regulamentação legal. A: existe sim. C: não precisa autorização. D: é direito do servidor. E: lei regula."
+  },
+  {
+   "id": "serv-me-08",
+   "tipo": "ME",
+   "tag": "Avaliação de desempenho",
+   "enunciado": "Servidor estável pode ser demitido por insuficiência em",
+   "alternativas": [
+    "uma única avaliação de desempenho realizada discricionariamente",
+    "avaliação periódica de desempenho conforme lei, com direito à defesa",
+    "avaliação sem regulamentação normativa, conforme critério do gestor",
+    "avaliação de comportamento político, conforme opiniões do governo",
+    "avaliação realizada apenas pelo tribunal administrativo, sem participação"
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B. Art. 41, § 1º, inciso II: avaliação periódica, regulada por lei. A: exige repetição e processo. C: exige regulação. D: avaliação política é vedada. E: gestor participa."
+  },
+  {
+   "id": "serv-me-09",
+   "tipo": "ME",
+   "tag": "Moralidade",
+   "enunciado": "O princípio da moralidade administrativa exige que",
+   "alternativas": [
+    "o servidor obedeça apenas à lei, ignorando questões éticas",
+    "a honestidade pública e conformidade com regras de conduta social sejam respeitadas",
+    "todos os atos sejam aprovados previamente pelo povo em referendo",
+    "o servidor não tenha qualquer vida privada ou opiniões pessoais",
+    "a lei ordinária seja a única fonte de conduta — o resto é dispensável"
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B. Art. 37, caput: moralidade é dever de honestidade e ética pública. A: é além da lei. C: não há referendo. D: vida privada é protegida. E: moralidade transcende a letra."
+  },
+  {
+   "id": "serv-me-10",
+   "tipo": "ME",
+   "tag": "Hierarquia",
+   "enunciado": "Lei complementar, em relação a lei ordinária,",
+   "alternativas": [
+    "é inferior hierarquicamente, podendo ser revogada por lei ordinária posterior",
+    "é superior hierarquicamente, podendo ser revogada apenas por outra lei complementar",
+    "é idêntica em hierarquia — a diferença é apenas de procedimento",
+    "nunca pode ser revogada, nem mesmo por emenda constitucional",
+    "só é válida se aprovada em referendo convocado pelo Congresso"
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B. Lei complementar exige maioria absoluta; é superior. A: é superior, não inferior. C: hierarquias diferentes. D: pode ser revogada por outra LC. E: não exige referendo."
+  }
+ ]
+}

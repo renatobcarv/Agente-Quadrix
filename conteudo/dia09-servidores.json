@@ -1,0 +1,19 @@
+{
+  "id": "dia09-servidores-publicos",
+  "kicker": "DIREITO CONSTITUCIONAL",
+  "titulo": "Servidores<br>Públicos",
+  "subtitulo": "Arts. 37–41 CF/88 — legalidade, estabilidade, remuneração e estágio probatório, com 20 questões (10 C/E + 10 A–E) e gabarito comentado",
+  "badge": "Dia 9 · 20 questões para fazer agora",
+  "cor": "#2d5a3d",
+  "cor_escura": "#1f4730",
+  "arquivo_saida": "Dia9_Servidores_Publicos_v2",
+  "secoes": [
+    {"titulo": "1. Princípios da Administração Pública (art. 37, caput)", "html": "<p>A Administração Pública deve obedecer a <b>cinco</b> princípios fundamentais: <b>Legalidade</b> (não pode fazer nada sem lei — oposto do particular, que pode fazer tudo que não é proibido), <b>Impessoalidade</b> (sem discriminação ou favorecimento), <b>Moralidade</b> (honestidade e ética pública), <b>Publicidade</b> (transparência de atos) e <b>Eficiência</b> (melhor desempenho). O princípio mais cobrado em concurso é a <b>legalidade</b>.</p>", "quebra": false},
+    {"titulo": "2. Regime dos servidores públicos (art. 39)", "html": "<p>Os servidores públicos civis são regidos por <b>lei em cada ente federado</b> (União, Estado, DF, Município). Podem ter regime <b>estatutário</b> (por lei) ou celetista (contrato por lei, com regras da CLT). Seu <b>subsídio</b> é valor fixo, único, por cargo/função, sem adicionais (diferencia-se de \"salário\"). São <b>vedados</b> acréscimos pecuniários não previstos em lei.</p>", "quebra": false},
+    {"titulo": "3. Estágio probatório (art. 41, § 1º)", "html": "<p>Todo servidor de novo ingresso cumpre <b>3 anos de estágio probatório</b>. Durante este período, pode ser <b>exonerado sem justa causa</b> (se não aprovado). Após 3 anos, se aprovado, adquire <b>estabilidade</b>. O servidor pode ser demitido apenas por <b>sentença judicial, processo administrativo</b> (com contraditório e ampla defesa) ou <b>insuficiência em avaliação periódica de desempenho</b>.</p>", "quebra": false},
+    {"titulo": "4. Acumulação de cargos (art. 37, inciso XVI)", "html": "<p><b>Regra geral:</b> proibido acumular. <b>Exceções permitidas:</b> dois cargos de professor; um cargo de professor + um técnico ou científico. Limite máximo: <b>dois cargos</b> (não três ou mais). Indenizações e pensões não são consideradas \"acumulação\".</p>", "quebra": false},
+    {"titulo": "5. Teto remuneratório e subsídio (art. 37, § 11)", "html": "<p>A remuneração de servidores em cada ente não pode ultrapassar o subsídio do chefe daquele ente: <b>União</b> → subsídio do Presidente; <b>Estado</b> → subsídio do Governador; <b>Município</b> → subsídio do Prefeito; <b>DF</b> → subsídio do Governador. Este é o <b>\"teto constitucional\"</b> e é inviolável.</p>", "quebra": false},
+    {"titulo": "6. Criação de cargos e direito de greve", "html": "<p>Cargos e funções públicos devem ser criados por <b>LEI em cada ente federado</b> (art. 37, § 5º) — decreto não basta. Servidores públicos <b>têm direito de greve</b>, conforme <b>lei que o regulamenta</b> (art. 37, § 7º). A lei define limites para preservar funcionamento de serviços essenciais.</p>", "quebra": true}
+  ],
+  "bancos": ["constitucional-servidores-v2"]
+}
