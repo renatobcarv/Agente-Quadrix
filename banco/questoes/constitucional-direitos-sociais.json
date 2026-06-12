@@ -1,0 +1,413 @@
+{
+ "materia": "Direito Constitucional",
+ "tema": "Direitos sociais (arts. 6º–11)",
+ "revisar": true,
+ "questoes": [
+  {
+   "id": "constitucional-direitos-sociais-ce-01",
+   "tipo": "CE",
+   "enunciado": "O transporte é direito social expressamente previsto no art. 6º da Constituição.",
+   "gabarito": "C",
+   "comentario": "Correto. O transporte foi incluído no rol do art. 6º pela EC 90/2015. Moradia (EC 26/2000) e alimentação (EC 64/2010) também são inclusões posteriores."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-02",
+   "tipo": "CE",
+   "enunciado": "A licença à gestante, sem prejuízo do emprego e do salário, tem duração de noventa dias.",
+   "gabarito": "E",
+   "comentario": "Errado. A CF fixa 120 dias (inciso XVIII do art. 7º). A troca do número (90, 180) é a armadilha típica."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-03",
+   "tipo": "CE",
+   "enunciado": "O salário mínimo é fixado por estado, conforme o custo de vida de cada região.",
+   "gabarito": "E",
+   "comentario": "Errado. O salário mínimo é fixado em lei e nacionalmente unificado (art. 7º, IV). O piso regional, por lei complementar, é coisa distinta."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-04",
+   "tipo": "CE",
+   "enunciado": "A remuneração do serviço extraordinário é superior à do normal em, no mínimo, cinquenta por cento.",
+   "gabarito": "C",
+   "comentario": "Correto. É a literalidade do art. 7º, XVI: hora extra com acréscimo mínimo de 50%."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-05",
+   "tipo": "CE",
+   "enunciado": "É proibido qualquer trabalho aos menores de dezoito anos.",
+   "gabarito": "E",
+   "comentario": "Errado. Proíbe-se o trabalho a menores de 16, salvo aprendiz a partir dos 14. Os 18 anos referem-se à vedação do trabalho noturno, perigoso ou insalubre (art. 7º, XXXIII)."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-06",
+   "tipo": "CE",
+   "enunciado": "Vigora a unicidade sindical: é vedada a criação de mais de um sindicato na mesma base territorial.",
+   "gabarito": "C",
+   "comentario": "Correto. O art. 8º, II, consagra a unicidade, sendo a base territorial não inferior a um município."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-07",
+   "tipo": "CE",
+   "enunciado": "Compete ao sindicato, e não aos trabalhadores, decidir sobre a oportunidade de exercer a greve.",
+   "gabarito": "E",
+   "comentario": "Errado. O art. 9º atribui aos próprios trabalhadores a decisão sobre a oportunidade de exercer a greve e os interesses a defender."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-08",
+   "tipo": "CE",
+   "enunciado": "As férias anuais são remuneradas com, pelo menos, um terço a mais do que o salário normal.",
+   "gabarito": "C",
+   "comentario": "Correto. Literalidade do art. 7º, XVII. Dizer “metade” ou “o dobro” seria o erro."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-09",
+   "tipo": "CE",
+   "enunciado": "O décimo terceiro salário tem como base de cálculo a metade da remuneração do mês de dezembro.",
+   "gabarito": "E",
+   "comentario": "Errado. O 13º tem por base a remuneração integral ou o valor da aposentadoria (art. 7º, VIII)."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-10",
+   "tipo": "CE",
+   "enunciado": "Ninguém é obrigado a filiar-se ou a manter-se filiado a sindicato.",
+   "gabarito": "C",
+   "comentario": "Correto. É a liberdade de filiação sindical (art. 8º, V)."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-11",
+   "tipo": "CE",
+   "enunciado": "A proteção da relação de emprego contra despedida arbitrária é automática, independentemente de lei.",
+   "gabarito": "E",
+   "comentario": "Errado. O art. 7º, I, remete a proteção a lei complementar, que preverá indenização compensatória, entre outros direitos."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-12",
+   "tipo": "CE",
+   "enunciado": "O aviso prévio é proporcional ao tempo de serviço, sendo, no mínimo, de trinta dias.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 7º, XXI: aviso prévio proporcional, com piso de 30 dias."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-13",
+   "tipo": "CE",
+   "enunciado": "A assistência gratuita em creches e pré-escolas é assegurada aos filhos dos trabalhadores até os seis anos de idade.",
+   "gabarito": "E",
+   "comentario": "Errado. O art. 7º, XXV, assegura creche e pré-escola do nascimento até os 5 anos de idade."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-14",
+   "tipo": "CE",
+   "enunciado": "Nas empresas de mais de duzentos empregados, é assegurada a eleição de um representante dos trabalhadores.",
+   "gabarito": "C",
+   "comentario": "Correto. É o art. 11 da Constituição. Trocar 200 por 100 ou 500 é a pegadinha."
+  },
+  {
+   "id": "constitucional-direitos-sociais-ce-15",
+   "tipo": "CE",
+   "enunciado": "A participação nos lucros ou resultados integra a remuneração do empregado para todos os efeitos.",
+   "gabarito": "E",
+   "comentario": "Errado. O art. 7º, XI, prevê a participação nos lucros desvinculada da remuneração."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-01",
+   "tipo": "ME",
+   "tag": "Art. 6º",
+   "enunciado": "Assinale a opção que apresenta um direito social expressamente previsto no art. 6º.",
+   "alternativas": [
+    "o transporte",
+    "o pleno emprego",
+    "o saneamento básico",
+    "o acesso à internet",
+    "o crédito popular"
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: o transporte integra o rol (EC 90/2015). ✗B, ✗C, ✗D, ✗E: pleno emprego, saneamento, internet e crédito popular não constam do art. 6º."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-02",
+   "tipo": "ME",
+   "tag": "Art. 7º — gestante",
+   "enunciado": "A licença à gestante, sem prejuízo do emprego e do salário, tem a duração de",
+   "alternativas": [
+    "sessenta dias.",
+    "cento e vinte dias.",
+    "noventa dias.",
+    "cento e oitenta dias.",
+    "trinta dias."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: 120 dias (art. 7º, XVIII). ✗A, ✗C, ✗D, ✗E: os demais números são trocas-armadilha."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-03",
+   "tipo": "ME",
+   "tag": "Art. 7º — hora extra",
+   "enunciado": "A remuneração do serviço extraordinário deve ser superior à do normal, no mínimo, em",
+   "alternativas": [
+    "vinte por cento.",
+    "trinta por cento.",
+    "cinquenta por cento.",
+    "cem por cento.",
+    "setenta por cento."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: acréscimo mínimo de 50% (art. 7º, XVI). ✗A, ✗B, ✗D, ✗E: percentuais incorretos."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-04",
+   "tipo": "ME",
+   "tag": "Art. 7º — jornada",
+   "enunciado": "A duração do trabalho normal, salvo negociação, não deve ser superior a",
+   "alternativas": [
+    "seis horas diárias e quarenta e quatro semanais.",
+    "oito horas diárias e quarenta e oito semanais.",
+    "dez horas diárias e quarenta e quatro semanais.",
+    "oito horas diárias e quarenta e quatro semanais.",
+    "doze horas diárias e trinta e seis semanais."
+   ],
+   "gabarito": 3,
+   "comentario": "Gabarito D: 8h diárias e 44h semanais (art. 7º, XIII). ✗A: 6h é o turno ininterrupto de revezamento. ✗B: não são 48 semanais. ✗C, ✗E: números incorretos."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-05",
+   "tipo": "ME",
+   "tag": "Art. 7º — idade",
+   "enunciado": "Quanto à idade para o trabalho, é proibido o trabalho a menores de",
+   "alternativas": [
+    "quatorze anos, sem exceção.",
+    "dezoito anos em qualquer atividade.",
+    "doze anos, salvo aprendiz.",
+    "dezesseis anos, salvo aprendiz a partir dos doze.",
+    "dezesseis anos, salvo na condição de aprendiz, a partir dos quatorze."
+   ],
+   "gabarito": 4,
+   "comentario": "Gabarito E: proibido a menores de 16, salvo aprendiz a partir dos 14 (art. 7º, XXXIII). ✗B: os 18 anos referem-se ao trabalho noturno/perigoso/insalubre. ✗A, ✗C, ✗D: idades trocadas."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-06",
+   "tipo": "ME",
+   "tag": "Art. 8º — sindical",
+   "enunciado": "Acerca da organização sindical, assinale a opção correta.",
+   "alternativas": [
+    "É vedada a criação de mais de um sindicato na mesma base territorial, não inferior a um município.",
+    "Vigora a pluralidade sindical na mesma base territorial.",
+    "É permitida a interferência do Poder Público para garantir a ordem.",
+    "A filiação ao sindicato da categoria é obrigatória.",
+    "O aposentado filiado não pode votar nem ser votado."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: unicidade sindical (art. 8º, II). ✗B: não é pluralidade. ✗C: é vedada a interferência do Poder Público. ✗D: a filiação é livre. ✗E: o aposentado filiado vota e é votado."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-07",
+   "tipo": "ME",
+   "tag": "Art. 9º — greve",
+   "enunciado": "A respeito do direito de greve, assinale a opção correta.",
+   "alternativas": [
+    "Depende de autorização prévia do Ministério do Trabalho.",
+    "Compete aos trabalhadores decidir sobre a oportunidade de exercê-lo e os interesses a defender.",
+    "Compete exclusivamente ao sindicato deflagrar o movimento.",
+    "É vedado a todos os trabalhadores da iniciativa privada.",
+    "É proibido em qualquer atividade essencial."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: são os trabalhadores que decidem (art. 9º). ✗A: não depende de autorização. ✗C: a decisão é dos trabalhadores, não só do sindicato. ✗D: a greve é assegurada. ✗E: nas essenciais a lei regula o atendimento das necessidades inadiáveis, não há proibição absoluta."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-08",
+   "tipo": "ME",
+   "tag": "Art. 7º — férias",
+   "enunciado": "As férias anuais remuneradas são asseguradas com o pagamento de",
+   "alternativas": [
+    "pelo menos um terço a mais do que o salário normal.",
+    "pelo menos a metade a mais do que o salário normal.",
+    "valor igual ao salário normal, sem acréscimo.",
+    "pelo menos o dobro do salário normal.",
+    "pelo menos dois terços a mais do que o salário normal."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: salário + no mínimo 1/3 (art. 7º, XVII). ✗B, ✗D, ✗E: frações incorretas. ✗C: há acréscimo obrigatório."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-09",
+   "tipo": "ME",
+   "tag": "Art. 7º — aviso prévio",
+   "enunciado": "O aviso prévio, proporcional ao tempo de serviço, é assegurado com duração",
+   "alternativas": [
+    "fixa de quinze dias.",
+    "mínima de trinta dias, nos termos da lei.",
+    "máxima de trinta dias.",
+    "fixa de sessenta dias.",
+    "definida só em convenção coletiva, sem piso legal."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: proporcional, com mínimo de 30 dias (art. 7º, XXI). ✗A, ✗C, ✗D: prazos incorretos. ✗E: há piso constitucional."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-10",
+   "tipo": "ME",
+   "tag": "Art. 7º — 13º",
+   "enunciado": "O décimo terceiro salário tem como base de cálculo",
+   "alternativas": [
+    "metade da remuneração de dezembro.",
+    "o valor de um salário mínimo.",
+    "a remuneração integral ou o valor da aposentadoria.",
+    "apenas o salário-base, sem adicionais.",
+    "a média dos seis últimos salários."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: remuneração integral ou valor da aposentadoria (art. 7º, VIII). ✗A, ✗B, ✗D, ✗E: bases de cálculo incorretas."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-11",
+   "tipo": "ME",
+   "tag": "Art. 11",
+   "enunciado": "É assegurada a eleição de um representante dos trabalhadores nas empresas com",
+   "alternativas": [
+    "mais de duzentos empregados.",
+    "mais de cinquenta empregados.",
+    "mais de cem empregados.",
+    "mais de quinhentos empregados.",
+    "qualquer número de empregados."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: mais de 200 empregados (art. 11). ✗B, ✗C, ✗D: números incorretos. ✗E: há limite mínimo."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-12",
+   "tipo": "ME",
+   "tag": "Art. 7º — despedida",
+   "enunciado": "A proteção da relação de emprego contra despedida arbitrária, conforme o art. 7º, I,",
+   "alternativas": [
+    "é automática e independe de regulamentação.",
+    "depende de lei complementar, que preverá indenização compensatória.",
+    "foi disciplinada por medida provisória.",
+    "aplica-se só a servidores estatutários.",
+    "vigora só para contratos por prazo determinado."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: depende de lei complementar. ✗A: não é automática. ✗C: não foi por MP. ✗D, ✗E: não há essa restrição."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-13",
+   "tipo": "ME",
+   "tag": "Art. 7º — menor",
+   "enunciado": "É vedado o trabalho noturno, perigoso ou insalubre aos",
+   "alternativas": [
+    "maiores de dezesseis e menores de dezoito anos apenas.",
+    "menores de quatorze anos.",
+    "menores de dezoito anos.",
+    "menores de dezesseis anos, salvo aprendiz.",
+    "menores de vinte e um anos."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: a vedação alcança todos os menores de 18 anos (art. 7º, XXXIII). ✗A: não se limita à faixa 16–18. ✗B, ✗D, ✗E: idades incorretas."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-14",
+   "tipo": "ME",
+   "tag": "Art. 8º — filiação",
+   "enunciado": "Sobre a filiação sindical, a Constituição estabelece que",
+   "alternativas": [
+    "todo trabalhador é obrigado a filiar-se ao sindicato da categoria.",
+    "a filiação depende de autorização do empregador.",
+    "só trabalhadores na ativa podem filiar-se.",
+    "ninguém será obrigado a filiar-se ou a manter-se filiado.",
+    "a desfiliação depende de autorização judicial."
+   ],
+   "gabarito": 3,
+   "comentario": "Gabarito D: filiação livre (art. 8º, V). ✗A: não é obrigatória. ✗B: não depende do empregador. ✗C: aposentado também se filia. ✗E: a desfiliação é livre."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-15",
+   "tipo": "ME",
+   "tag": "Art. 7º — creche",
+   "enunciado": "A assistência gratuita em creches e pré-escolas é assegurada do nascimento até os",
+   "alternativas": [
+    "três anos.",
+    "quatro anos.",
+    "seis anos.",
+    "sete anos.",
+    "cinco anos."
+   ],
+   "gabarito": 4,
+   "comentario": "Gabarito E: até os 5 anos de idade (art. 7º, XXV). ✗A, ✗B, ✗C, ✗D: idades incorretas."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-16",
+   "tipo": "ME",
+   "tag": "Art. 7º — lucros",
+   "enunciado": "A participação nos lucros ou resultados da empresa é",
+   "alternativas": [
+    "desvinculada da remuneração, conforme definido em lei.",
+    "integrante da remuneração para todos os efeitos.",
+    "obrigatória apenas para estatais.",
+    "calculada sempre em um salário mínimo.",
+    "vedada nas empresas privadas."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: desvinculada da remuneração (art. 7º, XI). ✗B: justamente não integra a remuneração. ✗C, ✗D, ✗E: afirmações sem respaldo no texto."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-17",
+   "tipo": "ME",
+   "tag": "Art. 7º — salário mínimo",
+   "enunciado": "Quanto ao salário mínimo, o art. 7º estabelece que ele é",
+   "alternativas": [
+    "fixado por decreto e diferenciado por estado.",
+    "fixado em lei, nacionalmente unificado, vedada a vinculação para qualquer fim.",
+    "passível de vinculação como índice.",
+    "reajustado a critério do empregador.",
+    "destinado a atender só o trabalhador, excluída a família."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: fixado em lei, nacionalmente unificado, vedada a vinculação (art. 7º, IV), atendendo trabalhador e família. ✗A: não é por decreto nem por estado. ✗C: a vinculação é vedada. ✗D: há reajustes legais. ✗E: alcança a família."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-18",
+   "tipo": "ME",
+   "tag": "Art. 7º — irredutibilidade",
+   "enunciado": "A irredutibilidade do salário comporta exceção quando houver",
+   "alternativas": [
+    "determinação unilateral do empregador.",
+    "autorização verbal do empregado.",
+    "convenção ou acordo coletivo de trabalho.",
+    "ordem do Ministério do Trabalho.",
+    "previsão em regulamento interno."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: a redução só por convenção ou acordo coletivo (art. 7º, VI). ✗A, ✗B, ✗D, ✗E: nenhum desses autoriza a redução salarial."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-19",
+   "tipo": "ME",
+   "tag": "Art. 6º — emendas",
+   "enunciado": "Assinale o direito social incluído no art. 6º por emenda posterior a 1988.",
+   "alternativas": [
+    "a saúde",
+    "a educação",
+    "a previdência social",
+    "o transporte",
+    "o trabalho"
+   ],
+   "gabarito": 3,
+   "comentario": "Gabarito D: o transporte foi incluído pela EC 90/2015. ✗A, ✗B, ✗C, ✗E: saúde, educação, previdência e trabalho constam do texto original."
+  },
+  {
+   "id": "constitucional-direitos-sociais-me-20",
+   "tipo": "ME",
+   "tag": "Art. 9º — greve",
+   "enunciado": "Sobre a greve em atividades essenciais, é correto afirmar que",
+   "alternativas": [
+    "a greve é totalmente proibida nessas atividades.",
+    "o sindicato é obrigado a manter 100% dos serviços.",
+    "o Ministério do Trabalho decide sobre a greve.",
+    "a greve dispensa qualquer comunicação prévia.",
+    "a lei definirá os serviços essenciais e o atendimento das necessidades inadiáveis da comunidade."
+   ],
+   "gabarito": 4,
+   "comentario": "Gabarito E: a lei define os serviços essenciais e assegura o atendimento das necessidades inadiáveis (art. 9º, §1º). ✗A: não há proibição total. ✗B: não se exige 100%. ✗C: a decisão é dos trabalhadores. ✗D: há deveres de comunicação."
+  }
+ ],
+ "nota_revisao": "Distratores: correta tende a ser a mais longa. Rebalancear tamanhos."
+}

@@ -1,0 +1,338 @@
+{
+ "materia": "Direito Constitucional",
+ "tema": "Servidores públicos (arts. 37–41)",
+ "revisar": true,
+ "questoes": [
+  {
+   "id": "constitucional-servidores-ce-01",
+   "tipo": "CE",
+   "enunciado": "A Administracao Publica direta ou indireta de qualquer dos Poderes deve obdecer ao princípio da legalidade.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 37: legalidade é fundamento (nao pode fazer nada sem lei)."
+  },
+  {
+   "id": "constitucional-servidores-ce-02",
+   "tipo": "CE",
+   "enunciado": "Servidor publico em estagio probatorio pode ser exonerado sem justa causa.",
+   "gabarito": "C",
+   "comentario": "Correto. O estagio probatorio permite exoneracao imotivada; após 3 anos, adquire estabilidade."
+  },
+  {
+   "id": "constitucional-servidores-ce-03",
+   "tipo": "CE",
+   "enunciado": "A estabilidade do servidor publico é absoluta; nao pode ser perfeita em hipotese alguma.",
+   "gabarito": "E",
+   "comentario": "Errado. Estabilidade pode ser perdida por sentenca judicial, processo administrativo ou avaliacao periodica de desempenho."
+  },
+  {
+   "id": "constitucional-servidores-ce-04",
+   "tipo": "CE",
+   "enunciado": "Lei municipal pode criar cargos de provimento vitalicio.",
+   "gabarito": "E",
+   "comentario": "Errado. Cargo vitalicio é proibido desde 1988 (art. 41). Todos os cargos devem ter estagio probatorio de 3 anos."
+  },
+  {
+   "id": "constitucional-servidores-ce-05",
+   "tipo": "CE",
+   "enunciado": "O servidor estavel so pode ser demitido por sentenca judicial.",
+   "gabarito": "E",
+   "comentario": "Errado. Pode ser demitido também por processo administrativo (com direito a defesa) ou por insuficiencia em avaliacao de desempenho."
+  },
+  {
+   "id": "constitucional-servidores-ce-06",
+   "tipo": "CE",
+   "enunciado": "Acumulacao de cargos publicos é proibida em qualquer hipotese.",
+   "gabarito": "E",
+   "comentario": "Errado. É permitida em casos específicos: dois cargos de professor; um cargo de professor + tecnico/cientif; dois magistério; médico + professor (art. 37, inciso XVI)."
+  },
+  {
+   "id": "constitucional-servidores-ce-07",
+   "tipo": "CE",
+   "enunciado": "A remuneracao dos servidores publicos deve respeitar o limite constitucional de subsídio do Presidente da Republica.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 37, parágrafo 11: remuneracao nao pode ultrapassar o subsídio presidencial (regra do teto)."
+  },
+  {
+   "id": "constitucional-servidores-ce-08",
+   "tipo": "CE",
+   "enunciado": "Servidores publicos estaduais podem receber remuneracao superior ao subsídio do Governador.",
+   "gabarito": "E",
+   "comentario": "Errado. O teto constitucional é o subsídio do Governador para Estado e do Prefeito para Municipio (art. 37, parágrafo 11)."
+  },
+  {
+   "id": "constitucional-servidores-ce-09",
+   "tipo": "CE",
+   "enunciado": "Servidor publico nao tem direito a greve.",
+   "gabarito": "E",
+   "comentario": "Errado. O direito de greve é assegurado a servidores publicos, mas a lei pode regulamentar (art. 37, parágrafo 7º)."
+  },
+  {
+   "id": "constitucional-servidores-ce-10",
+   "tipo": "CE",
+   "enunciado": "Despedida sem justa causa de servidor estavel é permitida em tempos de crise economica.",
+   "gabarito": "E",
+   "comentario": "Errado. Estabilidade protege contra demissao sem justa causa, ponto. Crise economica nao autoriza arbitrio."
+  },
+  {
+   "id": "constitucional-servidores-ce-11",
+   "tipo": "CE",
+   "enunciado": "O Presidente da Republica pode perder a estabilidade por avaliacao periodica de desempenho.",
+   "gabarito": "E",
+   "comentario": "Errado. Presidente é  cargo eletivo, nao se submete ao regime dos servidores publicos."
+  },
+  {
+   "id": "constitucional-servidores-ce-12",
+   "tipo": "CE",
+   "enunciado": "Todos os cargos publicos devem ser criados por lei.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 37, parágrafo 5º: criacao de cargos, funcoes, empregos só por lei (em cada ente)."
+  },
+  {
+   "id": "constitucional-servidores-ce-13",
+   "tipo": "CE",
+   "enunciado": "Servidor publico em estagio probatorio adquire estabilidade automaticamente apos 3 anos.",
+   "gabarito": "C",
+   "comentario": "Correto. Art. 41, parágrafo 1º: apos 3 anos de estagio probatorio, servidor adquire estabilidade."
+  },
+  {
+   "id": "constitucional-servidores-ce-14",
+   "tipo": "CE",
+   "enunciado": "Pode haver criacao de novos direitos sociais sem lei complementar.",
+   "gabarito": "C",
+   "comentario": "Correto. Lei ordinaria é suficiente para criar direitos sociais; lei complementar é exceção."
+  },
+  {
+   "id": "constitucional-servidores-ce-15",
+   "tipo": "CE",
+   "enunciado": "Leis ordinarias podem revogar lei complementar.",
+   "gabarito": "E",
+   "comentario": "Errado. Lei ordinaria nao pode revogar lei complementar; apenas outra lei complementar pode."
+  },
+  {
+   "id": "constitucional-servidores-me-01",
+   "tipo": "ME",
+   "tag": "Legalidade",
+   "enunciado": "O princípio da legalidade na Administracao Publica significa que",
+   "alternativas": [
+    "a Administracao pode fazer tudo aquilo nao proibido em lei.",
+    "a Administracao so pode fazer aquilo expressamente autorizado em lei.",
+    "nao ha necessidade de lei para atos da Administracao.",
+    "a Administracao é livre de vinculacoes legais.",
+    "leis podem nao ser cumpridas conforme a conveniencia."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: Administracao so faz o que lei permite (art. 37). A: incorreto (deve ser autorizado). C, D, E: violam legalidade."
+  },
+  {
+   "id": "constitucional-servidores-me-02",
+   "tipo": "ME",
+   "tag": "Estagio probatorio",
+   "enunciado": "Servidor em estagio probatorio de 3 anos pode ser",
+   "alternativas": [
+    "exonerado sem justa causa, se nao aprovado ao final.",
+    "automaticamente promovido apos 2 anos.",
+    "demitido apenas por justa causa comprovada.",
+    "afastado para sempre sem qualquer avaliacao.",
+    "transformado em vitalicio."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: estagio permite exoneracao imotivada se nao aprovado (art. 41, parágrafo 1º). B: nao há promocao automatica. C: nao é necessaria justa causa. D, E: incorretos."
+  },
+  {
+   "id": "constitucional-servidores-me-03",
+   "tipo": "ME",
+   "tag": "Estabilidade",
+   "enunciado": "Servidor estavel pode perder a estabilidade por",
+   "alternativas": [
+    "decisao arbitraria do Presidente.",
+    "falta de comparecimento em um dia de trabalho.",
+    "sentenca judicial transitada em julgado, processo administrativo ou insuficiencia em avaliacao periodica.",
+    "recusa em realizar atividades extras nao pagas.",
+    "opinioes politicas discordantes."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: as tres hipoteses que permitem perda de estabilidade (art. 41, parágrafo 1º, incisos). A: arbitrio proibido. B: exagerado. D, E: proibidos."
+  },
+  {
+   "id": "constitucional-servidores-me-04",
+   "tipo": "ME",
+   "tag": "Acumulacao",
+   "enunciado": "E permitido ao servidor publico acumular",
+   "alternativas": [
+    "dois cargos quaisquer.",
+    "tres ou mais funcoes.",
+    "dois cargos de professor ou um professor + um de tecnico/cientifico.",
+    "cargos sem limite.",
+    "funcoes eletivas com cargos tecnicos simultaneamente."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: excecoes permitidas listadas no art. 37, inciso XVI. A, B: limite dois. D: ha limite. E: incompatibilidades."
+  },
+  {
+   "id": "constitucional-servidores-me-05",
+   "tipo": "ME",
+   "tag": "Teto remuneratorio",
+   "enunciado": "A remuneracao de servidores estaduais nao pode ultrapassar",
+   "alternativas": [
+    "o dobro do salario minimo.",
+    "valor arbitrado pelo Governador.",
+    "o subsídio do Governador.",
+    "o salario minimo.",
+    "o subsídio do Presidente."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: teto estadual é subsídio do Governador; Federal é subsídio do Presidente (art. 37, parágrafo 11). E: apenas para federal."
+  },
+  {
+   "id": "constitucional-servidores-me-06",
+   "tipo": "ME",
+   "tag": "Criacao de cargos",
+   "enunciado": "Cargos e funcoes publicos devem ser criados por",
+   "alternativas": [
+    "decreto do Executivo.",
+    "portaria da administracao.",
+    "lei em cada ente.",
+    "decisao do tribunal.",
+    "costume administrativo."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: lei em cada ente federado (art. 37, parágrafo 5º). A, B, D, E: nao têm competencia."
+  },
+  {
+   "id": "constitucional-servidores-me-07",
+   "tipo": "ME",
+   "tag": "Regime estatutario",
+   "enunciado": "Servidores publicos civis nao podem ser regidos por",
+   "alternativas": [
+    "consolidacao das leis trabalhistas (CLT).",
+    "lei local (estatuto).",
+    "regime juridico unico.",
+    "direito administrativo.",
+    "Constituicao Federal."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: CLT é para setor privado; publico segue estatuto ou regime juridico (art. 39). B, C, D, E: sao aplicaveis."
+  },
+  {
+   "id": "constitucional-servidores-me-08",
+   "tipo": "ME",
+   "tag": "Greve",
+   "enunciado": "O direito de greve de servidores publicos",
+   "alternativas": [
+    "é inexistente; servidores nao podem greve.",
+    "é assegurado, conforme lei que o regulamenta.",
+    "depende de autorizacao do Presidente.",
+    "é limitado a sindicatos.",
+    "nao pode ser regulado por lei."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: direito assegurado, regulado por lei (art. 37, parágrafo 7º). A: existe. C: nao depende de autorizacao. D: é direito do servidor. E: lei regula."
+  },
+  {
+   "id": "constitucional-servidores-me-09",
+   "tipo": "ME",
+   "tag": "Avaliacao de desempenho",
+   "enunciado": "Servidor estavel pode ser demitido por insuficiencia em",
+   "alternativas": [
+    "uma unica avaliacao.",
+    "avaliacao periodica de desempenho conforme lei.",
+    "avaliacao escolhida arbitrariamente.",
+    "avaliacao sem direito a defesa.",
+    "avaliacao sem regulamentacao."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: avaliacao periodica conforme lei, com devido processo (art. 41, parágrafo 1º, inciso II). A: exige repetidao. C, D, E: violam direitos."
+  },
+  {
+   "id": "constitucional-servidores-me-10",
+   "tipo": "ME",
+   "tag": "Limite de mandato",
+   "enunciado": "Presidente da Republica tem mandato de",
+   "alternativas": [
+    "2 anos.",
+    "3 anos.",
+    "4 anos, com reeleicao permitida uma vez.",
+    "4 anos, sem possibilidade de reeleicao.",
+    "5 anos."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: 4 anos, reelegivél uma vez (maximo 8 anos) (art. 82). A, B: incorretos. D: reeleicao é permitida. E: incorreto."
+  },
+  {
+   "id": "constitucional-servidores-me-11",
+   "tipo": "ME",
+   "tag": "Conselho Nacional de Justica",
+   "enunciado": "O CNJ é responsavel por",
+   "alternativas": [
+    "julgar causas civeis e criminais.",
+    "controlar administrativa e financeiramente o Poder Judiciario.",
+    "editar codigos de processo.",
+    "criar novos tribunais.",
+    "substituir o STF."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: CNJ controla Judiciario (art. 103-B). A: nao julga. C, D: outras competencias. E: nao substitui STF."
+  },
+  {
+   "id": "constitucional-servidores-me-12",
+   "tipo": "ME",
+   "tag": "Emendas constitucionais",
+   "enunciado": "Proposta de emenda a Constituicao pode ser rejeitada por",
+   "alternativas": [
+    "maioria simples do Congresso.",
+    "maioria dos dois terços do Senado apenas.",
+    "maioria de tres quintos em duas votacoes em cada Casa.",
+    "decisao do STF.",
+    "veto do Presidente."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: exige tres quintos em ambas as Casas, em dois turnos (art. 60, parágrafo 2º). A: nao é maioria simples. B: exige ambas as Casas. D, E: nao têm essas competencias."
+  },
+  {
+   "id": "constitucional-servidores-me-13",
+   "tipo": "ME",
+   "tag": "Mandado de injuncao",
+   "enunciado": "Mandado de injuncao é cabível quando",
+   "alternativas": [
+    "existe lesao a direito.",
+    "falta norma regulamentadora que inviabiliza direito constitucional.",
+    "ha ameaca a liberdade de locomocao.",
+    "se quer conhecer dados pessoais.",
+    "ha abuso de autoridade."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: injuncao combate omissao legislativa (art. 5º, inciso LXXI). A: é mandado seg. C: é habeas corpus. D: é habeas data. E: é mandado seg."
+  },
+  {
+   "id": "constitucional-servidores-me-14",
+   "tipo": "ME",
+   "tag": "Subsidio",
+   "enunciado": "Subsidio nada mais é do que",
+   "alternativas": [
+    "bonificacao voluntaria.",
+    "salario fixado conforme o nivel salarial de cada um.",
+    "valor unico de remuneracao estabelecido em lei, por cargo ou funcao.",
+    "valor variavel conforme desempenho.",
+    "complemento de renda."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: subsidio é valor fixo, unico, por cargo/funcao, sem adicionais (art. 39, parágrafo 1º). A: nao é voluntario. B, D: podem variar indevidamente. E: é parte principal da remuneracao."
+  },
+  {
+   "id": "constitucional-servidores-me-15",
+   "tipo": "ME",
+   "tag": "Princípio da moralidade",
+   "enunciado": "O princípio da moralidade administrativa exige",
+   "alternativas": [
+    "honestidade publica e conformidade com regras de conduta social.",
+    "apenas cumprimento formal da lei.",
+    "que todos os atos sejam apreciados pelo povo.",
+    "inexistencia de qualquer controle.",
+    "liberdade absoluta de conducao."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: moralidade é dever de honestidade e respeito a etica publica (art. 37, caput). B: vai alem do formal. C: nao é necessario. D, E: ha controle."
+  }
+ ],
+ "nota_revisao": "Acentos parciais, completar p/ 35 questoes."
+}

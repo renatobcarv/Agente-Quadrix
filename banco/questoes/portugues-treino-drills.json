@@ -1,0 +1,607 @@
+{
+ "materia": "Língua Portuguesa",
+ "tema": "Porquês, classes e ortografia (drills)",
+ "revisar": false,
+ "questoes": [
+  {
+   "id": "portugues-treino-drills-porque-01",
+   "tipo": "CE",
+   "enunciado": "Não sei por que ele faltou à reunião.",
+   "gabarito": "C",
+   "comentario": "Pergunta indireta → “por que” (separado, sem acento). Cabe “por qual motivo”.",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-02",
+   "tipo": "CE",
+   "enunciado": "Ela saiu porque estava cansada.",
+   "gabarito": "C",
+   "comentario": "Relação de causa/resposta → “porque” (junto, sem acento).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-03",
+   "tipo": "CE",
+   "enunciado": "Você está triste por quê?",
+   "gabarito": "C",
+   "comentario": "Fim de frase → “por quê” (separado e acentuado).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-04",
+   "tipo": "CE",
+   "enunciado": "Ninguém entende o porque da briga.",
+   "gabarito": "E",
+   "comentario": "Com artigo “o”, é substantivo → “o porquê” (junto e acentuado).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-05",
+   "tipo": "CE",
+   "enunciado": "Por quê você não veio ontem?",
+   "gabarito": "E",
+   "comentario": "Pergunta no início da frase → “Por que” (separado, sem acento).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-06",
+   "tipo": "CE",
+   "enunciado": "Estudo muito, por que quero passar.",
+   "gabarito": "E",
+   "comentario": "Relação de causa → “porque” (junto).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-07",
+   "tipo": "CE",
+   "enunciado": "Eis o porquê de toda a confusão.",
+   "gabarito": "C",
+   "comentario": "Substantivo (= o motivo), precedido de artigo → “porquê”.",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-08",
+   "tipo": "CE",
+   "enunciado": "Por que motivo você mentiu para mim?",
+   "gabarito": "C",
+   "comentario": "“Por que” separado e sem acento (cabe “por qual motivo”).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-09",
+   "tipo": "CE",
+   "enunciado": "Ele não explicou porquê sumiu da festa.",
+   "gabarito": "E",
+   "comentario": "Pergunta indireta → “por que” (separado, sem acento).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-10",
+   "tipo": "CE",
+   "enunciado": "Afinal, lutamos por quê?",
+   "gabarito": "C",
+   "comentario": "Fim de frase → “por quê” (acentuado).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-11",
+   "tipo": "CE",
+   "enunciado": "A razão por que luto é justa.",
+   "gabarito": "C",
+   "comentario": "Equivale a “pela qual” → “por que” (separado, sem acento).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-12",
+   "tipo": "CE",
+   "enunciado": "Não irei à festa, porque não fui convidado.",
+   "gabarito": "C",
+   "comentario": "Causa → “porque” (junto).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-13",
+   "tipo": "CE",
+   "enunciado": "Você sabe o por quê disso tudo?",
+   "gabarito": "E",
+   "comentario": "Com artigo “o”, é substantivo → “o porquê” (junto e acentuado).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-14",
+   "tipo": "CE",
+   "enunciado": "Por que você está rindo tanto?",
+   "gabarito": "C",
+   "comentario": "Pergunta direta no início → “Por que” (separado, sem acento).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-porque-15",
+   "tipo": "CE",
+   "enunciado": "Cheguei atrasado porquê o ônibus quebrou.",
+   "gabarito": "E",
+   "comentario": "Causa → “porque” (junto, sem acento).",
+   "tag": "Os porquês"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-01",
+   "tipo": "ABERTA",
+   "enunciado": "O ALUNO entregou a prova. — Classe gramatical da palavra destacada?",
+   "resposta": "Substantivo (núcleo do sujeito).",
+   "comentario": "Substantivo (núcleo do sujeito).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-02",
+   "tipo": "ABERTA",
+   "enunciado": "Ela é MUITO esforçada. — Classe gramatical da palavra destacada?",
+   "resposta": "Advérbio (de intensidade — modifica o adjetivo).",
+   "comentario": "Advérbio (de intensidade — modifica o adjetivo).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-03",
+   "tipo": "ABERTA",
+   "enunciado": "Comprei TRÊS cadernos. — Classe gramatical da palavra destacada?",
+   "resposta": "Numeral (cardinal).",
+   "comentario": "Numeral (cardinal).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-04",
+   "tipo": "ABERTA",
+   "enunciado": "ELE chegou cedo à reunião. — Classe gramatical da palavra destacada?",
+   "resposta": "Pronome pessoal (do caso reto).",
+   "comentario": "Pronome pessoal (do caso reto).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-05",
+   "tipo": "ABERTA",
+   "enunciado": "O céu ESTÁ limpo. — Classe gramatical da palavra destacada?",
+   "resposta": "Verbo (de ligação).",
+   "comentario": "Verbo (de ligação).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-06",
+   "tipo": "ABERTA",
+   "enunciado": "Que dia BONITO! — Classe gramatical da palavra destacada?",
+   "resposta": "Adjetivo.",
+   "comentario": "Adjetivo.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-07",
+   "tipo": "ABERTA",
+   "enunciado": "Viajei COM meus colegas. — Classe gramatical da palavra destacada?",
+   "resposta": "Preposição.",
+   "comentario": "Preposição.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-08",
+   "tipo": "ABERTA",
+   "enunciado": "Tentei, MAS não consegui. — Classe gramatical da palavra destacada?",
+   "resposta": "Conjunção coordenativa adversativa.",
+   "comentario": "Conjunção coordenativa adversativa.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-09",
+   "tipo": "ABERTA",
+   "enunciado": "NOSSA, que susto! — Classe gramatical da palavra destacada?",
+   "resposta": "Interjeição.",
+   "comentario": "Interjeição.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-10",
+   "tipo": "ABERTA",
+   "enunciado": "A casa é espaçosa. — Classe gramatical da palavra destacada?",
+   "resposta": "Artigo definido (“A”).",
+   "comentario": "Artigo definido (“A”).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-11",
+   "tipo": "ABERTA",
+   "enunciado": "Ele dirige RAPIDAMENTE. — Classe gramatical da palavra destacada?",
+   "resposta": "Advérbio (de modo).",
+   "comentario": "Advérbio (de modo).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-12",
+   "tipo": "ABERTA",
+   "enunciado": "Cheguei em PRIMEIRO lugar. — Classe gramatical da palavra destacada?",
+   "resposta": "Numeral (ordinal).",
+   "comentario": "Numeral (ordinal).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-13",
+   "tipo": "ABERTA",
+   "enunciado": "ALGUÉM deixou a porta aberta. — Classe gramatical da palavra destacada?",
+   "resposta": "Pronome indefinido.",
+   "comentario": "Pronome indefinido.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-14",
+   "tipo": "ABERTA",
+   "enunciado": "O JANTAR está servido. — Classe gramatical da palavra destacada?",
+   "resposta": "Substantivo.",
+   "comentario": "Substantivo.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-15",
+   "tipo": "ABERTA",
+   "enunciado": "Vamos JANTAR mais tarde. — Classe gramatical da palavra destacada?",
+   "resposta": "Verbo (infinitivo).",
+   "comentario": "Verbo (infinitivo).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-16",
+   "tipo": "ABERTA",
+   "enunciado": "Ele se expressa BEM. — Classe gramatical da palavra destacada?",
+   "resposta": "Advérbio (de modo).",
+   "comentario": "Advérbio (de modo).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-17",
+   "tipo": "ABERTA",
+   "enunciado": "Desejo o seu BEM. — Classe gramatical da palavra destacada?",
+   "resposta": "Substantivo.",
+   "comentario": "Substantivo.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-18",
+   "tipo": "ABERTA",
+   "enunciado": "Entreguei o relatório A ela. — Classe gramatical da palavra destacada?",
+   "resposta": "Preposição.",
+   "comentario": "Preposição.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-19",
+   "tipo": "ABERTA",
+   "enunciado": "Este é o livro QUE comprei. — Classe gramatical da palavra destacada?",
+   "resposta": "Pronome relativo.",
+   "comentario": "Pronome relativo.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-20",
+   "tipo": "ABERTA",
+   "enunciado": "Espero QUE você compareça. — Classe gramatical da palavra destacada?",
+   "resposta": "Conjunção integrante.",
+   "comentario": "Conjunção integrante.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-21",
+   "tipo": "ABERTA",
+   "enunciado": "MUITOS candidatos desistiram. — Classe gramatical da palavra destacada?",
+   "resposta": "Pronome indefinido (adjetivo).",
+   "comentario": "Pronome indefinido (adjetivo).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-22",
+   "tipo": "ABERTA",
+   "enunciado": "Ai! Cortei o dedo. — Classe gramatical da palavra destacada?",
+   "resposta": "Interjeição.",
+   "comentario": "Interjeição.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-23",
+   "tipo": "ABERTA",
+   "enunciado": "SE estudar, você passará. — Classe gramatical da palavra destacada?",
+   "resposta": "Conjunção subordinativa condicional.",
+   "comentario": "Conjunção subordinativa condicional.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-24",
+   "tipo": "ABERTA",
+   "enunciado": "Não sei SE ele virá. — Classe gramatical da palavra destacada?",
+   "resposta": "Conjunção integrante.",
+   "comentario": "Conjunção integrante.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-25",
+   "tipo": "ABERTA",
+   "enunciado": "Ele FERIU-SE no acidente. — Classe gramatical da palavra destacada?",
+   "resposta": "Pronome reflexivo (“se”).",
+   "comentario": "Pronome reflexivo (“se”).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-26",
+   "tipo": "ABERTA",
+   "enunciado": "Trabalhamos DURANTE a madrugada. — Classe gramatical da palavra destacada?",
+   "resposta": "Preposição.",
+   "comentario": "Preposição.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-27",
+   "tipo": "ABERTA",
+   "enunciado": "Ela canta MARAVILHOSAMENTE. — Classe gramatical da palavra destacada?",
+   "resposta": "Advérbio (de modo).",
+   "comentario": "Advérbio (de modo).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-28",
+   "tipo": "ABERTA",
+   "enunciado": "O Brasil é um país TROPICAL. — Classe gramatical da palavra destacada?",
+   "resposta": "Adjetivo.",
+   "comentario": "Adjetivo.",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-29",
+   "tipo": "ABERTA",
+   "enunciado": "Vendem-SE apartamentos. — Classe gramatical da palavra destacada?",
+   "resposta": "Pronome apassivador (partícula apassivadora).",
+   "comentario": "Pronome apassivador (partícula apassivadora).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-morfo-30",
+   "tipo": "ABERTA",
+   "enunciado": "Comprei DOIS quilos de arroz. — Classe gramatical da palavra destacada?",
+   "resposta": "Numeral (cardinal).",
+   "comentario": "Numeral (cardinal).",
+   "tag": "Classe gramatical"
+  },
+  {
+   "id": "portugues-treino-drills-orto-01",
+   "tipo": "ESCOLHA",
+   "enunciado": "Ele se comportou (mau / mal) na entrevista.",
+   "resposta": "mal",
+   "comentario": "mal — Advérbio (oposto de “bem”).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-02",
+   "tipo": "ESCOLHA",
+   "enunciado": "O tempo está (mau / mal) hoje; vai chover.",
+   "resposta": "mau",
+   "comentario": "mau — Adjetivo (oposto de “bom”), qualifica “tempo”.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-03",
+   "tipo": "ESCOLHA",
+   "enunciado": "Estudei muito, (mas / mais) não passei.",
+   "resposta": "mas",
+   "comentario": "mas — Conjunção adversativa (= porém).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-04",
+   "tipo": "ESCOLHA",
+   "enunciado": "Preciso de (mas / mais) tempo.",
+   "resposta": "mais",
+   "comentario": "mais — Advérbio de intensidade/quantidade.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-05",
+   "tipo": "ESCOLHA",
+   "enunciado": "Cheguei (a / há) dois dias na cidade.",
+   "resposta": "há",
+   "comentario": "há — Tempo decorrido (= faz).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-06",
+   "tipo": "ESCOLHA",
+   "enunciado": "Daqui (a / há) uma semana viajarei.",
+   "resposta": "a",
+   "comentario": "a — Tempo futuro/distância.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-07",
+   "tipo": "ESCOLHA",
+   "enunciado": "(Onde / Aonde) você vai com tanta pressa?",
+   "resposta": "Aonde",
+   "comentario": "Aonde — Verbo de movimento (ir).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-08",
+   "tipo": "ESCOLHA",
+   "enunciado": "(Onde / Aonde) você mora atualmente?",
+   "resposta": "Onde",
+   "comentario": "Onde — Lugar fixo (sem movimento).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-09",
+   "tipo": "ESCOLHA",
+   "enunciado": "Corra, (senão / se não) você cairá.",
+   "resposta": "senão",
+   "comentario": "senão — Equivale a “caso contrário”.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-10",
+   "tipo": "ESCOLHA",
+   "enunciado": "(Senão / Se não) chover, faremos o passeio.",
+   "resposta": "Se não",
+   "comentario": "Se não — Equivale a “caso não” (condição).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-11",
+   "tipo": "ESCOLHA",
+   "enunciado": "Conversamos (acerca de / há cerca de) política.",
+   "resposta": "acerca de",
+   "comentario": "acerca de — Significa “a respeito de”.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-12",
+   "tipo": "ESCOLHA",
+   "enunciado": "Ele saiu (acerca de / há cerca de) uma hora.",
+   "resposta": "há cerca de",
+   "comentario": "há cerca de — Tempo decorrido aproximado (verbo haver).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-13",
+   "tipo": "ESCOLHA",
+   "enunciado": "Estudo (afim / a fim) de passar no concurso.",
+   "resposta": "a fim",
+   "comentario": "a fim — “A fim de” = com a finalidade de.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-14",
+   "tipo": "ESCOLHA",
+   "enunciado": "São duas áreas (afins / a fins).",
+   "resposta": "afins",
+   "comentario": "afins — “Afins” = semelhantes (adjetivo).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-15",
+   "tipo": "ESCOLHA",
+   "enunciado": "Comprei o aparelho na (sessão / seção) de eletrônicos.",
+   "resposta": "seção",
+   "comentario": "seção — “Seção” = divisão/parte.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-16",
+   "tipo": "ESCOLHA",
+   "enunciado": "A (sessão / seção) de cinema começou atrasada.",
+   "resposta": "sessão",
+   "comentario": "sessão — “Sessão” = período de tempo/reunião.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-17",
+   "tipo": "ESCOLHA",
+   "enunciado": "Houve a (sessão / cessão) dos direitos ao autor.",
+   "resposta": "cessão",
+   "comentario": "cessão — “Cessão” = ato de ceder.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-18",
+   "tipo": "ESCOLHA",
+   "enunciado": "A forma correta é (idéia / ideia).",
+   "resposta": "ideia",
+   "comentario": "ideia — Paroxítona com ditongo aberto perdeu o acento.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-19",
+   "tipo": "ESCOLHA",
+   "enunciado": "Escreve-se (vôo / voo).",
+   "resposta": "voo",
+   "comentario": "voo — Hiato “oo” não é mais acentuado.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-20",
+   "tipo": "ESCOLHA",
+   "enunciado": "A grafia correta é (heróico / heroico).",
+   "resposta": "heroico",
+   "comentario": "heroico — Paroxítona com ditongo aberto sem acento.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-21",
+   "tipo": "ESCOLHA",
+   "enunciado": "Ontem ele (pôde / pode) comparecer.",
+   "resposta": "pôde",
+   "comentario": "pôde — Pretérito leva acento diferencial.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-22",
+   "tipo": "ESCOLHA",
+   "enunciado": "Hoje ele não (pôde / pode) sair, pois está doente.",
+   "resposta": "pode",
+   "comentario": "pode — Presente, sem acento.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-23",
+   "tipo": "ESCOLHA",
+   "enunciado": "Levei o carro para (consertar / concertar).",
+   "resposta": "consertar",
+   "comentario": "consertar — “Consertar” = reparar.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-24",
+   "tipo": "ESCOLHA",
+   "enunciado": "Assistimos a um lindo (conserto / concerto).",
+   "resposta": "concerto",
+   "comentario": "concerto — “Concerto” = espetáculo musical.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-25",
+   "tipo": "ESCOLHA",
+   "enunciado": "Ele tem (mau / mal) hálito.",
+   "resposta": "mau",
+   "comentario": "mau — Adjetivo (qualifica “hálito”).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-26",
+   "tipo": "ESCOLHA",
+   "enunciado": "Tudo correu (mau / mal) na viagem.",
+   "resposta": "mal",
+   "comentario": "mal — Advérbio (oposto de “bem”).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-27",
+   "tipo": "ESCOLHA",
+   "enunciado": "Vim (a fim / afim) de resolver o problema.",
+   "resposta": "a fim",
+   "comentario": "a fim — “A fim de” = finalidade.",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-28",
+   "tipo": "ESCOLHA",
+   "enunciado": "Não sei (porque / por que) ele faltou.",
+   "resposta": "por que",
+   "comentario": "por que — Pergunta indireta (separado, sem acento).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-29",
+   "tipo": "ESCOLHA",
+   "enunciado": "Faltei ao trabalho (porque / por que) adoeci.",
+   "resposta": "porque",
+   "comentario": "porque — Causa/resposta (junto).",
+   "tag": "Ortografia"
+  },
+  {
+   "id": "portugues-treino-drills-orto-30",
+   "tipo": "ESCOLHA",
+   "enunciado": "A palavra é grafada com (x / ch) em “enxergar”.",
+   "resposta": "x",
+   "comentario": "x — “Enxergar” escreve-se com x.",
+   "tag": "Ortografia"
+  }
+ ]
+}

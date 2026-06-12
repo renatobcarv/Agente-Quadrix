@@ -1,0 +1,413 @@
+{
+ "materia": "Direito Constitucional",
+ "tema": "Art. 5º — direitos e deveres individuais",
+ "revisar": true,
+ "questoes": [
+  {
+   "id": "constitucional-art5-ce-01",
+   "tipo": "CE",
+   "enunciado": "Os direitos e garantias do art. 5º são assegurados aos brasileiros e aos estrangeiros residentes no País.",
+   "gabarito": "C",
+   "comentario": "Correto. É a literalidade do caput. A palavra-chave “residentes” é o ponto que a banca costuma explorar."
+  },
+  {
+   "id": "constitucional-art5-ce-02",
+   "tipo": "CE",
+   "enunciado": "Por não ser residente, o turista estrangeiro não pode invocar nenhum direito fundamental enquanto estiver no Brasil.",
+   "gabarito": "E",
+   "comentario": "Errado. Embora o caput cite “residentes”, o STF estende o núcleo essencial (vida, integridade, acesso à Justiça) a qualquer pessoa em território nacional. “Nenhum direito” é generalização indevida."
+  },
+  {
+   "id": "constitucional-art5-ce-03",
+   "tipo": "CE",
+   "enunciado": "É livre a manifestação do pensamento, sendo permitido o anonimato quando necessário à proteção da fonte.",
+   "gabarito": "E",
+   "comentario": "Errado. O inciso IV veda o anonimato. A troca de “vedado” por “permitido” é a armadilha clássica."
+  },
+  {
+   "id": "constitucional-art5-ce-04",
+   "tipo": "CE",
+   "enunciado": "Durante o dia, é possível ingressar na casa, sem consentimento do morador, por determinação judicial.",
+   "gabarito": "C",
+   "comentario": "Correto. O inciso XI autoriza o ingresso por ordem judicial apenas durante o dia."
+  },
+  {
+   "id": "constitucional-art5-ce-05",
+   "tipo": "CE",
+   "enunciado": "Havendo determinação judicial, admite-se o ingresso no domicílio a qualquer hora do dia ou da noite.",
+   "gabarito": "E",
+   "comentario": "Errado. O mandado judicial vale só durante o dia. À noite, só com flagrante, desastre ou para prestar socorro."
+  },
+  {
+   "id": "constitucional-art5-ce-06",
+   "tipo": "CE",
+   "enunciado": "A interceptação das comunicações telefônicas pode ser determinada pela autoridade policial no curso da investigação.",
+   "gabarito": "E",
+   "comentario": "Errado. A interceptação depende de ordem JUDICIAL e se destina a fins penais (inciso XII). Delegado ou promotor, sozinho, não pode."
+  },
+  {
+   "id": "constitucional-art5-ce-07",
+   "tipo": "CE",
+   "enunciado": "A prática do racismo constitui crime inafiançável e imprescritível, sujeito à pena de reclusão.",
+   "gabarito": "C",
+   "comentario": "Correto. É a literalidade do inciso XLII. Racismo não prescreve e não admite fiança."
+  },
+  {
+   "id": "constitucional-art5-ce-08",
+   "tipo": "CE",
+   "enunciado": "Os crimes hediondos, a exemplo do racismo, são imprescritíveis.",
+   "gabarito": "E",
+   "comentario": "Errado. Hediondos e equiparados são inafiançáveis e insuscetíveis de graça/anistia, mas PRESCREVEM. Imprescritíveis são apenas o racismo e a ação de grupos armados."
+  },
+  {
+   "id": "constitucional-art5-ce-09",
+   "tipo": "CE",
+   "enunciado": "A lei penal não retroagirá, salvo para beneficiar o réu.",
+   "gabarito": "C",
+   "comentario": "Correto. Literalidade do inciso XL: a lei penal mais benéfica retroage, inclusive para quem já foi condenado."
+  },
+  {
+   "id": "constitucional-art5-ce-10",
+   "tipo": "CE",
+   "enunciado": "Nenhum brasileiro será extraditado, não havendo qualquer exceção a essa regra.",
+   "gabarito": "E",
+   "comentario": "Errado. O nato nunca é extraditado, mas o naturalizado pode ser, por crime comum anterior à naturalização ou por tráfico (inciso LI). A generalização “qualquer exceção” torna o item falso."
+  },
+  {
+   "id": "constitucional-art5-ce-11",
+   "tipo": "CE",
+   "enunciado": "Ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória.",
+   "gabarito": "C",
+   "comentario": "Correto. Literalidade do inciso LVII (presunção de inocência). A culpa só se firma após esgotados os recursos."
+  },
+  {
+   "id": "constitucional-art5-ce-12",
+   "tipo": "CE",
+   "enunciado": "São inadmissíveis as provas obtidas por meios ilícitos, salvo quando forem a única forma de comprovar a verdade.",
+   "gabarito": "E",
+   "comentario": "Errado. O inciso LVI não traz essa ressalva: a prova ilícita é inadmissível e contamina as provas dela derivadas. A oração com “salvo” insere uma exceção inexistente."
+  },
+  {
+   "id": "constitucional-art5-ce-13",
+   "tipo": "CE",
+   "enunciado": "O contraditório e a ampla defesa são assegurados apenas no processo judicial.",
+   "gabarito": "E",
+   "comentario": "Errado. O inciso LV garante o contraditório e a ampla defesa também no processo administrativo. A palavra “apenas” restringe indevidamente."
+  },
+  {
+   "id": "constitucional-art5-ce-14",
+   "tipo": "CE",
+   "enunciado": "A pena não passará da pessoa do condenado, mas a obrigação de reparar o dano pode estender-se aos sucessores, até o limite do patrimônio transferido.",
+   "gabarito": "C",
+   "comentario": "Correto. É a redação do inciso XLV: a pena é pessoal; a reparação e o perdimento de bens alcançam os herdeiros, limitados à herança."
+  },
+  {
+   "id": "constitucional-art5-ce-15",
+   "tipo": "CE",
+   "enunciado": "As normas definidoras dos direitos e garantias fundamentais têm aplicação imediata.",
+   "gabarito": "C",
+   "comentario": "Correto. É o § 1º do art. 5º. A regra é a aplicabilidade imediata, ainda que algumas normas dependam de lei."
+  },
+  {
+   "id": "constitucional-art5-me-01",
+   "tipo": "ME",
+   "tag": "Sigilo (XII)",
+   "enunciado": "Acerca do sigilo das comunicações, assinale a opção correta.",
+   "alternativas": [
+    "É absoluto o sigilo das comunicações telefônicas, não se admitindo exceção.",
+    "A interceptação telefônica pode ser determinada diretamente pela autoridade policial.",
+    "O sigilo telefônico pode ser afastado por ordem de comissão parlamentar de inquérito municipal.",
+    "A interceptação das comunicações telefônicas é admitida para instruir processo de natureza civil.",
+    "A interceptação telefônica é admitida por ordem judicial, na forma da lei, para fins penais."
+   ],
+   "gabarito": 4,
+   "comentario": "Gabarito E: a exceção ao sigilo exige ordem judicial e fim penal. ✗A: o sigilo não é absoluto. ✗B: delegado não pode sozinho. ✗C: CPI municipal não tem esse poder. ✗D: a exceção é para a investigação criminal, não o processo civil."
+  },
+  {
+   "id": "constitucional-art5-me-02",
+   "tipo": "ME",
+   "tag": "Escusa de consciência (VIII)",
+   "enunciado": "A respeito da escusa de consciência, assinale a opção correta.",
+   "alternativas": [
+    "A crença religiosa autoriza, em qualquer hipótese, o descumprimento de obrigação legal.",
+    "A privação de direitos por convicção política é vedada de forma absoluta.",
+    "A escusa aplica-se somente às obrigações ligadas ao serviço militar.",
+    "Haverá privação de direitos se a pessoa recusar a obrigação legal e também a prestação alternativa fixada em lei.",
+    "Não se admite, em nenhum caso, a fixação de prestação alternativa."
+   ],
+   "gabarito": 3,
+   "comentario": "Gabarito D: a perda de direitos só ocorre na dupla recusa (obrigação + alternativa). ✗A: não é “em qualquer hipótese”. ✗B: não é “absoluta”, há a exceção. ✗C: não se limita ao serviço militar. ✗E: a prestação alternativa existe e é fixada em lei."
+  },
+  {
+   "id": "constitucional-art5-me-03",
+   "tipo": "ME",
+   "tag": "Reunião (XVI)",
+   "enunciado": "Acerca do direito de reunião, assinale a opção correta.",
+   "alternativas": [
+    "A reunião em local aberto ao público depende de prévia autorização da autoridade.",
+    "É permitida a reunião armada, desde que pacífica.",
+    "A reunião pacífica, sem armas, em local aberto, independe de autorização, exigido apenas aviso prévio.",
+    "É vedada toda reunião em local aberto ao público sem fiscalização estatal.",
+    "Exige-se autorização judicial para qualquer reunião."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: reunião pacífica e sem armas só exige aviso prévio. ✗A e ✗E: não se exige autorização (administrativa ou judicial). ✗B: reunião não pode ser armada. ✗D: a regra é a liberdade, não a vedação."
+  },
+  {
+   "id": "constitucional-art5-me-04",
+   "tipo": "ME",
+   "tag": "Pessoalidade da pena (XLV)",
+   "enunciado": "Sobre a pessoalidade da pena, assinale a opção correta.",
+   "alternativas": [
+    "A pena privativa de liberdade pode passar aos sucessores do condenado.",
+    "A obrigação de reparar o dano pode ser estendida aos sucessores, até o limite do patrimônio transferido.",
+    "A decretação do perdimento de bens não pode, em nenhuma hipótese, atingir os sucessores.",
+    "A obrigação de reparar o dano jamais atinge os sucessores.",
+    "A pena privativa de liberdade pode ser cumprida pelos sucessores."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: a reparação e o perdimento alcançam os herdeiros até o limite da herança. ✗A e ✗E: a pena é pessoal, não se transmite. ✗C e ✗D: reparação e perdimento podem, sim, estender-se aos sucessores."
+  },
+  {
+   "id": "constitucional-art5-me-05",
+   "tipo": "ME",
+   "tag": "Domicílio (XI)",
+   "enunciado": "Quanto à inviolabilidade do domicílio, assinale a opção correta.",
+   "alternativas": [
+    "Durante o dia, a casa pode ser invadida por determinação judicial, na forma da lei.",
+    "Em flagrante delito, a casa só pode ser invadida durante o dia.",
+    "O ingresso para prestar socorro depende sempre de prévia ordem judicial.",
+    "A determinação judicial autoriza o ingresso a qualquer hora do dia ou da noite.",
+    "Em caso de desastre, o ingresso exige o consentimento do morador ausente."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: ordem judicial autoriza o ingresso durante o dia. ✗B: o flagrante autoriza a qualquer hora. ✗C: socorro independe de ordem judicial. ✗D: mandado só de dia. ✗E: desastre dispensa consentimento."
+  },
+  {
+   "id": "constitucional-art5-me-06",
+   "tipo": "ME",
+   "tag": "Titulares (caput)",
+   "enunciado": "Acerca dos destinatários dos direitos do art. 5º, assinale a opção correta.",
+   "alternativas": [
+    "São assegurados exclusivamente aos brasileiros natos.",
+    "Os estrangeiros de passagem equiparam-se em tudo aos residentes.",
+    "São assegurados aos brasileiros e aos estrangeiros residentes, sem distinção de qualquer natureza.",
+    "A igualdade do caput refere-se à igualdade de resultados sociais.",
+    "Os brasileiros naturalizados não têm a garantia da inviolabilidade da vida."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: é a literalidade do caput. ✗A: alcança também naturalizados e estrangeiros residentes. ✗B: turista não se equipara “em tudo” ao residente. ✗D: é igualdade formal (perante a lei). ✗E: o naturalizado é plenamente titular."
+  },
+  {
+   "id": "constitucional-art5-me-07",
+   "tipo": "ME",
+   "tag": "Legalidade (II)",
+   "enunciado": "Considerando o princípio da legalidade, assinale a opção correta.",
+   "alternativas": [
+    "O particular pode ser obrigado a algo em virtude de decreto do Executivo.",
+    "A obrigação pode decorrer de portaria de autoridade administrativa.",
+    "Atos normativos criam obrigações novas independentemente de lei.",
+    "A Administração, por sua supremacia, pode impor deveres sem lei formal.",
+    "Ninguém será obrigado a fazer ou deixar de fazer algo senão em virtude de lei."
+   ],
+   "gabarito": 4,
+   "comentario": "Gabarito E: literalidade do inciso II. ✗A, ✗B, ✗C: decreto, portaria e atos normativos não criam obrigação ao particular sem lei. ✗D: a supremacia não dispensa a lei formal."
+  },
+  {
+   "id": "constitucional-art5-me-08",
+   "tipo": "ME",
+   "tag": "Anonimato (IV)",
+   "enunciado": "Sobre a liberdade de manifestação do pensamento, assinale a opção correta.",
+   "alternativas": [
+    "A liberdade de expressão é absoluta e afasta responsabilização.",
+    "É livre a manifestação do pensamento, sendo vedado o anonimato.",
+    "O anonimato é assegurado para proteger a fonte jornalística.",
+    "A manifestação depende de prévio licenciamento do poder público.",
+    "A vedação ao anonimato só vale para meios impressos."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: literalidade do inciso IV. ✗A: a liberdade não é absoluta (há o direito de resposta e a indenização). ✗C: o anonimato é vedado. ✗D: não há licenciamento prévio. ✗E: a vedação é geral, não só para impressos."
+  },
+  {
+   "id": "constitucional-art5-me-09",
+   "tipo": "ME",
+   "tag": "Resposta (V)",
+   "enunciado": "Quanto ao direito de resposta, assinale a opção correta.",
+   "alternativas": [
+    "O ofendido deve optar entre resposta e indenização.",
+    "A indenização restringe-se ao dano material.",
+    "O direito de resposta independe de proporcionalidade ao agravo.",
+    "É assegurado o direito de resposta, proporcional ao agravo, além da indenização por dano material, moral ou à imagem.",
+    "A indenização só cabe quando inexistir direito de resposta."
+   ],
+   "gabarito": 3,
+   "comentario": "Gabarito D: literalidade do inciso V (“além da” = cumulação). ✗A: são cumuláveis, não excludentes. ✗B: cabe dano moral e à imagem. ✗C: a resposta é proporcional ao agravo. ✗E: a indenização não depende da inexistência de resposta."
+  },
+  {
+   "id": "constitucional-art5-me-10",
+   "tipo": "ME",
+   "tag": "Inafastabilidade (XXXV)",
+   "enunciado": "A respeito do acesso à Justiça, assinale a opção correta.",
+   "alternativas": [
+    "A lei pode excluir da apreciação do Judiciário a ameaça a direito.",
+    "O acesso ao Judiciário pressupõe o esgotamento da via administrativa.",
+    "Somente a lesão, e não a ameaça, pode ser submetida ao Judiciário.",
+    "A apreciação judicial depende de autorização do órgão de origem.",
+    "A lei não excluirá da apreciação do Poder Judiciário lesão ou ameaça a direito."
+   ],
+   "gabarito": 4,
+   "comentario": "Gabarito E: literalidade do inciso XXXV — alcança lesão E ameaça. ✗A e ✗C: a ameaça também é apreciável. ✗B: em regra não se exige exaurir a via administrativa. ✗D: não depende de autorização."
+  },
+  {
+   "id": "constitucional-art5-me-11",
+   "tipo": "ME",
+   "tag": "Racismo (XLII)",
+   "enunciado": "Sobre o crime de racismo, assinale a opção correta.",
+   "alternativas": [
+    "Prescreve em vinte anos.",
+    "Admite fiança ao réu primário.",
+    "Constitui contravenção penal.",
+    "É inafiançável e imprescritível, sujeito a reclusão.",
+    "É afiançável, mas imprescritível."
+   ],
+   "gabarito": 3,
+   "comentario": "Gabarito D: literalidade do inciso XLII. ✗A: é imprescritível. ✗B e ✗E: é inafiançável. ✗C: é crime, não contravenção."
+  },
+  {
+   "id": "constitucional-art5-me-12",
+   "tipo": "ME",
+   "tag": "Devido processo (LIV)",
+   "enunciado": "A privação da liberdade ou de bens, segundo o art. 5º, exige",
+   "alternativas": [
+    "mera decisão administrativa.",
+    "apenas ordem do chefe imediato.",
+    "concordância da vítima.",
+    "decreto do Poder Executivo.",
+    "o devido processo legal."
+   ],
+   "gabarito": 4,
+   "comentario": "Gabarito E: literalidade do inciso LIV. ✗A, ✗B, ✗D: nenhuma decisão isolada substitui o devido processo. ✗C: a vontade da vítima não é requisito."
+  },
+  {
+   "id": "constitucional-art5-me-13",
+   "tipo": "ME",
+   "tag": "Ampla defesa (LV)",
+   "enunciado": "Sobre o contraditório e a ampla defesa, assinale a opção correta.",
+   "alternativas": [
+    "Existem apenas no processo judicial.",
+    "São assegurados também no processo administrativo.",
+    "Dependem de previsão em estatuto.",
+    "Valem só no processo penal.",
+    "São dispensáveis quando a prova é robusta."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: o inciso LV alcança o processo judicial E o administrativo. ✗A e ✗D: não se restringem ao judicial/penal. ✗C: a garantia é constitucional. ✗E: nunca são dispensáveis."
+  },
+  {
+   "id": "constitucional-art5-me-14",
+   "tipo": "ME",
+   "tag": "Extradição (LI)",
+   "enunciado": "Brasileiro naturalizado, acusado de tráfico cometido após a naturalização, quanto à extradição,",
+   "alternativas": [
+    "não pode ser extraditado, por ser brasileiro.",
+    "só poderia se o crime fosse anterior à naturalização.",
+    "depende de plebiscito.",
+    "pode ser extraditado, pois o envolvimento com o tráfico autoriza a medida.",
+    "só cabe para brasileiro nato."
+   ],
+   "gabarito": 3,
+   "comentario": "Gabarito D: o naturalizado é extraditável por tráfico (antes ou depois) ou por crime comum anterior à naturalização. ✗A: a naturalização não blinda nesse caso. ✗B: o tráfico não exige anterioridade. ✗C: não há plebiscito. ✗E: o nato é justamente o inextraditável."
+  },
+  {
+   "id": "constitucional-art5-me-15",
+   "tipo": "ME",
+   "tag": "Penas (XLVII)",
+   "enunciado": "Assinale a única pena admitida, excepcionalmente, pela Constituição.",
+   "alternativas": [
+    "pena de morte em caso de guerra declarada.",
+    "prisão perpétua para hediondos.",
+    "trabalhos forçados.",
+    "banimento de reincidentes.",
+    "penas cruéis para terroristas."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: a única exceção é a pena de morte em guerra declarada. ✗B, ✗C, ✗D, ✗E: perpétua, trabalhos forçados, banimento e penas cruéis são sempre vedados."
+  },
+  {
+   "id": "constitucional-art5-me-16",
+   "tipo": "ME",
+   "tag": "Presunção de inocência (LVII)",
+   "enunciado": "Réu condenado em primeira instância, ainda cabível recurso, é",
+   "alternativas": [
+    "culpado, pois já houve condenação.",
+    "presumido inocente até o trânsito em julgado da sentença penal condenatória.",
+    "culpado a partir da segunda instância.",
+    "semi-culpado.",
+    "culpado, mas com direito a recurso."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: só é culpado após o trânsito em julgado. ✗A, ✗C, ✗E: condenação recorrível não firma a culpa. ✗D: não existe tal categoria."
+  },
+  {
+   "id": "constitucional-art5-me-17",
+   "tipo": "ME",
+   "tag": "Provas ilícitas (LVI)",
+   "enunciado": "A única prova da autoria foi obtida mediante tortura. Essa prova",
+   "alternativas": [
+    "é admissível por ser decisiva.",
+    "é admissível se confirmada por outra.",
+    "é inadmissível, por ter origem ilícita.",
+    "vale apenas na fase de investigação.",
+    "é válida se o réu confessar depois."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: prova ilícita é inadmissível e contamina as derivadas. ✗A e ✗B: a relevância não convalida a ilicitude. ✗D: não vale em fase alguma do processo. ✗E: a confissão posterior não a legitima."
+  },
+  {
+   "id": "constitucional-art5-me-18",
+   "tipo": "ME",
+   "tag": "Petição (XXXIV)",
+   "enunciado": "Sobre o direito de petição e a obtenção de certidões, assinale a opção correta.",
+   "alternativas": [
+    "Dependem do pagamento de taxa de expediente.",
+    "Exigem demonstração de interesse econômico.",
+    "São assegurados a todos, independentemente do pagamento de taxas.",
+    "São exclusivos de brasileiros natos.",
+    "Podem ser cobrados em caráter de urgência."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: petição e certidões são gratuitas e para todos. ✗A, ✗E: independem de taxa. ✗B: não se exige interesse econômico. ✗D: não são exclusivos de natos."
+  },
+  {
+   "id": "constitucional-art5-me-19",
+   "tipo": "ME",
+   "tag": "Segurança jurídica (XXXVI)",
+   "enunciado": "Assinale o que a lei NÃO pode prejudicar, segundo o art. 5º.",
+   "alternativas": [
+    "a expectativa de direito.",
+    "o direito adquirido, o ato jurídico perfeito e a coisa julgada.",
+    "os interesses da Administração.",
+    "os contratos futuros.",
+    "as meras liberalidades."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: o trio protegido é direito adquirido, ato jurídico perfeito e coisa julgada. ✗A: a expectativa de direito NÃO é protegida. ✗C, ✗D, ✗E: não integram a garantia do inciso XXXVI."
+  },
+  {
+   "id": "constitucional-art5-me-20",
+   "tipo": "ME",
+   "tag": "Remédios (LXXI)",
+   "enunciado": "O instrumento cabível diante da falta de norma regulamentadora que inviabiliza um direito é o",
+   "alternativas": [
+    "habeas corpus.",
+    "mandado de injunção.",
+    "habeas data.",
+    "mandado de segurança.",
+    "ação popular."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: o mandado de injunção combate a omissão legislativa. ✗A: HC protege a locomoção. ✗C: HD trata de dados pessoais. ✗D: MS protege direito líquido e certo já existente. ✗E: ação popular anula ato lesivo ao patrimônio público."
+  }
+ ],
+ "nota_revisao": "Distratores: correta tende a ser a mais longa. Rebalancear tamanhos."
+}

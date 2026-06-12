@@ -1,0 +1,412 @@
+{
+ "materia": "Língua Portuguesa",
+ "tema": "Ortografia, classes, morfossintaxe e coesão",
+ "revisar": false,
+ "questoes": [
+  {
+   "id": "portugues-morfossintaxe-ce-01",
+   "tipo": "CE",
+   "enunciado": "Na frase “Fazem dois anos que ele partiu”, o verbo “fazer” está corretamente flexionado.",
+   "gabarito": "E",
+   "comentario": "O verbo “fazer” indicando tempo decorrido é IMPESSOAL e fica sempre no singular: “Faz dois anos”. A flexão no plural é justamente a armadilha mais cobrada pela banca."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-02",
+   "tipo": "CE",
+   "enunciado": "Em “Houve muitos problemas na reunião”, o verbo “haver”, no sentido de existir, é impessoal e permanece no singular.",
+   "gabarito": "C",
+   "comentario": "Correto. “Haver” = existir não tem sujeito (oração sem sujeito) e não vai ao plural; “muitos problemas” é objeto direto. Dizer “Houveram” seria o erro."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-03",
+   "tipo": "CE",
+   "enunciado": "Conforme o Acordo Ortográfico vigente, as palavras “ideia”, “heroico” e “voo” são grafadas sem acento.",
+   "gabarito": "C",
+   "comentario": "Correto. Paroxítonas com ditongos abertos “ei/oi” perderam o acento (ideia, heroico) e os hiatos “oo” também (voo). As grafias “idéia/heróico/vôo” estão erradas hoje."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-04",
+   "tipo": "CE",
+   "enunciado": "Na frase “Ele se comportou mau na reunião”, a palavra “mau” está empregada corretamente.",
+   "gabarito": "E",
+   "comentario": "Errado. Aqui se exige o ADVÉRBIO “mal” (oposto de “bem”): “comportou-se mal”. “Mau” é adjetivo (oposto de “bom”). Teste: cabe “bem” → usa-se “mal”."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-05",
+   "tipo": "CE",
+   "enunciado": "Em “Aonde você nasceu?”, o emprego de “aonde” está de acordo com a norma culta.",
+   "gabarito": "E",
+   "comentario": "Errado. “Nascer” não exprime movimento; o correto é “Onde você nasceu?”. “Aonde” (a + onde) só com verbos de movimento (ir, chegar): “Aonde você vai?”."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-06",
+   "tipo": "CE",
+   "enunciado": "Em “Alugam-se salas comerciais”, o “se” é partícula apassivadora e “salas comerciais” funciona como sujeito.",
+   "gabarito": "C",
+   "comentario": "Correto. Verbo transitivo direto (“alugar”) + “se” = voz passiva sintética; “salas” é sujeito paciente, por isso o verbo concorda no plural (“Alugam-se”)."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-07",
+   "tipo": "CE",
+   "enunciado": "Em “Precisa-se de vendedores”, o verbo deve ir para o plural — “Precisam-se de vendedores”.",
+   "gabarito": "E",
+   "comentario": "Errado. “Precisar de” é transitivo indireto; o “se” é índice de indeterminação do sujeito e o verbo fica no SINGULAR: “Precisa-se de vendedores”."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-08",
+   "tipo": "CE",
+   "enunciado": "Em “Este é o relatório que assinei ontem”, a palavra “que” é conjunção integrante.",
+   "gabarito": "E",
+   "comentario": "Errado. O “que” retoma “o relatório” e equivale a “o qual” → é PRONOME RELATIVO, que inicia oração subordinada adjetiva. Conjunção integrante completaria um verbo (“Disse que…”)."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-09",
+   "tipo": "CE",
+   "enunciado": "Em “Não sei se ela virá à reunião”, a palavra “se” é conjunção integrante.",
+   "gabarito": "C",
+   "comentario": "Correto. “Se” introduz oração que completa o verbo “saber” (objeto direto): “Não sei [isto]” → conjunção integrante (oração subordinada substantiva)."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-10",
+   "tipo": "CE",
+   "enunciado": "Na frase “Assisti o jogo ontem à noite”, a regência do verbo “assistir” está de acordo com a norma culta.",
+   "gabarito": "E",
+   "comentario": "Errado. “Assistir” no sentido de “ver/presenciar” é transitivo indireto e exige a preposição “a”: “Assisti AO jogo”. Sem a preposição, viola a norma culta."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-11",
+   "tipo": "CE",
+   "enunciado": "Em “Faz cinco anos que moro nesta cidade”, o verbo “fazer” está corretamente empregado no singular.",
+   "gabarito": "C",
+   "comentario": "Correto. “Fazer” indicando tempo decorrido é impessoal e fica no singular. “Fazem cinco anos” seria o erro."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-12",
+   "tipo": "CE",
+   "enunciado": "O conectivo “portanto” estabelece, entre as orações, uma relação de causa.",
+   "gabarito": "E",
+   "comentario": "Errado. “Portanto” exprime CONCLUSÃO (“Estudou; portanto, passou”). Causa seria “porque/pois (antes do verbo)”. Trocar conclusão por causa é pegadinha clássica de coesão."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-13",
+   "tipo": "CE",
+   "enunciado": "Em “O candidato que se preparou foi aprovado”, a oração “que se preparou” é subordinada adjetiva restritiva.",
+   "gabarito": "C",
+   "comentario": "Correto. Sem vírgulas, a oração restringe o sentido (só o candidato que se preparou) → adjetiva restritiva. Com vírgulas, seria explicativa."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-14",
+   "tipo": "CE",
+   "enunciado": "Em “Meu irmão, que mora em Brasília, virá amanhã”, as vírgulas isolam uma oração subordinada adjetiva explicativa.",
+   "gabarito": "C",
+   "comentario": "Correto. A informação entre vírgulas apenas acrescenta um dado (ele tem um irmão); por isso é explicativa. Retirá-la não muda o referente."
+  },
+  {
+   "id": "portugues-morfossintaxe-ce-15",
+   "tipo": "CE",
+   "enunciado": "Em “Ninguém sabe o porquê da decisão”, a grafia “porquê” (junta e acentuada) está correta.",
+   "gabarito": "C",
+   "comentario": "Correto. Precedido do artigo “o”, “porquê” é substantivo (= o motivo) e, por isso, vem junto e acentuado. O artigo é a pista que confirma a grafia."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-01",
+   "tipo": "ME",
+   "tag": "Ortografia",
+   "enunciado": "Assinale a opção em que o emprego de por que / porque / por quê / porquê está correto.",
+   "alternativas": [
+    "Não sei porque ele se atrasou para a reunião.",
+    "Ela faltou por quê estava doente.",
+    "Você ainda está aqui? Por quê?",
+    "Ninguém explicou o por que da decisão.",
+    "Estudo muito, porquê quero passar."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: em fim de frase usa-se “por quê” (separado e acentuado). ✗A: pergunta indireta pede “por que” separado. ✗B: relação de causa pede “porque” junto. ✗D: com artigo “o” seria o substantivo “porquê”. ✗E: causa = “porque” junto, sem acento."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-02",
+   "tipo": "ME",
+   "tag": "Ortografia",
+   "enunciado": "Assinale a opção em que a palavra destacada (mau/mal) está empregada corretamente.",
+   "alternativas": [
+    "Ele se comportou mau na entrevista.",
+    "O tempo está mau hoje; vai chover.",
+    "Ela dormiu muito mau ontem.",
+    "Tudo acabou mau para eles.",
+    "Ele é um mal aluno."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: “mau” é adjetivo (oposto de “bom”) e qualifica “tempo” → “tempo está mau (ruim)”. ✗A, ✗C, ✗D: exigem o advérbio “mal” (comportou-se mal, dormiu mal, acabou mal). ✗E: antes de substantivo é adjetivo → “mau aluno”."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-03",
+   "tipo": "ME",
+   "tag": "Ortografia",
+   "enunciado": "Assinale a opção em que o emprego de a / há (tempo) está correto.",
+   "alternativas": [
+    "Cheguei a dois dias na cidade.",
+    "Daqui há uma semana viajarei.",
+    "Estou aqui a três horas esperando.",
+    "Não o vejo há muitos anos.",
+    "Espero por ele a muito tempo."
+   ],
+   "gabarito": 3,
+   "comentario": "Gabarito D: tempo passado/decorrido pede “há” (verbo haver). ✗A e ✗C: passado também pediria “há” (há dois dias; há três horas). ✗B: tempo futuro pede “a” (daqui a uma semana). ✗E: passado → “há muito tempo”."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-04",
+   "tipo": "ME",
+   "tag": "Ortografia",
+   "enunciado": "Assinale a opção em que todas as palavras estão grafadas conforme o Acordo Ortográfico.",
+   "alternativas": [
+    "idéia, vôo, heróico",
+    "ideia, vôo, heroico",
+    "idéia, voo, heróico",
+    "ideía, voo, heroíco",
+    "ideia, voo, heroico"
+   ],
+   "gabarito": 4,
+   "comentario": "Gabarito E: paroxítonas com ditongo aberto (ideia, heroico) e hiato “oo” (voo) não levam acento. ✗A, ✗B, ✗C: mantêm acentos abolidos (idéia, vôo, heróico). ✗D: acentuação inexistente (ideía, heroíco)."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-05",
+   "tipo": "ME",
+   "tag": "Ortografia/Crase",
+   "enunciado": "Assinale a opção em que o emprego do acento grave (crase) está correto.",
+   "alternativas": [
+    "Refiro-me à essa questão.",
+    "Cheguei à Brasília ontem.",
+    "Entreguei o documento à diretora.",
+    "Estou disposto à ajudar.",
+    "Falei à respeito do caso."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: “entregar a” + “a diretora” (feminino) = à. ✗A: pronome demonstrativo “essa” não admite crase. ✗B: “Brasília” não exige artigo (cidade sem artigo) → “a Brasília”. ✗D: antes de verbo não há crase. ✗E: “a respeito” (masculino) não tem crase."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-06",
+   "tipo": "ME",
+   "tag": "Ortografia",
+   "enunciado": "Assinale a opção em que o emprego de senão / se não está correto.",
+   "alternativas": [
+    "Estude, se não você será reprovado.",
+    "Ele não quer outra coisa se não vencer.",
+    "Apresse-se, se não chegará atrasado.",
+    "Não havia ninguém, se não o porteiro.",
+    "Se não chover, faremos o passeio."
+   ],
+   "gabarito": 4,
+   "comentario": "Gabarito E: “se não” (separado) = “caso não” (condição). ✗A e ✗C: equivalem a “caso contrário” → “senão” junto. ✗B e ✗D: equivalem a “a não ser” → “senão” junto."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-07",
+   "tipo": "ME",
+   "tag": "Classes de palavras",
+   "enunciado": "Em “Ele fala bem demais”, as palavras “bem” e “demais” classificam-se, respectivamente, como",
+   "alternativas": [
+    "adjetivo e substantivo.",
+    "substantivo e advérbio.",
+    "advérbio e advérbio.",
+    "advérbio e adjetivo.",
+    "preposição e advérbio."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: “bem” modifica o verbo “fala” e “demais” intensifica “bem” → ambos advérbios (invariáveis). ✗ demais opções classificam errado: “bem”/“demais” aqui não são adjetivo, substantivo nem preposição."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-08",
+   "tipo": "ME",
+   "tag": "Classes de palavras",
+   "enunciado": "Em “O jantar foi servido às oito”, a palavra “jantar” classifica-se como",
+   "alternativas": [
+    "verbo.",
+    "substantivo.",
+    "adjetivo.",
+    "advérbio.",
+    "preposição."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: precedida do artigo “O”, a palavra está substantivada → substantivo. ✗A: seria verbo em “Vamos jantar”. A classe depende do contexto, e o artigo é a pista decisiva."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-09",
+   "tipo": "ME",
+   "tag": "Classes de palavras",
+   "enunciado": "Em “Ela é a aluna que mais estuda”, a palavra “que” classifica-se como",
+   "alternativas": [
+    "pronome relativo.",
+    "conjunção integrante.",
+    "preposição.",
+    "interjeição.",
+    "advérbio."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: “que” retoma “a aluna” (= a qual) → pronome relativo, iniciando oração adjetiva. ✗B: integrante completaria verbo (Disse que…). ✗C/D/E: não exerce esses papéis aqui."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-10",
+   "tipo": "ME",
+   "tag": "Morfossintaxe",
+   "enunciado": "Em “Faltaram três candidatos à prova”, o termo “três candidatos” exerce a função de",
+   "alternativas": [
+    "sujeito.",
+    "objeto direto.",
+    "adjunto adverbial.",
+    "complemento nominal.",
+    "predicativo do sujeito."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: “faltar” é intransitivo; quem falta pratica a ação → sujeito (o verbo concorda: “Faltaram”). ✗B: não há objeto, pois o verbo não é transitivo. ✗C/D/E: não cabem à estrutura."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-11",
+   "tipo": "ME",
+   "tag": "Morfossintaxe",
+   "enunciado": "Em “Vendem-se imóveis usados”, a palavra “se” classifica-se como",
+   "alternativas": [
+    "índice de indeterminação do sujeito.",
+    "conjunção integrante.",
+    "pronome apassivador.",
+    "pronome reflexivo.",
+    "conjunção condicional."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: VTD “vender” + “se” = voz passiva sintética; “imóveis” é sujeito paciente (verbo no plural). ✗A: o IIS ocorre com VTI/VI (verbo no singular). ✗B/D/E: funções diversas, não cabíveis."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-12",
+   "tipo": "ME",
+   "tag": "Morfossintaxe",
+   "enunciado": "Em “Os alunos assistiram ao documentário”, o verbo “assistir” classifica-se como",
+   "alternativas": [
+    "transitivo indireto.",
+    "transitivo direto.",
+    "intransitivo.",
+    "de ligação.",
+    "transitivo direto e indireto."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: “assistir” = ver exige preposição “a” → transitivo indireto (“ao documentário” = objeto indireto). ✗B: seria VTD se não exigisse preposição. ✗C/D/E: não correspondem à regência."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-13",
+   "tipo": "ME",
+   "tag": "Morfossintaxe",
+   "enunciado": "Em “A construção da ponte durou meses”, o termo “da ponte” exerce a função de",
+   "alternativas": [
+    "adjunto adverbial.",
+    "objeto indireto.",
+    "complemento nominal.",
+    "adjunto adnominal.",
+    "agente da passiva."
+   ],
+   "gabarito": 2,
+   "comentario": "Gabarito C: a ponte SOFRE a ação (foi construída) e “construção” é nome abstrato → complemento nominal. ✗D: seria adjunto adnominal se a ponte praticasse/possuísse (ex.: “a torre da igreja”). ✗A/B/E: não cabem."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-14",
+   "tipo": "ME",
+   "tag": "Morfossintaxe",
+   "enunciado": "Em “Embora estivesse cansado, terminou o serviço”, a oração destacada é subordinada adverbial",
+   "alternativas": [
+    "causal.",
+    "condicional.",
+    "temporal.",
+    "concessiva.",
+    "consecutiva."
+   ],
+   "gabarito": 3,
+   "comentario": "Gabarito D: “embora” introduz concessão (um obstáculo que não impede o fato). ✗A: causa seria “porque”. ✗B: condição seria “se”. ✗C: tempo seria “quando”. ✗E: consequência seria “tão… que”."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-15",
+   "tipo": "ME",
+   "tag": "Morfossintaxe",
+   "enunciado": "A frase “O projeto foi aprovado pela comissão” está na voz",
+   "alternativas": [
+    "passiva analítica.",
+    "ativa.",
+    "passiva sintética.",
+    "reflexiva.",
+    "reflexiva recíproca."
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: “ser + particípio” = voz passiva analítica; “pela comissão” é agente da passiva. ✗C: a sintética usa “se” (Aprovou-se o projeto). ✗B/D/E: não correspondem à estrutura."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-16",
+   "tipo": "ME",
+   "tag": "Morfossintaxe",
+   "enunciado": "Assinale a opção em que a colocação pronominal está correta.",
+   "alternativas": [
+    "Me empreste o seu livro.",
+    "Não diga-me isso.",
+    "Quem contou-te a verdade?",
+    "Nunca se deve mentir.",
+    "Tudo resolveu-se rápido."
+   ],
+   "gabarito": 3,
+   "comentario": "Gabarito D: “Nunca” é palavra atrativa → próclise obrigatória (“se deve”). ✗A: não se inicia frase com pronome átono. ✗B: a negação atrai (“Não me diga”). ✗C: “Quem” atrai (“Quem te contou”). ✗E: “Tudo” atrai (“Tudo se resolveu”)."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-17",
+   "tipo": "ME",
+   "tag": "Morfossintaxe",
+   "enunciado": "Quantas orações há no período “Quando cheguei, todos já tinham saído”?",
+   "alternativas": [
+    "uma.",
+    "duas.",
+    "três.",
+    "quatro.",
+    "nenhuma."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: conta-se uma oração por verbo ou locução verbal — “cheguei” (1) e “tinham saído” (locução = 1) → duas. ✗ As demais erram a contagem; a pegadinha é contar a locução como dois verbos."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-18",
+   "tipo": "ME",
+   "tag": "Coesão",
+   "enunciado": "No período “Esforçou-se muito; ____, não obteve o resultado esperado”, a lacuna, para exprimir oposição, deve ser preenchida com",
+   "alternativas": [
+    "contudo",
+    "portanto",
+    "porque",
+    "assim que",
+    "à medida que"
+   ],
+   "gabarito": 0,
+   "comentario": "Gabarito A: há contraste → conectivo adversativo “contudo”. ✗B: “portanto” daria conclusão. ✗C: “porque” daria causa. ✗D: “assim que” é tempo. ✗E: “à medida que” é proporção."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-19",
+   "tipo": "ME",
+   "tag": "Coesão",
+   "enunciado": "Assinale a opção em que o conectivo destacado exprime CONCLUSÃO.",
+   "alternativas": [
+    "Faltou ao trabalho PORQUE adoeceu.",
+    "Estudou muito; PORTANTO, foi aprovado.",
+    "EMBORA chovesse, ele saiu.",
+    "Tudo correu CONFORME o combinado.",
+    "Saiu LOGO QUE o sinal tocou."
+   ],
+   "gabarito": 1,
+   "comentario": "Gabarito B: “portanto” = conclusão. ✗A: “porque” = causa. ✗C: “embora” = concessão. ✗D: “conforme” = conformidade. ✗E: “logo que” = tempo."
+  },
+  {
+   "id": "portugues-morfossintaxe-me-20",
+   "tipo": "ME",
+   "tag": "Coesão",
+   "enunciado": "Em “O cão latia sem parar; o animal parecia assustado”, o termo “o animal” retoma “o cão” por meio de",
+   "alternativas": [
+    "elipse do sujeito.",
+    "catáfora.",
+    "repetição do mesmo termo.",
+    "emprego de pronome relativo.",
+    "substituição por hiperônimo."
+   ],
+   "gabarito": 4,
+   "comentario": "Gabarito E: “animal” é palavra de sentido mais amplo que “cão” → substituição por hiperônimo (coesão referencial). ✗A: não há omissão. ✗B: catáfora antecipa, não retoma. ✗C: não houve repetição. ✗D: não há pronome relativo."
+  }
+ ]
+}
